@@ -59,7 +59,7 @@ defaults: &defaults
   doi_loaded_link: "http://doi.org/"
 
   best_bets:
-    solr_url: "http://localhost:8983/solr/bestbets/select?"
+    solr_url: ""
 
 development:
   <<: *defaults
