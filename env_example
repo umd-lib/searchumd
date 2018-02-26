@@ -1,0 +1,35 @@
+# Example .env file
+# Make a copy of this file named ".env" and fill out the properties
+# Note: The .env file should _not_ be checked in to Git!
+
+# File containing server-specific Rails environment variables.
+# Do not check into Git!
+
+# --- config/secrets.yml
+# Secret key used to verify signed cookies
+SECRET_KEY_BASE=
+
+# --- config/database.yml
+# The type of database
+PROD_DATABASE_ADAPTER=postgresql
+
+# The name of the database
+PROD_DATABASE_NAME=search
+
+# The encoding to use
+PROD_DATABASE_ENCODING=utf8
+
+# The username used to connect to the database
+PROD_DATABASE_USERNAME=search
+
+# The password used to connect to the database
+PROD_DATABASE_PASSWORD=
+
+# The host for the database
+PROD_DATABASE_HOST=
+
+# The port for the database
+PROD_DATABASE_PORT=5432
+
+# Pool size
+PROD_DATABASE_POOL=10

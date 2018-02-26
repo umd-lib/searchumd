@@ -1,0 +1,58 @@
+# Enables Rails cops
+Rails:
+  Enabled: true
+
+# Don't require gems in Gemfile to be in alphabetical order.
+Bundler/OrderedGems:
+  Enabled: false
+
+# Exclude auto-generated files
+AllCops:
+  Include:
+    - '**/Gemfile'
+    - '**/Rakefile'
+  Exclude:
+    - 'bin/*'
+    - 'config/initializers/*'
+    - 'config/application.rb'
+    - 'db/schema.rb'
+    - 'db/migrate/*'
+    - 'lib/**/*'
+    - 'db/seeds.rb'
+
+  TargetRubyVersion: 2.2
+  TargetRailsVersion: 5.0
+
+# Increase max allowed line length
+Metrics/LineLength:
+  Max: 120
+
+Metrics/ClassLength:
+  Exclude:
+    - 'test/**/*'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'test/**/*'
+
+Metrics/ModuleLength:
+  Exclude:
+    - 'test/**/*'
+
+# The following configuration exclude checks that seem
+# silly, or conflict with the way Rails naturally does
+# things.
+Style/Documentation:
+  Exclude:
+    - 'app/controllers/*_controller.rb'
+    - 'app/helpers/*_helper.rb'
+    - 'test/test_helper.rb'
+    - 'test/controllers/*_controller_test.rb'
+    - 'test/helpers/*_helper_test.rb'
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/test_helper.rb'
+
+Layout/IndentationConsistency:
+  EnforcedStyle: rails
