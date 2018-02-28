@@ -22,6 +22,9 @@
 # Ignore minitest-ci reports
 test/reports
 
+# Ignore coverage report
+coverage
+
 # Ignore .env .env.production
 .env
 .env.production
