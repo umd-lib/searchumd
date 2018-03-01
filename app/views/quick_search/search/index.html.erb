@@ -37,23 +37,32 @@
 <div class="quicksearch-ga-click-tracking">
     <div class="row articles-catalog">
         <div class="small-12 medium-6 columns summon module">
-          <%= render_module(@arxiv, 'arxiv') %>
+          <%= render_module(@placeholder, 'placeholder') %>
         </div>
         <div class="small-12 medium-6 columns catalog module">
-            <%= render_module(@open_library, 'open_library') %>
+            <%= render_module(@placeholder, 'placeholder') %>
+        </div>
+        <hr>
+    </div>
+    <div class="row articles-catalog">
+        <div class="small-12 medium-6 columns summon module">
+          <%= render_module(@lib_guides, 'lib_guides') %>
+        </div>
+        <div class="small-12 medium-6 columns catalog module">
+            <%= render_module(@placeholder, 'placeholder') %>
         </div>
         <hr>
     </div>
     <div class="row journals-databases">
         <div class="small-12 columns"><h4 class='section-description'>Other Ways to Find Articles</h4></div>
         <div class="small-12 medium-4 columns journals module">
-          <%= render_module(@wikipedia, 'wikipedia') %>
+          <%= render_module(@arxiv, 'arxiv') %>
         </div>
         <div class="small-12 medium-4 columns databases module">
-          <%= render_module(@placeholder, 'placeholder') %>
+          <%= render_module(@open_library, 'open_library') %>
         </div>
         <div class="small-12 medium-4 columns smart-subjects module">
-          <%= render_module(@placeholder, 'placeholder') %>
+          <%= render_module(@wikipedia, 'wikipedia') %>
         </div>
         <hr>
     </div>

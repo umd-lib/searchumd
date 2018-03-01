@@ -12,6 +12,14 @@ GIT
       rails (~> 5.0)
 
 GIT
+  remote: https://github.com/umd-lib/quick_search-lib_guides_searcher.git
+  revision: 23702edf2de60e6f6c4ebf452689be155a47ca4e
+  branch: develop
+  specs:
+    quick_search-lib_guides_searcher (0.1.0)
+      quick_search-core (~> 0)
+
+GIT
   remote: https://github.com/umd-lib/quick_search-umd_theme.git
   revision: 4fa8c34346ad578eeb4ab0d0a6ea1216b7eacb88
   branch: develop
@@ -276,6 +284,7 @@ DEPENDENCIES
   puma (~> 3.0)
   quick_search-arxiv_searcher
   quick_search-core!
+  quick_search-lib_guides_searcher!
   quick_search-open_library_searcher
   quick_search-placeholder_searcher
   quick_search-umd_theme!

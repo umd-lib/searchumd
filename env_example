@@ -33,3 +33,7 @@ PROD_DATABASE_PORT=5432
 
 # Pool size
 PROD_DATABASE_POOL=10
+
+# --- config/searchers/lib_guides_config.yml
+# The API key to use with LibGuides
+LIB_GUIDES_API_KEY=
