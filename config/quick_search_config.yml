@@ -7,7 +7,7 @@ defaults: &defaults
   #
   # See docs for more details: https://github.com/NCSU-Libraries/quick_search/blob/master/docs/configuration.md
 
-  theme: 'quick_search_generic_theme'
+  theme: 'quick_search_umd_theme'
 
   # Searchers that QuickSearch will automatically search
   #

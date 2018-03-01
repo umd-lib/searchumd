@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'dotenv-rails', '~> 2.2.1'
 
 # Using "master" branch, because tagged versions are old
-gem 'quick_search-core', git: 'git://github.com/NCSU-Libraries/quick_search.git'
+gem 'quick_search-core', git: 'https://github.com/NCSU-Libraries/quick_search.git'
 
 # -Inserted by QuickSearch-
 
@@ -56,7 +56,7 @@ gem 'quick_search-placeholder_searcher'
 #
 # Remove the following if you want to use a different theme
 
-gem 'quick_search-generic_theme'
+gem 'quick_search-umd_theme', git: 'https://github.com/umd-lib/quick_search-umd_theme.git', branch: 'develop'
 
 # END -Inserted by QuickSearch-
 
