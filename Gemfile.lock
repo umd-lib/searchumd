@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_guides_searcher.git
-  revision: 23702edf2de60e6f6c4ebf452689be155a47ca4e
+  revision: 91187284b0e4346f329e21c4918df1a28e27be5d
   branch: develop
   specs:
     quick_search-lib_guides_searcher (0.1.0)
