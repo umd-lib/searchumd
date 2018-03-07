@@ -1,0 +1,16 @@
+defaults: &defaults
+  base_url: "https://api2.libanswers.com/1.0/search/"
+  query_params: "?iid=<YOUR_IID>&limit=3"
+  loaded_link: "http://umd.libanswers.com/search?q="
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

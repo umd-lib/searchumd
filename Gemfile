@@ -48,8 +48,10 @@ gem 'quick_search-open_library_searcher'
 gem 'quick_search-arxiv_searcher'
 gem 'quick_search-placeholder_searcher'
 
+gem 'quick_search-lib_answers_searcher',
+  git: 'https://github.com/umd-lib/quick_search-lib_answers_searcher.git', branch: 'develop'
 gem 'quick_search-lib_guides_searcher',
-    git: 'https://github.com/umd-lib/quick_search-lib_guides_searcher.git', branch: 'develop'
+  git: 'https://github.com/umd-lib/quick_search-lib_guides_searcher.git', branch: 'develop'
 
 # -END Inserted by QuickSearch-
 
