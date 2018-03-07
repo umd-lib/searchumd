@@ -34,6 +34,12 @@ PROD_DATABASE_PORT=5432
 # Pool size
 PROD_DATABASE_POOL=10
 
+# --- config/searchers/lib_answers_config.yml
+# The Institution ID for LibAnswers
+LIB_ANSWERS_IID=
+
 # --- config/searchers/lib_guides_config.yml
+# The Site ID to use with LibGuides
+LIB_GUIDES_SITE_ID=
 # The API key to use with LibGuides
 LIB_GUIDES_API_KEY=
