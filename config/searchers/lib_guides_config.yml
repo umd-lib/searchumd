@@ -1,6 +1,6 @@
 defaults: &defaults
   base_url: 'http://lgapi-us.libapps.com/1.1/guides/?key='
-  query_params: '&site_id=<YOUR_SITE_ID>&sort_by=relevance&search_terms='
+  query_params: '&site_id=<%= ENV['LIB_GUIDES_SITE_ID'] %>&sort_by=relevance&search_terms='
   loaded_link: 'http://lib.guides.umd.edu/srch.php?q='
   key: <%= ENV['LIB_GUIDES_API_KEY'] %>
 
