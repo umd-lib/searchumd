@@ -45,5 +45,7 @@ LIB_ANSWERS_IID=
 # --- config/searchers/lib_guides_config.yml
 # The Site ID to use with LibGuides
 LIB_GUIDES_SITE_ID=
+
 # The API key to use with LibGuides
 LIB_GUIDES_API_KEY=
+
