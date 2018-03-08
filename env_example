@@ -34,6 +34,10 @@ PROD_DATABASE_PORT=5432
 # Pool size
 PROD_DATABASE_POOL=10
 
+# --- config/searchers/world_cat_config.yml
+# The wskey to use with WorlCat
+WORLD_CAT_API_WSKEY=
+
 # --- config/searchers/lib_answers_config.yml
 # The Institution ID for LibAnswers
 LIB_ANSWERS_IID=

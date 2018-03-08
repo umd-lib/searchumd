@@ -12,14 +12,6 @@ GIT
       rails (~> 5.0)
 
 GIT
-  remote: https://github.com/umd-lib/quick_search-lib_guides_searcher.git
-  revision: 91187284b0e4346f329e21c4918df1a28e27be5d
-  branch: develop
-  specs:
-    quick_search-lib_guides_searcher (0.1.0)
-      quick_search-core (~> 0)
-
-GIT
   remote: https://github.com/umd-lib/quick_search-umd_theme.git
   revision: 4fa8c34346ad578eeb4ab0d0a6ea1216b7eacb88
   branch: develop
@@ -32,6 +24,25 @@ GIT
       quick_search-core (~> 0.1)
       sass (~> 3.2)
       sass-rails (~> 5.0)
+
+PATH
+  remote: ../quick_search-lib_answers_searcher
+  specs:
+    quick_search-lib_answers_searcher (0.1.0)
+      quick_search-core (~> 0)
+
+PATH
+  remote: ../quick_search-lib_guides_searcher
+  specs:
+    quick_search-lib_guides_searcher (0.1.0)
+      quick_search-core (~> 0)
+
+PATH
+  remote: ../quick_search-world_cat_searcher
+  specs:
+    quick_search-world_cat_searcher (0.1.0)
+      nokogiri (~> 1.6)
+      quick_search-core (~> 0)
 
 GEM
   remote: https://rubygems.org/
@@ -284,11 +295,13 @@ DEPENDENCIES
   puma (~> 3.0)
   quick_search-arxiv_searcher
   quick_search-core!
+  quick_search-lib_answers_searcher!
   quick_search-lib_guides_searcher!
   quick_search-open_library_searcher
   quick_search-placeholder_searcher
   quick_search-umd_theme!
   quick_search-wikipedia_searcher
+  quick_search-world_cat_searcher!
   rails (~> 5.0.0)
   rubocop (= 0.52.1)
   rubocop-checkstyle_formatter (~> 0.4.0)
