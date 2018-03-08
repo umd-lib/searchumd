@@ -23,12 +23,6 @@ en:
   hello: "Hello world"
 
   world_cat_search:
-    display_name: "WorldCat"
-    short_display_name: "WorldCat"
-    search_form_placeholder: "Search WorldCat"
-    module_callout: "Search WorldCat"
-    error_service_message: "searching WorldCat"
-    no_results_service_message: "a different search from WorldCat"
     no_results_link: "https://umaryland.on.worldcat.org/search"
 
   lib_answers_search:
@@ -41,10 +35,5 @@ en:
     no_results_link: "http://umd.libanswers.com/"
 
   lib_guides_search:
-      display_name: "LibGuides"
-      short_display_name: "LibGuides"
-      search_form_placeholder: "Search LibGuides"
-      module_callout: "Search LibGuides"
-      error_service_mesasge: "searching LibGuides"
-      no_results_service_message: "a different search from LibGuides"
-      no_results_link: "http://lib.guides.umd.edu/"
+    no_results_link: "http://lib.guides.umd.edu/"
+
