@@ -12,6 +12,22 @@ GIT
       rails (~> 5.0)
 
 GIT
+  remote: https://github.com/umd-lib/quick_search-lib_answers_searcher.git
+  revision: 1cf658759a811eafd644a81b89f612aa80e3b67e
+  branch: develop
+  specs:
+    quick_search-lib_answers_searcher (0.1.0)
+      quick_search-core (~> 0)
+
+GIT
+  remote: https://github.com/umd-lib/quick_search-lib_guides_searcher.git
+  revision: d82f91ce3c13167841289873d02a7513545bff73
+  branch: develop
+  specs:
+    quick_search-lib_guides_searcher (0.1.0)
+      quick_search-core (~> 0)
+
+GIT
   remote: https://github.com/umd-lib/quick_search-umd_theme.git
   revision: 4fa8c34346ad578eeb4ab0d0a6ea1216b7eacb88
   branch: develop
@@ -25,20 +41,10 @@ GIT
       sass (~> 3.2)
       sass-rails (~> 5.0)
 
-PATH
-  remote: ../quick_search-lib_answers_searcher
-  specs:
-    quick_search-lib_answers_searcher (0.1.0)
-      quick_search-core (~> 0)
-
-PATH
-  remote: ../quick_search-lib_guides_searcher
-  specs:
-    quick_search-lib_guides_searcher (0.1.0)
-      quick_search-core (~> 0)
-
-PATH
-  remote: ../quick_search-world_cat_searcher
+GIT
+  remote: https://github.com/umd-lib/quick_search-world_cat_searcher.git
+  revision: d7fd93206b201acecd85defade037ef61a278a74
+  branch: develop
   specs:
     quick_search-world_cat_searcher (0.1.0)
       nokogiri (~> 1.6)
