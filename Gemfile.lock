@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/NCSU-Libraries/quick_search.git
-  revision: 8afe3122ad1d9127636cb6edddec6f7f65eace71
+  revision: 26a840f5d3157ee360249f18c71ed2a3cb3697fa
   specs:
-    quick_search-core (0.1.1)
+    quick_search-core (0.2.0)
       fastimage
       httpclient
       kaminari
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_answers_searcher.git
-  revision: 1cf658759a811eafd644a81b89f612aa80e3b67e
+  revision: 2817964b57d6baa26ed9f3542808cd644701f9a8
   branch: develop
   specs:
     quick_search-lib_answers_searcher (0.1.0)
@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_guides_searcher.git
-  revision: d82f91ce3c13167841289873d02a7513545bff73
+  revision: 67d30e190945c870cb51b39d64fc3ce19302a0ce
   branch: develop
   specs:
     quick_search-lib_guides_searcher (0.1.0)
@@ -43,7 +43,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_searcher.git
-  revision: d7fd93206b201acecd85defade037ef61a278a74
+  revision: 6b7a187ed961bfc31bed9a3fb4a9a63c54d5ab84
   branch: develop
   specs:
     quick_search-world_cat_searcher (0.1.0)
@@ -164,7 +164,7 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    loofah (2.2.0)
+    loofah (2.2.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.0)
@@ -180,8 +180,8 @@ GEM
       ruby-progressbar
     modernizr-rails (2.7.1)
     multi_json (1.13.1)
-    mysql2 (0.4.10)
-    nio4r (2.2.0)
+    mysql2 (0.5.0)
+    nio4r (2.3.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     parallel (1.12.1)
@@ -225,7 +225,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rainbow (3.0.0)
-    rake (12.3.0)
+    rake (12.3.1)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
