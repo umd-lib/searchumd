@@ -53,6 +53,8 @@ gem 'quick_search-lib_answers_searcher',
     git: 'https://github.com/umd-lib/quick_search-lib_answers_searcher.git', branch: 'develop'
 gem 'quick_search-lib_guides_searcher',
     git: 'https://github.com/umd-lib/quick_search-lib_guides_searcher.git', branch: 'develop'
+gem 'quick_search-database_finder_searcher',
+    git: 'https://github.com/umd-lib/quick_search-database_finder_searcher.git', branch: 'develop'
 
 # -END Inserted by QuickSearch-
 
