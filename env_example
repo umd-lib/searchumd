@@ -49,3 +49,7 @@ LIB_GUIDES_SITE_ID=
 # The API key to use with LibGuides
 LIB_GUIDES_API_KEY=
 
+# -- config/searchers/dabase_finder_config.yml
+# The base URL for the Hippo website
+DATABASE_FINDER_HIPPO_SITE_URL=
+
