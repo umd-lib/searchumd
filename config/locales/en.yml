@@ -35,5 +35,10 @@ en:
     no_results_link: "http://umd.libanswers.com/"
 
   lib_guides_search:
+    display_name: "Research Guides"
+    short_display_name: "Research Guides"
+    search_form_placeholder: "Search Research Guides"
+    module_callout: "Search Research Guides"
+    error_service_mesasge: "searching Research Guides"
+    no_results_service_message: "a different search from Research Guides"
     no_results_link: "http://lib.guides.umd.edu/"
-
