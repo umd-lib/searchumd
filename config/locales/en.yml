@@ -39,6 +39,10 @@ en:
     short_display_name: "Research Guides"
     search_form_placeholder: "Search Research Guides"
     module_callout: "Search Research Guides"
-    error_service_mesasge: "searching Research Guides"
+    error_service_message: "searching Research Guides"
     no_results_service_message: "a different search from Research Guides"
     no_results_link: "http://lib.guides.umd.edu/"
+
+en:
+  database_finder_search:
+    no_results_link: "http://localhost:8080/site/dbfinder"
