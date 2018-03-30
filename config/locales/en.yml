@@ -43,6 +43,11 @@ en:
     no_results_service_message: "a different search from Research Guides"
     no_results_link: "http://lib.guides.umd.edu/"
 
-en:
   database_finder_search:
+    display_name: "Databases"
+    short_display_name: "Databases"
+    search_form_placeholder: "Search Databases"
+    module_callout: "Search Databases"
+    error_service_message: "searching Databases"
+    no_results_service_message: "a different search from Databases"
     no_results_link: "http://localhost:8080/site/dbfinder"
