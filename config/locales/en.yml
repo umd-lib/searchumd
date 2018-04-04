@@ -51,3 +51,12 @@ en:
     error_service_message: "searching Databases"
     no_results_service_message: "a different search from Databases"
     no_results_link: "http://localhost:8080/site/dbfinder"
+
+  world_cat_knowledge_base_search:
+    display_name: "WorldCat Knowledge Base"
+    short_display_name: "WorldCat Knowledge Base"
+    search_form_placeholder: "Search WorldCat Knowledge Base"
+    module_callout: "Search WorldCat Knowledge Base"
+    error_service_message: "searching WorldCat Knowledge Base"
+    no_results_service_message: "a different search from WorldCat Knowledge Base"
+    no_results_link: "https://umaryland.on.worldcat.org/atoztitles/search#ebook"

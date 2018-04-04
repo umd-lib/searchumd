@@ -1,0 +1,17 @@
+defaults: &defaults
+  base_url: "http://worldcat.org/webservices/kb/rest/entries/search?"
+  institution_id: <%= ENV['WORLD_CAT_KNOWLEDGE_BASE_INSTITUTION_ID'] %>
+  wskey: <%= ENV['WORLD_CAT_KNOWLEDGE_BASE_WSKEY'] %>
+  loaded_link: "https://umaryland.on.worldcat.org/atoztitles/ebooks?searchType=matchAll&btitle="
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

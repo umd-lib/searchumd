@@ -1,12 +1,3 @@
-# Configuration
-#
-# Replace the following placeholders with the correct values for
-# your installation.
-#
-# <SEARCH_URL>: The URL for performing the search
-# <QUERY_PARAMS>: Any HTTP query parameters that should be included in the search
-# <LOADED_LINK>: The direct link to your Database Finder site
-
 defaults: &defaults
   search_url: "<%= ENV['DATABASE_FINDER_HIPPO_SITE_URL'] %>/dbfinder/restapi/v1/search"
   query_params: '?q='

@@ -40,7 +40,7 @@
           <%= render_module(@world_cat, 'world_cat') %>
         </div>
         <div class="small-12 medium-6 columns catalog module">
-            <%= render_module(@lib_answers, 'lib_answers') %>
+            <%= render_module(@world_cat_knowledge_base, 'world_cat_knowledge_base') %>
         </div>
         <hr>
     </div>
@@ -50,6 +50,15 @@
         </div>
         <div class="small-12 medium-6 columns catalog module">
             <%= render_module(@database_finder, 'database_finder') %>
+        </div>
+        <hr>
+    </div>
+    <div class="row articles-catalog">
+        <div class="small-12 medium-6 columns catalog module">
+          <%= render_module(@lib_answers, 'lib_answers') %>
+        </div>
+        <div class="small-12 medium-6 columns catalog module">
+            <%= render_module(@placeholder, 'placeholder') %>
         </div>
         <hr>
     </div>
