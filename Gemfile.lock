@@ -51,6 +51,14 @@ GIT
       sass-rails (~> 5.0)
 
 GIT
+  remote: https://github.com/umd-lib/quick_search-world_cat_knowledge_base_searcher.git
+  revision: 17485c46a44f3e12ed92d0e2fe8bf0391378fd76
+  branch: develop
+  specs:
+    quick_search-world_cat_knowledge_base_searcher (0.1.0)
+      quick_search-core (~> 0)
+
+GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_searcher.git
   revision: 6b7a187ed961bfc31bed9a3fb4a9a63c54d5ab84
   branch: develop
@@ -317,6 +325,7 @@ DEPENDENCIES
   quick_search-placeholder_searcher
   quick_search-umd_theme!
   quick_search-wikipedia_searcher
+  quick_search-world_cat_knowledge_base_searcher!
   quick_search-world_cat_searcher!
   rails (~> 5.0.0)
   rubocop (= 0.52.1)
