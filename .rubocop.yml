@@ -20,7 +20,7 @@ AllCops:
     - 'lib/**/*'
     - 'db/seeds.rb'
 
-  TargetRubyVersion: 2.2
+  TargetRubyVersion: 2.3
   TargetRailsVersion: 5.0
 
 # Increase max allowed line length
