@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-database_finder_searcher.git
-  revision: b963645db1d5bb164049e232a2409d6b63eace06
+  revision: 7f6c86e6b39a832bc96e5341a202349849efe2c8
   branch: develop
   specs:
     quick_search-database_finder_searcher (0.1.0)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_answers_searcher.git
-  revision: 2817964b57d6baa26ed9f3542808cd644701f9a8
+  revision: 7304931a1d7ce7a945a0ca49dddb04e618f2fa54
   branch: develop
   specs:
     quick_search-lib_answers_searcher (0.1.0)
@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_guides_searcher.git
-  revision: b00e9bdc878eea3c890c23c6a817648be1886471
+  revision: 8716e33f48d7b17348e58ac9ef34730f21cdb255
   branch: develop
   specs:
     quick_search-lib_guides_searcher (0.1.0)
@@ -52,7 +52,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_knowledge_base_searcher.git
-  revision: 17485c46a44f3e12ed92d0e2fe8bf0391378fd76
+  revision: 281cc6111dcc04b067734955f545a8ec0cb46fdd
   branch: develop
   specs:
     quick_search-world_cat_knowledge_base_searcher (0.1.0)
@@ -60,7 +60,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_searcher.git
-  revision: 6b7a187ed961bfc31bed9a3fb4a9a63c54d5ab84
+  revision: aa97d3432e9842767cbf2604ec4102602a34c83d
   branch: develop
   specs:
     quick_search-world_cat_searcher (0.1.0)
