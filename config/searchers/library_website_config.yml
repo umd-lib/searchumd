@@ -9,7 +9,7 @@
 
 defaults: &defaults
   search_url: <%= ENV['LIBRARY_WEBSITE_SEARCH_REST_URL'] %>
-  query_params: '?q='
+  query_params: '?pageSize=3&q='
   loaded_link: '<WEBSITE_SEARCH_URL>'
 
 development:
