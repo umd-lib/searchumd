@@ -37,6 +37,14 @@ GIT
       quick_search-core (~> 0)
 
 GIT
+  remote: https://github.com/umd-lib/quick_search-library_website_searcher.git
+  revision: 4fcd5bb0904801d8a0746be49a23cbe5bc54fa1c
+  branch: develop
+  specs:
+    quick_search-library_website_searcher (0.1.0)
+      quick_search-core (~> 0)
+
+GIT
   remote: https://github.com/umd-lib/quick_search-umd_theme.git
   revision: d110f0216154ba6315ef57a453edace9fb5b8d70
   branch: develop
@@ -65,12 +73,6 @@ GIT
   specs:
     quick_search-world_cat_searcher (0.1.0)
       nokogiri (~> 1.6)
-      quick_search-core (~> 0)
-
-PATH
-  remote: ../quick_search-library_website_searcher
-  specs:
-    quick_search-library_website_searcher (0.1.0)
       quick_search-core (~> 0)
 
 GEM
@@ -221,7 +223,7 @@ GEM
     quick_search-placeholder_searcher (0.0.1)
       quick_search-core (~> 0)
     quick_search-wikipedia_searcher (0.0.1)
-    rack (2.0.4)
+    rack (2.0.5)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.7)
