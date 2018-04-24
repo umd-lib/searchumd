@@ -1,0 +1,25 @@
+# Configuration
+#
+# Replace the following placeholders with the correct values for
+# your installation.
+#
+# <SEARCH_URL>: The URL for performing the search
+# <QUERY_PARAMS>: Any HTTP query parameters that should be included in the search
+# <WEBSITE_SEARCH_URL>: The URL for the website search page (with query parameter)
+
+defaults: &defaults
+  search_url: <%= ENV['LIBRARY_WEBSITE_SEARCH_REST_URL'] %>
+  query_params: '?pageSize=3&q='
+  loaded_link: '<WEBSITE_SEARCH_URL>'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
