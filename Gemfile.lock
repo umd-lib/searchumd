@@ -38,10 +38,11 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-library_website_searcher.git
-  revision: 4fcd5bb0904801d8a0746be49a23cbe5bc54fa1c
+  revision: 49bd2035fae2955f96a88c6ee52e92e7e9d00a3b
   branch: develop
   specs:
     quick_search-library_website_searcher (0.1.0)
+      kaminari
       quick_search-core (~> 0)
 
 GIT
