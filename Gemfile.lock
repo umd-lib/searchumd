@@ -47,7 +47,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-umd_theme.git
-  revision: d110f0216154ba6315ef57a453edace9fb5b8d70
+  revision: 1936a4341c7ec3f4a2639165d04f43cc8945b42e
   branch: develop
   specs:
     quick_search-umd_theme (0.1.0)
