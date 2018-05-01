@@ -60,3 +60,12 @@ en:
     error_service_message: "searching WorldCat Knowledge Base"
     no_results_service_message: "a different search from WorldCat Knowledge Base"
     no_results_link: "https://umaryland.on.worldcat.org/atoztitles/search#ebook"
+
+  library_website_search:
+    display_name: "Website"
+    short_display_name: "Website"
+    search_form_placeholder: "Search Website"
+    module_callout: "Search Website"
+    error_service_message: "searching Website"
+    no_results_service_message: "a different search from Website"
+    no_results_link: "website"
