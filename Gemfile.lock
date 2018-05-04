@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-database_finder_searcher.git
-  revision: b268e0f0f8ef5c96b4a0285fe0722c697ea1e67a
+  revision: f4651a65df987820babf710a9a44d7aa1ed658f4
   branch: develop
   specs:
     quick_search-database_finder_searcher (0.1.0)
