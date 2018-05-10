@@ -8,11 +8,20 @@ RUN apt-get update && \
                        libpq-dev && \
     apt-get clean
 
+# Create a user for the web app.
+RUN addgroup --gid 9999 app
+RUN adduser --uid 9999 --gid 9999 --disabled-password --gecos "Application" app
+RUN usermod -L app
+RUN mkdir -p /home/app/.ssh
+RUN chmod 700 /home/app/.ssh
+RUN chown app:app /home/app/.ssh
+    
 # Configure the main working directory. This is the base
 # directory used in any further RUN, COPY, and ENTRYPOINT
 # commands.
-RUN mkdir -p /app
-WORKDIR /app
+
+USER app
+WORKDIR /home/app
 
 ENV RAILS_ENV=production
 
@@ -20,18 +29,21 @@ ENV RAILS_ENV=production
 # the RubyGems. This is a separate step so the dependencies
 # will be cached unless changes to one of those two files
 # are made.
-COPY Gemfile Gemfile.lock ./
-RUN gem install bundler &&\
-    bundle install --jobs 20 --retry 5 --without development test
+COPY --chown=app:app Gemfile Gemfile.lock /home/app/webapp/
+RUN cd /home/app/webapp && \
+    gem install bundler && \
+    bundle install --jobs 20 --retry 5 --without development test && \
+    cd ..
     
 # Copy the main application.
-COPY . ./
+COPY  --chown=app:app . /home/app/webapp/
 
 ENV RAILS_RELATIVE_URL_ROOT=/search
 ENV SCRIPT_NAME=/search
 
-RUN bundle exec rails assets:precompile
-RUN bundle exec rails db:migrate
+RUN cd /home/app/webapp && \
+    bundle exec rails assets:precompile && \
+    cd ..
 
 # Expose port 3000 to the Docker host, so we can access it
 # from the outside.
@@ -40,4 +52,4 @@ EXPOSE 3000
 # The main command to run when the container starts. Also
 # tell the Rails dev server to bind to all interfaces by
 # default.
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+CMD cd /home/app/webapp && bundle exec rails db:migrate && bundle exec rails server -b 0.0.0.0
