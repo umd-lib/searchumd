@@ -1,0 +1,18 @@
+version: '3'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/home/app/webapp
+    expose:
+      - "3000"
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx
+    links:
+      - app
+    depends_on:
+      - app
+    ports:
+      - "80:80"

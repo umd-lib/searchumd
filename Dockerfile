@@ -23,7 +23,7 @@ RUN chown app:app /home/app/.ssh
 USER app
 WORKDIR /home/app
 
-ENV RAILS_ENV=production
+ENV RAILS_ENV=development
 
 # Copy the Gemfile as well as the Gemfile.lock and install
 # the RubyGems. This is a separate step so the dependencies
@@ -32,18 +32,18 @@ ENV RAILS_ENV=production
 COPY --chown=app:app Gemfile Gemfile.lock /home/app/webapp/
 RUN cd /home/app/webapp && \
     gem install bundler && \
-    bundle install --jobs 20 --retry 5 --without development test && \
+    bundle install --jobs 20 --retry 5 --without production && \
     cd ..
     
 # Copy the main application.
 COPY  --chown=app:app . /home/app/webapp/
 
-ENV RAILS_RELATIVE_URL_ROOT=/search
-ENV SCRIPT_NAME=/search
+# ENV RAILS_RELATIVE_URL_ROOT=/search
+# ENV SCRIPT_NAME=/search
 
-RUN cd /home/app/webapp && \
-    bundle exec rails assets:precompile && \
-    cd ..
+#RUN cd /home/app/webapp && \
+#    bundle exec rails assets:precompile && \
+#    cd ..
 
 # Expose port 3000 to the Docker host, so we can access it
 # from the outside.
