@@ -13,7 +13,7 @@ WORKDIR /home/app/webapp
 RUN mkdir ssl
  
 # Copy Nginx config template
-COPY nginx.devel.conf /tmp/docker_example.nginx
+COPY nginx.production.conf /tmp/docker_example.nginx
 
 EXPOSE 80
  
