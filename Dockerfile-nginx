@@ -1,7 +1,7 @@
 # docker build -t docker.lib.umd.edu/dsteelma/nginx-searchumd:1.0.0 -f Dockerfile-nginx .
 
 # Base image:
-FROM nginx
+FROM nginx:1.14.0
 
 # Install dependencies
 RUN apt-get update -qq && apt-get -y install apache2-utils
@@ -10,10 +10,11 @@ RUN apt-get update -qq && apt-get -y install apache2-utils
 WORKDIR /home/app/webapp
  
 # Copy SSL certs
-RUN mkdir ssl
+RUN mkdir ssl && \
+    mkdir log
  
 # Copy Nginx config template
-COPY nginx.production.conf /tmp/docker_example.nginx
+COPY docker_config/nginx/nginx.production.conf /tmp/docker_example.nginx
 
 EXPOSE 80
  
