@@ -3,7 +3,7 @@
 #
 # To build:
 #
-# docker build -t docker.lib.umd.edu/nginx-searchumd:<VERSION> -f Dockerfile-nginx .
+# docker build -t docker.lib.umd.edu/searchumd-nginx:<VERSION> -f Dockerfile-nginx .
 #
 # where <VERSION> is the Docker image version to create.
 
@@ -23,6 +23,8 @@ RUN mkdir ssl && \
 # Copy favicon
 RUN mkdir /etc/nginx/html
 COPY docker_config/nginx/favicon.ico /etc/nginx/html/favicon.ico
+COPY docker_config/nginx/robots.txt /etc/nginx/html/robots.txt 
+     
 
 # Copy Nginx config template
 COPY docker_config/nginx/nginx.production.conf /tmp/docker_example.nginx
