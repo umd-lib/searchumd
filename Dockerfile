@@ -1,3 +1,11 @@
+# Dockerfile for the generating searchumd Rails application Docker image
+#
+# To build:
+#
+# docker build -t docker.lib.umd.edu/searchumd:<VERSION> -f Dockerfile .
+#
+# where <VERSION> is the Docker image version to create.
+
 FROM ruby:2.3.7-slim
 
 # Install apt based dependencies required to run Rails as

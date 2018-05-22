@@ -1,4 +1,11 @@
-# docker build -t docker.lib.umd.edu/dsteelma/nginx-searchumd:1.0.0 -f Dockerfile-nginx .
+# Dockerfile for the generating Nginx web server Docker image providing HTTPS
+# and port redirection for the searchumd application.
+#
+# To build:
+#
+# docker build -t docker.lib.umd.edu/nginx-searchumd:<VERSION> -f Dockerfile-nginx .
+#
+# where <VERSION> is the Docker image version to create.
 
 # Base image:
 FROM nginx:1.14.0
