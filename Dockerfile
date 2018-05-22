@@ -13,7 +13,7 @@ FROM ruby:2.3.7-slim
 # Debian image, we use apt-get to install those.
 RUN apt-get update && \
     apt-get install -y build-essential nodejs git libsqlite3-dev libmysqlclient-dev \
-                       libpq-dev curl && \
+                       libpq-dev && \
     apt-get clean
 
 # Create a user for the web app.
