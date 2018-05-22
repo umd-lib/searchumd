@@ -13,6 +13,10 @@ WORKDIR /home/app/webapp
 RUN mkdir ssl && \
     mkdir log
  
+# Copy favicon
+RUN mkdir /etc/nginx/html
+COPY docker_config/nginx/favicon.ico /etc/nginx/html/favicon.ico
+
 # Copy Nginx config template
 COPY docker_config/nginx/nginx.production.conf /tmp/docker_example.nginx
 
