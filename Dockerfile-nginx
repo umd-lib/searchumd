@@ -1,0 +1,36 @@
+# Dockerfile for the generating Nginx web server Docker image providing HTTPS
+# and port redirection for the searchumd application.
+#
+# To build:
+#
+# docker build -t docker.lib.umd.edu/searchumd-nginx:<VERSION> -f Dockerfile-nginx .
+#
+# where <VERSION> is the Docker image version to create.
+
+# Base image:
+FROM nginx:1.14.0
+
+# Install dependencies
+RUN apt-get update -qq && apt-get -y install apache2-utils
+ 
+# Set our working directory inside the image
+WORKDIR /home/app/webapp
+ 
+# Copy SSL certs
+RUN mkdir ssl && \
+    mkdir log
+ 
+# Copy favicon
+RUN mkdir /etc/nginx/html
+COPY docker_config/nginx/favicon.ico /etc/nginx/html/favicon.ico
+COPY docker_config/nginx/robots.txt /etc/nginx/html/robots.txt 
+     
+
+# Copy Nginx config template
+COPY docker_config/nginx/nginx.production.conf /tmp/docker_example.nginx
+
+EXPOSE 80
+ 
+# Use envsubst to replace templated values in nginx configuration with 
+# environment variables.
+CMD envsubst '$$SERVER_NAME $$SSL_CERT_PEM_CONTAINER_FULL_PATH $$SSL_CERT_PRIVATE_KEY_CONTAINER_FULL_PATH' < /tmp/docker_example.nginx > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'

@@ -11,7 +11,7 @@ This application wraps the NCSU Quick Search engine.
 
 Requires:
 
-* Ruby 2.2.4
+* Ruby 2.3.7
 * Bundler
 
 ### Setup
@@ -52,13 +52,18 @@ provided to assist with this process. Simply copy the "env_example" file to
 The configured .env file should _not_ be checked into the Git repository, as it
 contains credential information.
 
-## Production Environment Configuration
+## Docker Images
 
-Requires:
+This application provides the following Dockerfiles for generating Docker images
+for use in production:
 
-* Postgres client to be installed (on RedHat, the "postgresql" and
-  "postgresql-devel" packages)
-* MySQL client to be installed (on RedHat, the "mysql-devel"). This is a
-  requirement from the NCSU Quick Search Rails engine.
+* Dockerfile - Generates image for the searchumd Rails application
+* Dockerfile-nginx - Generates image for the Nginx web server providing HTTPS
+    and port redirection.
+
+The "docker_config" directory contains files used by the Dockerfiles.
+
+In order to generate "clean" Docker images, the Docker images should be
+built from a fresh clone of the GitHub repository.
 
 [1]: https://github.com/NCSU-Libraries/quick_search
