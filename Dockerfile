@@ -12,17 +12,18 @@ FROM ruby:2.3.7-slim
 # well as RubyGems. As the Ruby image itself is based on a
 # Debian image, we use apt-get to install those.
 RUN apt-get update && \
-    apt-get install -y build-essential nodejs git libsqlite3-dev libmysqlclient-dev \
-                       libpq-dev && \
+    apt-get install -y build-essential \
+                       default-libmysqlclient-dev \
+                       git \
+                       libpq-dev \
+                       libsqlite3-dev \
+                       nodejs && \
     apt-get clean
 
 # Create a user for the web app.
-RUN addgroup --gid 9999 app
-RUN adduser --uid 9999 --gid 9999 --disabled-password --gecos "Application" app
-RUN usermod -L app
-RUN mkdir -p /home/app/.ssh
-RUN chmod 700 /home/app/.ssh
-RUN chown app:app /home/app/.ssh
+RUN addgroup --gid 9999 app && \
+    adduser --uid 9999 --gid 9999 --disabled-password --gecos "Application" app && \
+    usermod -L app
     
 # Configure the main working directory. This is the base
 # directory used in any further RUN, COPY, and ENTRYPOINT
