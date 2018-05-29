@@ -1,0 +1,27 @@
+# Dockerfile for the generating Apache Nutch Docker image
+#
+# To build:
+#
+# docker build -t docker.lib.umd.edu/searchumd-solr:<VERSION> -f Dockerfile-solr .
+#
+# where <VERSION> is the Docker image version to create.
+
+# Builder Stage: Build from apache/nutch image, with UMD configuration files
+FROM solr:6.6.4-alpine
+
+# Create Solr core for Apache Nutch
+
+ARG SOLR_DIR=/opt/solr
+ENV SOLR_DIR=${SOLR_DIR}
+
+RUN cp -r ${SOLR_DIR}/server/solr/configsets/basic_configs ${SOLR_DIR}/server/solr/configsets/nutch && \
+    rm ${SOLR_DIR}/server/solr/configsets/nutch/conf/managed-schema
+
+COPY docker_config/solr/conf/schema.xml ${SOLR_DIR}/server/solr/configsets/nutch/conf
+
+RUN ${SOLR_DIR}/bin/solr start && \
+    ${SOLR_DIR}/bin/solr create -c nutch -d server/solr/configsets/nutch/conf/ &&\
+    ${SOLR_DIR}/bin/solr stop
+
+ENTRYPOINT ["docker-entrypoint.sh"]
+CMD ["solr-foreground"]
