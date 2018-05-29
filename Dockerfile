@@ -47,6 +47,9 @@ RUN cd /home/app/webapp && \
 # Copy the main application.
 COPY  --chown=app:app . /home/app/webapp/
 
+# Copy Rails application start script
+COPY --chown=app:app docker_config/searchumd/rails_start.sh /home/app/webapp
+
 ENV RAILS_RELATIVE_URL_ROOT=/search
 ENV SCRIPT_NAME=/search
 
@@ -58,7 +61,5 @@ RUN cd /home/app/webapp && \
 # from the outside.
 EXPOSE 3000
 
-# The main command to run when the container starts. Also
-# tell the Rails dev server to bind to all interfaces by
-# default.
-CMD cd /home/app/webapp && bundle exec rails db:migrate && bundle exec rails server -b 0.0.0.0
+# The main command to run when the container starts.
+CMD ["/home/app/webapp/rails_start.sh"]
