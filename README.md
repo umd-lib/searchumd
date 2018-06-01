@@ -60,7 +60,9 @@ for use in production:
 * Dockerfile - Generates image for the searchumd Rails application
 * Dockerfile-nginx - Generates image for the Nginx web server providing HTTPS
     and port redirection.
-* Dockerfile-solr - Generates images for the Solr search application
+* Dockerfile-solr - Generates image for the Solr search application
+* Dockerfile-nutch - Generates image for Apache Nutch application with UMD
+    custom configuration
 
 The "docker_config" directory contains files used by the Dockerfiles.
 
