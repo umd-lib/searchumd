@@ -1,0 +1,27 @@
+# Dockerfile for the generating Apache Nutch Docker image
+#
+# To build:
+#
+# docker build -t docker.lib.umd.edu/searchumd-nutch:<VERSION> -f Dockerfile-nutch .
+#
+# where <VERSION> is the Docker image version to create.
+
+# Builder Stage: Build from apache/nutch image, with UMD configuration files
+FROM apache/nutch:release-1.14 as builder
+
+# Copy configuration files
+COPY docker_config/nutch/ /root/nutch/
+
+# Stage 2: Rebuild using smaller base image, and only use JRE
+FROM openjdk:8u171-jre-slim-stretch
+
+WORKDIR /root/nutch
+
+# Install dependencies
+RUN apt-get update -qq
+
+# Set up JAVA_HOME
+RUN echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> $HOME/.bashrc
+
+# Copy Apache Nutch runtime from "builder" stage into this image.
+COPY --from=builder /root/nutch_source/runtime/local/ /root/nutch/
