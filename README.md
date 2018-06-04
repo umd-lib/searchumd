@@ -37,6 +37,127 @@ Requires:
 > rails server
 ```
 
+### Development Setup
+
+The quick_search-library_website_searcher requires a Solr instance containing
+search results. To set up a Solr instance use one of the following two methods:
+
+#### Method 1: Create and Populating Solr using Nutch
+
+In this method, a Solr instance will be created and populated using Apache
+Nutch. Use this method if you don't have a Solr data backup.
+
+1) Create a Docker image "searchumd-solr:dev" using the Dockerfile-solr:
+
+```
+> docker build -t searchumd-solr:dev -f Dockerfile-solr .
+```
+
+2) Create a Docker bridge network named "dev_network":
+
+```
+> docker network create dev_network
+```
+2) Run a Docker container with the Solr image, naming it "solr_app", specifying
+the "dev_network", and making it accessible from http://localhost:8983/:
+
+```
+> docker run --rm -p 8983:8983 --network dev_network --name solr_app --mount source=solr-data,destination=/opt/solr/server/solr/nutch searchumd-solr:dev
+```
+
+The Solr data will be persisted in a Docker volume named "solr-data" and the
+Solr instance should now be available via a web browser at:
+
+[http://localhost:8983/solr][2]
+
+3) To populate the Solr container, do the following:
+
+
+a) Create a Docker image "searchumd-nutch:dev" using the Dockerfile-nutch:
+
+```
+> docker build -t searchumd-nutch:dev -f Dockerfile-nutch .
+```
+
+b) Run Nutch, using only two crawl iterations, placing the result in the local
+Solr "solr_app" instance, via the "dev_network" network:
+
+```
+> docker run --rm --network dev_network searchumd-nutch:dev bin/crawl -i -D solr.server.url=http://solr_app:8983/solr/nutch -s /root/nutch/urls/ LibCrawl/ 2
+```
+
+**Note:** If you want to preserve the Apache Nutch crawl data between container
+runs, use a Docker volume (named "nutch-data" in this example) by running
+the following command:
+
+```
+> docker run --rm --mount source=nutch-data,destination=/root/nutch/LibCrawl --network dev_network searchumd-nutch:dev bin/crawl -i -D solr.server.url=http://solr_app:8983/solr/nutch -s /root/nutch/urls/ LibCrawl/ 2
+```
+
+#### Method 2: Create and Populating Solr from a Solr backup file
+
+Use this method if you have a Solr data backup, or can retrieve one from some
+source.
+
+See [https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes][3]
+for more information about backing up and restoring data volumes.
+
+_Creating the Solr Backup_
+
+**Note:** This step can be skipped if you already have a Solr data backup.
+
+In order to populate Solr from a backup file, we first need the data. To
+retrieve the data from a Docker data volume (named "solr-data" in this
+example) do the following:
+
+1) Run a "ubuntu" container with the "solr-data" volume mounted, and run the
+"tar" command:
+
+```
+> docker run --rm -v `pwd`:/backup --mount source=solr-data,destination=/root/solr ubuntu tar -cvf /backup/backup-solr.tar /root/solr
+```
+
+This will create a "backup-solr.tar" file in the current directory.
+
+
+_Populating a new data volume_
+
+1) Create a Docker volume named "solr-data":
+
+```
+> docker volume create solr-data
+```
+
+2) Run a "ubuntu" container and place the data from the backup-solr.tar into
+the volume:
+
+```
+> docker run --rm -v `pwd`:/backup --mount source=solr-data,destination=/root/solr ubuntu bash -c  "cd /root/solr && tar -xvf /backup/backup-solr.tar --strip 1"
+```
+
+3) Create a Docker image "searchumd-solr:dev" using the Dockerfile-solr:
+
+```
+> docker build -t searchumd-solr:dev -f Dockerfile-solr .
+```
+
+4) Create a Docker bridge network named "dev_network":
+
+```
+> docker network create dev_network
+```
+5) Run a Docker container with the Solr image, naming it "solr_app", specifying
+the "dev_network", and making it accessible from http://localhost:8983/:
+
+```
+> docker run --rm -p 8983:8983 --network dev_network --name solr_app --mount source=solr-data,destination=/opt/solr/server/solr/nutch searchumd-solr:dev
+```
+
+The Solr container will now use and persist data in the "solr-data" Docker
+volume. The Solr instance should now be available via a web browser at:
+
+[http://localhost:8983/solr][2]
+
 ## Environment Configuration
 
 Some searchers used by this application require API keys to perform searches.
@@ -70,3 +191,5 @@ In order to generate "clean" Docker images, the Docker images should be
 built from a fresh clone of the GitHub repository.
 
 [1]: https://github.com/NCSU-Libraries/quick_search
+[2]: http://localhost:8983/solr
+[3]: https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes
