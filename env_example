@@ -61,5 +61,5 @@ LIB_GUIDES_API_KEY=
 DATABASE_FINDER_HIPPO_SITE_URL=
 
 # -- config/searchers/library_website_config.yml
-# The Library Website Search REST API URL endpoint
-LIBRARY_WEBSITE_SEARCH_REST_URL=
+# The Library Website Search Solr endpoint
+LIBRARY_WEBSITE_SEARCH_SOLR_URL=

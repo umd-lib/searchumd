@@ -4,12 +4,16 @@
 # your installation.
 #
 # <SEARCH_URL>: The URL for performing the search
-# <QUERY_PARAMS>: Any HTTP query parameters that should be included in the search
 # <WEBSITE_SEARCH_URL>: The URL for the website search page (with query parameter)
 
 defaults: &defaults
-  search_url: <%= ENV['LIBRARY_WEBSITE_SEARCH_REST_URL'] %>
-  query_params: '?pageSize=3&q='
+  search_url: <%= ENV['LIBRARY_WEBSITE_SEARCH_SOLR_URL'] %>
+  # Query params should be listed in "hash" format
+  query_params:
+    # The number of results to return
+    rows: 3
+    # Template for the "q" parameter. SEARCH_TERM will be replaced with the URI escaped search term
+    q_template: 'content:SEARCH_TERM'
   loaded_link: '<WEBSITE_SEARCH_URL>'
 
 development:
