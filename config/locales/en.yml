@@ -23,6 +23,12 @@ en:
   hello: "Hello world"
 
   world_cat_search:
+    display_name: "WorldCat (Search)"
+    short_display_name: "WorldCat (Search)"
+    search_form_placeholder: "Search WorldCat (Search)"
+    module_callout: "Search WorldCat (Search)"
+    error_service_message: "searching WorldCat (Search)"
+    no_results_service_message: "a different search from WorldCat (Search)"
     no_results_link: "https://umaryland.on.worldcat.org/search"
 
   lib_answers_search:
