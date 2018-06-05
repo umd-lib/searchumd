@@ -406,6 +406,12 @@
 
     <!-- field containing segment's raw binary content if indexed with -addBinaryContent -->
     <field name="binaryContent" type="binary" stored="true" indexed="false"/>
+    
+    <!-- Field for actual document content from webpage
+         (i.e. JSON-LD WebPage "text", actual text from a Hippo document, etc.)
+         This is distinct from the "content" field, in that it doesn't include
+         extraneous information such as the main menu, sidebar, or footer -->
+    <field name="documentContent" type="text_general" stored="true" indexed="true"/>
 
  </fields>
  <uniqueKey>id</uniqueKey>
@@ -415,6 +421,7 @@
         or to add multiple fields to the same field for easier/faster searching.  -->
 
  <copyField source="content" dest="text"/>
+ <copyField source="documentContent" dest="text"/>
  <copyField source="url" dest="text"/>
  <copyField source="title" dest="text"/>
  <copyField source="anchor" dest="text"/>
