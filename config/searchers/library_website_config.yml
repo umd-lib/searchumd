@@ -12,8 +12,9 @@ defaults: &defaults
   query_params:
     # The number of results to return
     rows: 3
-    # Template for the "q" parameter. SEARCH_TERM will be replaced with the URI escaped search term
-    q_template: 'content:SEARCH_TERM'
+    # Template for the "q" parameter. SEARCH_TERM will be replaced with the
+    # URI escaped search term
+    q_template: 'text:SEARCH_TERM'
   loaded_link: '<WEBSITE_SEARCH_URL>'
 
 development:
