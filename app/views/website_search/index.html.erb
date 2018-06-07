@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="small-12 medium-6 large-9 columns">
+        <h1>Search Website</h1>
+    </div>
+</div>
+<%= render partial: 'layouts/quick_search/search_form' %>
+<%= render partial: 'results', locals: { results: @results } %>
+<%= paginate @results %>
