@@ -38,12 +38,13 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-library_website_searcher.git
-  revision: 49bd2035fae2955f96a88c6ee52e92e7e9d00a3b
+  revision: 4959a3d855e1e9d4fe907c0e7ef33ee49361cbcc
   branch: develop
   specs:
     quick_search-library_website_searcher (0.1.0)
       kaminari
       quick_search-core (~> 0)
+      rsolr (= 2.2.1)
 
 GIT
   remote: https://github.com/umd-lib/quick_search-umd_theme.git
@@ -142,7 +143,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    compass-rails (3.0.2)
+    compass-rails (3.1.0)
       compass (~> 1.0.0)
       sass-rails (< 5.1)
       sprockets (< 4.0)
@@ -155,8 +156,10 @@ GEM
       railties (>= 3.2, < 6.0)
     erubis (2.7.0)
     execjs (2.7.0)
-    fastimage (2.1.1)
-    ffi (1.9.23)
+    faraday (0.15.2)
+      multipart-post (>= 1.2, < 3)
+    fastimage (2.1.3)
+    ffi (1.9.25)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
     foundation-rails (5.4.5.0)
@@ -206,8 +209,9 @@ GEM
       ruby-progressbar
     modernizr-rails (2.7.1)
     multi_json (1.13.1)
+    multipart-post (2.0.0)
     mysql2 (0.5.1)
-    nio4r (2.3.0)
+    nio4r (2.3.1)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     parallel (1.12.1)
@@ -255,6 +259,9 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    rsolr (2.2.1)
+      builder (>= 2.1.2)
+      faraday (>= 0.9.0)
     rubocop (0.52.1)
       parallel (~> 1.10)
       parser (>= 2.4.0.2, < 3.0)
