@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-library_website_searcher.git
-  revision: 4959a3d855e1e9d4fe907c0e7ef33ee49361cbcc
+  revision: c7cfb745bb344981cbaf35b513e9b0f76067f6ef
   branch: develop
   specs:
     quick_search-library_website_searcher (0.1.0)
