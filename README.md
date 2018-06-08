@@ -3,7 +3,7 @@
 ## Introduction
 
 UMD Libraries bento-box search application, based on the NSCU Quick Search
-Rails engine ([https://github.com/NCSU-Libraries/quick_search][1])
+Rails engine ([https://github.com/NCSU-Libraries/quick_search][quick_search])
 
 This application wraps the NCSU Quick Search engine.
 
@@ -31,18 +31,35 @@ Requires:
 > rails db:reset
 ```
 
-3) To run the web application:
+3) Copy the "env_example" file to ".env" and configure.
+
+4) To run the web application:
 
 ```
 > rails server
 ```
 
-### Development Setup
+## Environment Configuration
+
+Some searchers used by this application require API keys to perform searches.
+To keep these keys secure, and out of the GitHub repository, these keys are
+should be configured through the environment.
+
+The application uses the "dotenv" gem to configure the environment.
+The gem expects a ".env" file in the root directory to contain the environment
+variables that are provided to Rails. A sample "env_example" file has been
+provided to assist with this process. Simply copy the "env_example" file to
+".env" and fill out the parameters as appropriate.
+
+The configured .env file should _not_ be checked into the Git repository, as it
+contains credential information.
+
+## Development Setup
 
 The quick_search-library_website_searcher requires a Solr instance containing
 search results. To set up a Solr instance use one of the following two methods:
 
-#### Method 1: Create and Populating Solr using Nutch
+### Method 1: Create and Populating Solr using Nutch
 
 In this method, a Solr instance will be created and populated using Apache
 Nutch. Use this method if you don't have a Solr data backup.
@@ -58,8 +75,9 @@ Nutch. Use this method if you don't have a Solr data backup.
 ```
 > docker network create dev_network
 ```
+
 2) Run a Docker container with the Solr image, naming it "solr_app", specifying
-the "dev_network", and making it accessible from http://localhost:8983/:
+the "dev_network", and making it accessible from [http://localhost:8983/][solr]:
 
 ```
 > docker run --rm -p 8983:8983 --network dev_network --name solr_app --mount source=solr-data,destination=/opt/solr/server/solr/nutch searchumd-solr:dev
@@ -68,10 +86,9 @@ the "dev_network", and making it accessible from http://localhost:8983/:
 The Solr data will be persisted in a Docker volume named "solr-data" and the
 Solr instance should now be available via a web browser at:
 
-[http://localhost:8983/solr][2]
+[http://localhost:8983/solr][solr]
 
 3) To populate the Solr container, do the following:
-
 
 a) Create a Docker image "searchumd-nutch:dev" using the Dockerfile-nutch:
 
@@ -94,15 +111,15 @@ the following command:
 > docker run --rm --mount source=nutch-data,destination=/root/nutch/LibCrawl --network dev_network searchumd-nutch:dev bin/crawl -i -D solr.server.url=http://solr_app:8983/solr/nutch -s /root/nutch/urls/ LibCrawl/ 2
 ```
 
-#### Method 2: Create and Populating Solr from a Solr backup file
+### Method 2: Create and Populating Solr from a Solr backup file
 
 Use this method if you have a Solr data backup, or can retrieve one from some
 source.
 
-See [https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes][3]
+See [https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes][docker]
 for more information about backing up and restoring data volumes.
 
-_Creating the Solr Backup_
+#### Creating the Solr Backup
 
 **Note:** This step can be skipped if you already have a Solr data backup.
 
@@ -119,8 +136,7 @@ example) do the following:
 
 This will create a "backup-solr.tar" file in the current directory.
 
-
-_Populating a new data volume_
+#### Populating a new data volume
 
 1) Create a Docker volume named "solr-data":
 
@@ -146,8 +162,9 @@ the volume:
 ```
 > docker network create dev_network
 ```
+
 5) Run a Docker container with the Solr image, naming it "solr_app", specifying
-the "dev_network", and making it accessible from http://localhost:8983/:
+the "dev_network", and making it accessible from [http://localhost:8983/][solr]:
 
 ```
 > docker run --rm -p 8983:8983 --network dev_network --name solr_app --mount source=solr-data,destination=/opt/solr/server/solr/nutch searchumd-solr:dev
@@ -156,22 +173,7 @@ the "dev_network", and making it accessible from http://localhost:8983/:
 The Solr container will now use and persist data in the "solr-data" Docker
 volume. The Solr instance should now be available via a web browser at:
 
-[http://localhost:8983/solr][2]
-
-## Environment Configuration
-
-Some searchers used by this application require API keys to perform searches.
-To keep these keys secure, and out of the GitHub repository, these keys are
-should be configured through the environment.
-
-The application uses the "dotenv" gem to configure the environment.
-The gem expects a ".env" file in the root directory to contain the environment
-variables that are provided to Rails. A sample "env_example" file has been
-provided to assist with this process. Simply copy the "env_example" file to
-".env" and fill out the parameters as appropriate.
-
-The configured .env file should _not_ be checked into the Git repository, as it
-contains credential information.
+[http://localhost:8983/solr][solr]
 
 ## Docker Images
 
@@ -190,6 +192,18 @@ The "docker_config" directory contains files used by the Dockerfiles.
 In order to generate "clean" Docker images, the Docker images should be
 built from a fresh clone of the GitHub repository.
 
-[1]: https://github.com/NCSU-Libraries/quick_search
-[2]: http://localhost:8983/solr
-[3]: https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes
+## Additional Functionality
+
+### Website search interface
+
+In addition to the functionality provided by the NSCU Quick Search Rails engine,
+this application also provides a search page for the library website on the
+"website" path (i.e., [http://localhost:3000/website][website].
+
+This functionality uses the quick_search-library_website_searcher to generate
+the results, and so is also dependent on a running Solr instance.
+
+[quick_search]: https://github.com/NCSU-Libraries/quick_search
+[solr]: http://localhost:8983/
+[website]: http://localhost:3000/website
+[docker]: https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes
