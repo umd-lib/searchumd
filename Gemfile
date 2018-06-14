@@ -62,7 +62,7 @@ gem 'quick_search-database_finder_searcher',
 gem 'quick_search-library_website_searcher',
     git: 'https://github.com/umd-lib/quick_search-library_website_searcher.git', branch: 'develop'
 gem 'quick_search-world_cat_discovery_api_searcher',
-    git: 'https://github.com/mohideen/quick_search-world_cat_discovery_api_searcher.git', branch: 'feature/LIBSEARCH-46'
+    git: 'https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git', branch: 'develop'
 
 # Dependencies for the quick_search-world_cat_discovery_api_searcher initialization script
 gem 'oclc-auth', '>=1.0.0'
