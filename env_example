@@ -38,6 +38,16 @@ PROD_DATABASE_POOL=10
 # The wskey to use with WorlCat
 WORLD_CAT_API_WSKEY=
 
+# --- config/searchers/world_cat_discovery_api_config.yml
+# The WorldCat Discovery API institution id
+WORLD_CAT_DISCOVERY_API_INSTITUTION_ID=
+
+# The WorldCat Discovery API wskey
+WORLD_CAT_DISCOVERY_API_WSKEY=
+
+# The WorldCat Discovery API wskey
+WORLD_CAT_DISCOVERY_API_SECRET=
+
 # --- config/searchers/world_cat_knowledge_base_config.yml
 # The WorldCat Knowledge Base institution id
 WORLD_CAT_KNOWLEDGE_BASE_INSTITUTION_ID=
