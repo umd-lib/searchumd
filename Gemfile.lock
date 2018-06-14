@@ -13,15 +13,6 @@ GIT
       rails (~> 5.0)
 
 GIT
-  remote: https://github.com/mohideen/quick_search-world_cat_discovery_api_searcher.git
-  revision: 1ecb6994d192bf6a348a30f2c47ca097c824bac0
-  branch: feature/LIBSEARCH-46
-  specs:
-    quick_search-world_cat_discovery_api_searcher (0.1.0)
-      quick_search-core (~> 0)
-      worldcat-discovery (~> 1.2.0.1)
-
-GIT
   remote: https://github.com/umd-lib/quick_search-database_finder_searcher.git
   revision: f4651a65df987820babf710a9a44d7aa1ed658f4
   branch: develop
@@ -68,6 +59,15 @@ GIT
       quick_search-core (~> 0.1)
       sass (~> 3.2)
       sass-rails (~> 5.0)
+
+GIT
+  remote: https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git
+  revision: fb9f39032edc1e5e0e6cb53a18fc815f3ae0b812
+  branch: develop
+  specs:
+    quick_search-world_cat_discovery_api_searcher (0.1.0)
+      quick_search-core (~> 0)
+      worldcat-discovery (~> 1.2.0.1)
 
 GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_knowledge_base_searcher.git
