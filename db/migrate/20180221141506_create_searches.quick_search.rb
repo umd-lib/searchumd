@@ -1,5 +1,5 @@
 # This migration comes from quick_search (originally 20140130202944)
-class CreateSearches < ActiveRecord::Migration
+class CreateSearches < ActiveRecord::Migration[5.0]
   def change
     create_table :searches do |t|
       t.string :query
