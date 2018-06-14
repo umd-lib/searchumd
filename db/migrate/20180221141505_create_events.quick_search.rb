@@ -1,5 +1,5 @@
 # This migration comes from quick_search (originally 20140130202859)
-class CreateEvents < ActiveRecord::Migration
+class CreateEvents < ActiveRecord::Migration[5.0]
   def change
     create_table :events do |t|
       t.string :category

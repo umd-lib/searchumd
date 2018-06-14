@@ -1,0 +1,19 @@
+defaults: &defaults
+  wskey: <%= ENV['WORLD_CAT_DISCOVERY_API_WSKEY'] %>
+  secret: <%= ENV['WORLD_CAT_DISCOVERY_API_SECRET'] %>
+  authenticatingInstitutionId: <%= ENV['WORLD_CAT_DISCOVERY_API_INSTITUTION_ID'] %>
+  contextInstitutionId: <%= ENV['WORLD_CAT_DISCOVERY_API_INSTITUTION_ID'] %>
+  loaded_link: "https://umaryland.on.worldcat.org/search?queryString="
+  url_link: "https://umaryland.on.worldcat.org/oclc/6032704017"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
