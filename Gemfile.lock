@@ -62,7 +62,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git
-  revision: fb9f39032edc1e5e0e6cb53a18fc815f3ae0b812
+  revision: 47759fd80f88c78fc272d98e74625a76bfdc4bf0
   branch: develop
   specs:
     quick_search-world_cat_discovery_api_searcher (0.1.0)
