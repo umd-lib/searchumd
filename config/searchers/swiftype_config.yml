@@ -11,7 +11,7 @@ defaults: &defaults
   engine_key: "<%= ENV['SWIFTYPE_ENGINE_KEY'] %>"
   search_url: 'https://search-api.swiftype.com/api/v1/public/engines/search'
   query_params: '?q='
-  loaded_link: 'TODO'
+  loaded_link: 'swiftype#stq='
 
 development:
   <<: *defaults
