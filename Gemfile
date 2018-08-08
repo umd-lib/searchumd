@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-source 'https://maven.lib.umd.edu/nexus/content/groups/umd-ruby-gems-repository-group/'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.0'
 # Use sqlite3 as the database for Active Record
@@ -61,6 +59,8 @@ gem 'quick_search-database_finder_searcher',
     git: 'https://github.com/umd-lib/quick_search-database_finder_searcher.git', branch: 'develop'
 gem 'quick_search-library_website_searcher',
     git: 'https://github.com/umd-lib/quick_search-library_website_searcher.git', branch: 'develop'
+gem 'quick_search-swiftype_searcher',
+    git: 'https://github.com/umd-lib/quick_search-swiftype_searcher.git', branch: 'develop'
 gem 'quick_search-world_cat_discovery_api_searcher',
     git: 'https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git', branch: 'develop'
 

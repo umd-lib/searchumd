@@ -1,0 +1,26 @@
+# Configuration
+#
+# Replace the following placeholders with the correct values for
+# your installation.
+#
+# <SEARCH_URL>: The URL for performing the search
+# <QUERY_PARAMS>: Any HTTP query parameters that should be included in the search
+# <WEBSITE_SEARCH_URL>: The URL for the website search page (with query parameter)
+
+defaults: &defaults
+  engine_key: "<%= ENV['SWIFTYPE_ENGINE_KEY'] %>"
+  search_url: 'https://search-api.swiftype.com/api/v1/public/engines/search'
+  query_params: '?q='
+  loaded_link: 'TODO'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

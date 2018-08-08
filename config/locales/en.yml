@@ -75,3 +75,12 @@ en:
     error_service_message: "searching Website"
     no_results_service_message: "a different search from Website"
     no_results_link: "website"
+
+  swiftype_search:
+    display_name: "Swiftype Library Website"
+    short_display_name: "Swiftype Library Website"
+    search_form_placeholder: "Search Library Website using Swiftype"
+    module_callout: "Swiftype Search Library Website"
+    error_service_message: "searching Library Website using Swiftype"
+    no_results_service_message: "a different search from Library Website using Swiftype"
+    no_results_link: "<NO_RESULTS_LINK>"
