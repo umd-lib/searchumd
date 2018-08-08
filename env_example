@@ -35,7 +35,7 @@ PROD_DATABASE_PORT=5432
 PROD_DATABASE_POOL=10
 
 # --- config/searchers/world_cat_config.yml
-# The wskey to use with WorlCat
+# The wskey to use with WorldCat
 WORLD_CAT_API_WSKEY=
 
 # --- config/searchers/world_cat_discovery_api_config.yml
