@@ -1,18 +1,4 @@
 GIT
-  remote: https://github.com/NCSU-Libraries/quick_search.git
-  revision: 26a840f5d3157ee360249f18c71ed2a3cb3697fa
-  tag: 0.2.0
-  specs:
-    quick_search-core (0.2.0)
-      fastimage
-      httpclient
-      kaminari
-      modernizr-rails
-      mysql2
-      nokogiri
-      rails (~> 5.0)
-
-GIT
   remote: https://github.com/umd-lib/quick_search-database_finder_searcher.git
   revision: f4651a65df987820babf710a9a44d7aa1ed658f4
   branch: develop
@@ -93,6 +79,20 @@ GIT
     quick_search-world_cat_searcher (0.1.0)
       nokogiri (~> 1.6)
       quick_search-core (~> 0)
+
+GIT
+  remote: https://github.com/umd-lib/quick_search.git
+  revision: 6758a17d9772f6715381a152f17cfd9ab5d2f348
+  branch: umd-develop
+  specs:
+    quick_search-core (0.2.0)
+      fastimage
+      httpclient
+      kaminari
+      modernizr-rails
+      mysql2
+      nokogiri
+      rails (~> 5.0)
 
 GEM
   remote: https://maven.lib.umd.edu/nexus/content/groups/umd-ruby-gems-repository-group/

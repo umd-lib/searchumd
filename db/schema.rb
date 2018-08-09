@@ -13,37 +13,37 @@
 ActiveRecord::Schema.define(version: 20180221193511) do
 
   create_table "events", force: :cascade do |t|
-    t.string   "category"
-    t.string   "item"
-    t.string   "query"
+    t.string "category"
+    t.string "item"
+    t.string "query"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "action"
-    t.integer  "session_id"
-    t.string   "created_at_string"
+    t.string "action"
+    t.integer "session_id"
+    t.string "created_at_string"
     t.index ["created_at_string"], name: "index_events_on_created_at_string"
     t.index ["session_id"], name: "index_events_on_session_id"
   end
 
   create_table "searches", force: :cascade do |t|
-    t.string   "query"
+    t.string "query"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "page"
-    t.integer  "session_id"
-    t.string   "created_at_string"
+    t.string "page"
+    t.integer "session_id"
+    t.string "created_at_string"
     t.index ["created_at_string"], name: "index_searches_on_created_at_string"
     t.index ["session_id"], name: "index_searches_on_session_id"
   end
 
   create_table "sessions", force: :cascade do |t|
-    t.string   "session_uuid"
+    t.string "session_uuid"
     t.datetime "expiry"
-    t.boolean  "on_campus"
-    t.boolean  "is_mobile"
+    t.boolean "on_campus"
+    t.boolean "is_mobile"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "created_at_string"
+    t.string "created_at_string"
     t.index ["created_at_string"], name: "index_sessions_on_created_at_string"
   end
 
