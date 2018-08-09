@@ -2,10 +2,14 @@
 
 ## Introduction
 
-UMD Libraries bento-box search application, based on the NSCU Quick Search
-Rails engine ([https://github.com/NCSU-Libraries/quick_search][quick_search])
+UMD Libraries bento-box search application, based on the NSCU QuickSearch
+Rails engine ([https://github.com/NCSU-Libraries/quick_search][quick_search]).
 
-This application wraps the NCSU Quick Search engine.
+This application wraps the NCSU QuickSearch engine.
+
+Note: This application is currently using a UMD-customized fork of the
+NCSU QuickSearch application at
+[https://github.com/umd-lib/quick_search][umd_quick_search].
 
 ## Quick Start
 
@@ -196,7 +200,7 @@ built from a fresh clone of the GitHub repository.
 
 ### Website search interface
 
-In addition to the functionality provided by the NSCU Quick Search Rails engine,
+In addition to the functionality provided by the NSCU QuickSearch Rails engine,
 this application also provides a search page for the library website on the
 "website" path (i.e., [http://localhost:3000/website][website].
 
@@ -204,6 +208,7 @@ This functionality uses the quick_search-library_website_searcher to generate
 the results, and so is also dependent on a running Solr instance.
 
 [quick_search]: https://github.com/NCSU-Libraries/quick_search
+[umd_quick_search]: https://github.com/umd-lib/quick_search
 [solr]: http://localhost:8983/
 [website]: http://localhost:3000/website
 [docker]: https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes

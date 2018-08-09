@@ -82,8 +82,8 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search.git
-  revision: 26a840f5d3157ee360249f18c71ed2a3cb3697fa
-  tag: 0.2.0
+  revision: 6758a17d9772f6715381a152f17cfd9ab5d2f348
+  branch: umd-develop
   specs:
     quick_search-core (0.2.0)
       fastimage
