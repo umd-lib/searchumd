@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # dotenv - For storing production configuration parameters
 gem 'dotenv-rails', '~> 2.2.1'
 
-gem 'quick_search-core', git: 'https://github.com/NCSU-Libraries/quick_search.git', tag: '0.2.0'
+gem 'quick_search-core', git: 'https://github.com/umd-lib/quick_search.git', tag: '0.2.0'
 
 # -Inserted by QuickSearch-
 
