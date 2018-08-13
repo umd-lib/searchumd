@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/umd-lib/quick_search-database_finder_searcher.git
-  revision: f4651a65df987820babf710a9a44d7aa1ed658f4
+  revision: a4df0932db162d7f09ea57ed722f2eb424105b50
   branch: develop
   specs:
     quick_search-database_finder_searcher (0.1.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-swiftype_searcher.git
-  revision: ae59cc4fcc173e2a231a077abff2aabf798f7afb
+  revision: c78ebaed40ee9f470eb1dbcc439d6d69914847a7
   branch: develop
   specs:
     quick_search-swiftype_searcher (0.1.0)
@@ -65,7 +65,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_knowledge_base_searcher.git
-  revision: 281cc6111dcc04b067734955f545a8ec0cb46fdd
+  revision: 79d74f82c9bcda8520271bc13da8a1a82471e638
   branch: develop
   specs:
     quick_search-world_cat_knowledge_base_searcher (0.1.0)
@@ -199,7 +199,7 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     httpclient (2.8.3)
-    i18n (1.0.1)
+    i18n (1.1.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -231,9 +231,9 @@ GEM
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     method_source (0.9.0)
-    mime-types (3.1)
+    mime-types (3.2.2)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
+    mime-types-data (3.2018.0812)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
