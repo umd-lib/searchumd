@@ -29,7 +29,8 @@ en:
     module_callout: "Search WorldCat (Search)"
     error_service_message: "searching WorldCat (Search)"
     no_results_service_message: "a different search from WorldCat (Search)"
-    no_results_link: "https://umaryland.on.worldcat.org/search"
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
 
   lib_answers_search:
     display_name: "Ask Us!"
@@ -38,7 +39,8 @@ en:
     module_callout: "Search Ask Us!"
     error_service_message: "searching Ask Us!"
     no_results_service_message: "a different search from Ask Us!"
-    no_results_link: "http://umd.libanswers.com/"
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
 
   lib_guides_search:
     display_name: "Research Guides"
@@ -47,7 +49,8 @@ en:
     module_callout: "Search Research Guides"
     error_service_message: "searching Research Guides"
     no_results_service_message: "a different search from Research Guides"
-    no_results_link: "http://lib.guides.umd.edu/"
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
 
   database_finder_search:
     display_name: "Databases"
@@ -56,7 +59,8 @@ en:
     module_callout: "Search Databases"
     error_service_message: "searching Databases"
     no_results_service_message: "a different search from Databases"
-    no_results_link: "http://localhost:8080/site/dbfinder"
+    # no_results_link configured in searcher configuration YAML file
+    no_results_link:
 
   world_cat_knowledge_base_search:
     display_name: "WorldCat Knowledge Base"
@@ -65,7 +69,8 @@ en:
     module_callout: "Search WorldCat Knowledge Base"
     error_service_message: "searching WorldCat Knowledge Base"
     no_results_service_message: "a different search from WorldCat Knowledge Base"
-    no_results_link: "https://umaryland.on.worldcat.org/atoztitles/search#ebook"
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
 
   library_website_search:
     display_name: "Website"
@@ -74,7 +79,8 @@ en:
     module_callout: "Search Website"
     error_service_message: "searching Website"
     no_results_service_message: "a different search from Website"
-    no_results_link: "website"
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
 
   swiftype_search:
     display_name: "Swiftype Library Website"
@@ -83,4 +89,9 @@ en:
     module_callout: "Swiftype Search Library Website"
     error_service_message: "searching Library Website using Swiftype"
     no_results_service_message: "a different search from Library Website using Swiftype"
-    no_results_link: "<NO_RESULTS_LINK>"
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
+
+  world_cat_discovery_api_search:
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:

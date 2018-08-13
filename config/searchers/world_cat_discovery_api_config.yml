@@ -4,6 +4,7 @@ defaults: &defaults
   authenticatingInstitutionId: <%= ENV['WORLD_CAT_DISCOVERY_API_INSTITUTION_ID'] %>
   contextInstitutionId: <%= ENV['WORLD_CAT_DISCOVERY_API_INSTITUTION_ID'] %>
   loaded_link: "https://umaryland.on.worldcat.org/search?queryString="
+  no_results_link: 'https://umaryland.on.worldcat.org/search'
   url_link: "https://umaryland.on.worldcat.org/oclc/6032704017"
 
 development:
