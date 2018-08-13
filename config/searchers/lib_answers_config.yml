@@ -2,7 +2,8 @@ defaults: &defaults
   base_url: "https://api2.libanswers.com/1.0/search/"
   query_params: "?iid=<%= ENV['LIB_ANSWERS_IID'] %>&limit=3"
   loaded_link: "http://umd.libanswers.com/search?q="
-  iid: 
+  no_results_link: "http://umd.libanswers.com/search"
+  iid:
 
 development:
   <<: *defaults

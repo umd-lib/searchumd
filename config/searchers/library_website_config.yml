@@ -16,6 +16,7 @@ defaults: &defaults
     # URI escaped search term
     q_template: 'text:SEARCH_TERM'
   loaded_link: 'website?q='
+  no_results_link: 'website'
 
 development:
   <<: *defaults

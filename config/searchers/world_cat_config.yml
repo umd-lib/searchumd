@@ -2,6 +2,7 @@ defaults: &defaults
   base_url: "http://www.worldcat.org/webservices/catalog/search/worldcat/opensearch?count=3&wskey="
   wskey: <%= ENV['WORLD_CAT_API_WSKEY'] %>
   loaded_link: "https://umaryland.on.worldcat.org/search?queryString="
+  no_results_link: 'https://umaryland.on.worldcat.org/search'
   url_link: "https://umaryland.on.worldcat.org/search?queryString=no%3A+"
 
 development:

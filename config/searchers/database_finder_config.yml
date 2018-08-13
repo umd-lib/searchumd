@@ -2,6 +2,7 @@ defaults: &defaults
   search_url: "<%= ENV['DATABASE_FINDER_HIPPO_SITE_URL'] %>restservices/v1/dbfinder/search"
   query_params: '?q='
   loaded_link: "<%= ENV['DATABASE_FINDER_HIPPO_SITE_URL'] %>dbfinder/list?queryScope=all&query="
+  no_results_link: "<%= ENV['DATABASE_FINDER_HIPPO_SITE_URL'] %>dbfinder/"
 
 development:
   <<: *defaults
