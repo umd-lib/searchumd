@@ -11,18 +11,8 @@
         </div>
     </div>
 </div>
-<%# FIXME: This logic could stand a second look %>
-<% unless @wikipedia.is_a? StandardError %>
-    <% unless @best_bets.is_a? StandardError %>
-        <% if @best_bets.results.blank? %>
-            <% unless @wikipedia.spelling_suggestion.blank? %>
-                <%= render partial: 'layouts/quick_search/spelling_suggestion', locals: { spelling_suggestion: @wikipedia.spelling_suggestion} %>
-            <% end %>
-        <% end %>
-    <% end %>
-<% else %>
-    <div id="spelling-suggestion" class="hidden"></div>
-<% end %>
+<div id="spelling-suggestion" class="hidden"></div>
+
 <div class="row">
     <div class="small-12 large-8 columns">
         <% if @best_bets.is_a? StandardError %>
@@ -65,27 +55,8 @@
         </div>
         <hr>
     </div>
-    <div class="row journals-databases">
-        <div class="small-12 columns"><h4 class='section-description'>Other Ways to Find Articles</h4></div>
-        <div class="small-12 medium-4 columns journals module">
-          <%= render_module(@arxiv, 'arxiv') %>
-        </div>
-        <div class="small-12 medium-4 columns databases module">
-          <%= render_module(@open_library, 'open_library') %>
-        </div>
-        <div class="small-12 medium-4 columns smart-subjects module">
-          <%= render_module(@wikipedia, 'wikipedia') %>
-        </div>
-        <hr>
-    </div>
     <div class="row website-faq">
         <div class="small-12 columns"><h4 class='section-description'>Information About the Libraries</h4></div>
-        <div class="small-12 medium-4 medium-push-8 columns faq module">
-            <%= render_module(@placeholder, 'placeholder') %>
-        </div>
-        <div class="small-12 medium-8 medium-pull-4 columns website module">
-            <%= render_module(@placeholder, 'placeholder') %>
-        </div>
     </div>
 
     <div class="row">
