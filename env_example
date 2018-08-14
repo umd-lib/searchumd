@@ -48,13 +48,6 @@ WORLD_CAT_DISCOVERY_API_WSKEY=
 # The WorldCat Discovery API wskey
 WORLD_CAT_DISCOVERY_API_SECRET=
 
-# --- config/searchers/world_cat_knowledge_base_config.yml
-# The WorldCat Knowledge Base institution id
-WORLD_CAT_KNOWLEDGE_BASE_INSTITUTION_ID=
-
-# The WorldCat Knowledge Base wskey
-WORLD_CAT_KNOWLEDGE_BASE_WSKEY=
-
 # --- config/searchers/lib_answers_config.yml
 # The Institution ID for LibAnswers
 LIB_ANSWERS_IID=

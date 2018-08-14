@@ -49,8 +49,6 @@ gem 'quick_search-placeholder_searcher'
 
 gem 'quick_search-world_cat_searcher',
     git: 'https://github.com/umd-lib/quick_search-world_cat_searcher.git', branch: 'develop'
-gem 'quick_search-world_cat_knowledge_base_searcher',
-    git: 'https://github.com/umd-lib/quick_search-world_cat_knowledge_base_searcher.git', branch: 'develop'
 gem 'quick_search-lib_answers_searcher',
     git: 'https://github.com/umd-lib/quick_search-lib_answers_searcher.git', branch: 'develop'
 gem 'quick_search-lib_guides_searcher',

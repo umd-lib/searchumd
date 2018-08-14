@@ -64,14 +64,6 @@ GIT
       worldcat-discovery (~> 1.2.0.2)
 
 GIT
-  remote: https://github.com/umd-lib/quick_search-world_cat_knowledge_base_searcher.git
-  revision: 79d74f82c9bcda8520271bc13da8a1a82471e638
-  branch: develop
-  specs:
-    quick_search-world_cat_knowledge_base_searcher (0.1.0)
-      quick_search-core (~> 0)
-
-GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_searcher.git
   revision: aa97d3432e9842767cbf2604ec4102602a34c83d
   branch: develop
@@ -429,7 +421,6 @@ DEPENDENCIES
   quick_search-umd_theme!
   quick_search-wikipedia_searcher
   quick_search-world_cat_discovery_api_searcher!
-  quick_search-world_cat_knowledge_base_searcher!
   quick_search-world_cat_searcher!
   rails (~> 5.1.0)
   rubocop (= 0.52.1)
