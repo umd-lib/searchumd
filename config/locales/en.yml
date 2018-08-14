@@ -62,16 +62,6 @@ en:
     # no_results_link configured in searcher configuration YAML file
     no_results_link:
 
-  world_cat_knowledge_base_search:
-    display_name: "WorldCat Knowledge Base"
-    short_display_name: "WorldCat Knowledge Base"
-    search_form_placeholder: "Search WorldCat Knowledge Base"
-    module_callout: "Search WorldCat Knowledge Base"
-    error_service_message: "searching WorldCat Knowledge Base"
-    no_results_service_message: "a different search from WorldCat Knowledge Base"
-    # no_results_link now configured in searcher configuration YAML file
-    no_results_link:
-
   library_website_search:
     display_name: "Website"
     short_display_name: "Website"
