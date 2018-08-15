@@ -85,3 +85,13 @@ en:
   world_cat_discovery_api_search:
     # no_results_link now configured in searcher configuration YAML file
     no_results_link:
+
+  world_cat_discovery_api_article_search:
+    display_name: "Articles"
+    short_display_name: "Articles"
+    search_form_placeholder: "Search Worldcat Discovery API (Articles)"
+    module_callout: "Articles"
+    error_service_message: "searching Worldcat Discovery API (Articles)"
+    no_results_service_message: "a different search from Worldcat Discovery API (Articles)"
+    loaded_link:
+    no_results_link:
