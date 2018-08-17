@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/umd-lib/quick_search-database_finder_searcher.git
-  revision: a4df0932db162d7f09ea57ed722f2eb424105b50
+  revision: ca6d1d30e11a2ba40d1afb2f6574f99f12d42361
   branch: develop
   specs:
     quick_search-database_finder_searcher (0.1.0)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_answers_searcher.git
-  revision: 7304931a1d7ce7a945a0ca49dddb04e618f2fa54
+  revision: 1208f8d308a0405473458fe2931b4d21bfeab500
   branch: develop
   specs:
     quick_search-lib_answers_searcher (0.1.0)
@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_guides_searcher.git
-  revision: 8716e33f48d7b17348e58ac9ef34730f21cdb255
+  revision: d1fc3353576f2aae5edbb7013101b2174f255665
   branch: develop
   specs:
     quick_search-lib_guides_searcher (0.1.0)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-library_website_searcher.git
-  revision: c7cfb745bb344981cbaf35b513e9b0f76067f6ef
+  revision: 5a9c822a4409702f2fd7fb03159a4bff26461f94
   branch: develop
   specs:
     quick_search-library_website_searcher (0.1.0)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-swiftype_searcher.git
-  revision: c78ebaed40ee9f470eb1dbcc439d6d69914847a7
+  revision: cd1faa53c843885510dbb585a6c1177af56bd7ef
   branch: develop
   specs:
     quick_search-swiftype_searcher (0.1.0)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-umd_theme.git
-  revision: 78e6189b55fc625410297f4766357b4d0f28f0ca
+  revision: 7974326def4cd6082022ded601f88ef2ab29362a
   branch: develop
   specs:
     quick_search-umd_theme (0.1.0)
@@ -56,7 +56,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git
-  revision: f57c90decd555cf5cf05435c94c8ecdda8d38d07
+  revision: 73cbfd54f1f156cf5b2ce5dcb1c3416cf9599e84
   branch: develop
   specs:
     quick_search-world_cat_discovery_api_searcher (0.1.0)
@@ -65,7 +65,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_searcher.git
-  revision: aa97d3432e9842767cbf2604ec4102602a34c83d
+  revision: d5baea55a675f4cd084dbb5e3dde0b0ec3a48937
   branch: develop
   specs:
     quick_search-world_cat_searcher (0.1.0)
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search.git
-  revision: 6758a17d9772f6715381a152f17cfd9ab5d2f348
+  revision: 74aede896eb8c1dbebe1bb25f8700efa84f0608b
   branch: umd-develop
   specs:
     quick_search-core (0.2.0)
@@ -226,7 +226,7 @@ GEM
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
-    mini_mime (1.0.0)
+    mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     minitest-reporters (1.1.19)
@@ -252,7 +252,7 @@ GEM
     pg (0.18.4)
     powerpack (0.1.1)
     promise (0.3.1)
-    public_suffix (3.0.2)
+    public_suffix (3.0.3)
     puma (3.11.4)
     rack (2.0.5)
     rack-test (1.1.0)
