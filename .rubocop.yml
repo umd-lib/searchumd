@@ -2,15 +2,12 @@
 Rails:
   Enabled: true
 
-# Don't require gems in Gemfile to be in alphabetical order.
-Bundler/OrderedGems:
-  Enabled: false
+inherit_mode:
+  merge:
+    - Include
 
 # Exclude auto-generated files
 AllCops:
-  Include:
-    - '**/Gemfile'
-    - '**/Rakefile'
   Exclude:
     - 'bin/*'
     - 'config/initializers/*'
@@ -21,7 +18,20 @@ AllCops:
     - 'db/seeds.rb'
 
   TargetRubyVersion: 2.3
-  TargetRailsVersion: 5.0
+  TargetRailsVersion: 5.1
+
+# Don't require gems in Gemfile to be in alphabetical order.
+Bundler/OrderedGems:
+  Enabled: false
+
+# Exclude the following because they are largely controlled by Rails
+Style/StringLiterals:
+  Exclude:
+    - config/puma.rb
+
+Style/PercentLiteralDelimiters:
+  Exclude:
+    - config/spring.rb
 
 # Increase max allowed line length
 Metrics/LineLength:

@@ -94,7 +94,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   # Code analysis tools
-  gem 'rubocop', '= 0.52.1', require: false
+  gem 'rubocop', '= 0.59.0', require: false
   gem 'rubocop-checkstyle_formatter', '~> 0.4.0', require: false
 end
 
