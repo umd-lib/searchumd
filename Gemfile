@@ -42,8 +42,6 @@ gem 'quick_search-core', git: 'https://github.com/umd-lib/quick_search.git', bra
 # your config/quick_search_config.yml file as well as references to them in your theme's search
 # results page template
 
-gem 'quick_search-world_cat_searcher',
-    git: 'https://github.com/umd-lib/quick_search-world_cat_searcher.git', branch: 'develop'
 gem 'quick_search-lib_answers_searcher',
     git: 'https://github.com/umd-lib/quick_search-lib_answers_searcher.git', branch: 'develop'
 gem 'quick_search-lib_guides_searcher',
