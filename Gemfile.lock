@@ -64,15 +64,6 @@ GIT
       worldcat-discovery (~> 1.2.0.2)
 
 GIT
-  remote: https://github.com/umd-lib/quick_search-world_cat_searcher.git
-  revision: d5baea55a675f4cd084dbb5e3dde0b0ec3a48937
-  branch: develop
-  specs:
-    quick_search-world_cat_searcher (0.1.0)
-      nokogiri (~> 1.6)
-      quick_search-core (~> 0)
-
-GIT
   remote: https://github.com/umd-lib/quick_search.git
   revision: 74aede896eb8c1dbebe1bb25f8700efa84f0608b
   branch: umd-develop
@@ -411,7 +402,6 @@ DEPENDENCIES
   quick_search-swiftype_searcher!
   quick_search-umd_theme!
   quick_search-world_cat_discovery_api_searcher!
-  quick_search-world_cat_searcher!
   rails (~> 5.1.0)
   rubocop (= 0.59.0)
   rubocop-checkstyle_formatter (~> 0.4.0)
