@@ -7,17 +7,28 @@
 # Ignore bundler config.
 /.bundle
 
-
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
-.DS_Store
-
 # Ignore all logfiles and tempfiles.
 /log/*
+/tmp/*
 !/log/.keep
-/tmp
+!/tmp/.keep
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+/node_modules
+/yarn-error.log
+
+/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
 
 # Ignore minitest-ci reports
 test/reports
@@ -29,11 +40,7 @@ coverage
 .env
 .env.production
 
-# Ignore byebug history
-.byebug_history
-
 # Ignore Bundler vendored files
 vendor/bundle
 
-# Ignore pre-compiled assets
-public/assets
+.DS_Store
