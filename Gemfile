@@ -87,7 +87,7 @@ gem 'quick_search-umd_theme',
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
 
 group :development do
@@ -99,7 +99,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   # Code analysis tools
-  gem 'rubocop', '= 0.59.0', require: false
+  gem 'rubocop', '= 0.66.0', require: false
   gem 'rubocop-checkstyle_formatter', '~> 0.4.0', require: false
 end
 
