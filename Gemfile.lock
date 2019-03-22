@@ -79,7 +79,7 @@ GIT
       rails (~> 5.2)
 
 GEM
-  remote: https://rubygems.org/
+  remote: https://maven.lib.umd.edu/nexus/content/groups/umd-ruby-gems-repository-group/
   specs:
     actioncable (5.2.2.1)
       actionpack (= 5.2.2.1)

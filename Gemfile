@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'
+source 'https://maven.lib.umd.edu/nexus/content/groups/umd-ruby-gems-repository-group/'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Ruby version should be controlled by .ruby-version file
