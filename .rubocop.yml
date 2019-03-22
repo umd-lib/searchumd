@@ -18,7 +18,7 @@ AllCops:
     - 'db/seeds.rb'
 
   TargetRubyVersion: 2.3
-  TargetRailsVersion: 5.1
+  TargetRailsVersion: 5.2
 
 # Don't require gems in Gemfile to be in alphabetical order.
 Bundler/OrderedGems:
