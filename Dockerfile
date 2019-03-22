@@ -24,7 +24,7 @@ RUN apt-get update && \
 RUN addgroup --gid 9999 app && \
     adduser --uid 9999 --gid 9999 --disabled-password --gecos "Application" app && \
     usermod -L app
-    
+
 # Configure the main working directory. This is the base
 # directory used in any further RUN, COPY, and ENTRYPOINT
 # commands.
@@ -43,7 +43,7 @@ RUN cd /home/app/webapp && \
     gem install bundler && \
     bundle install --jobs 20 --retry 5 --without development test && \
     cd ..
-    
+
 # Copy the main application.
 COPY  --chown=app:app . /home/app/webapp/
 
@@ -53,6 +53,10 @@ COPY --chown=app:app docker_config/searchumd/rails_start.sh /home/app/webapp
 ENV RAILS_RELATIVE_URL_ROOT=/search
 ENV SCRIPT_NAME=/search
 
+# The following SECRET_KEY_BASE variable is used so that the
+# "assets:precompile" command will run run without throwing an error.
+# It will have no effect on the application when it is actually run.
+ENV SECRET_KEY_BASE=1
 RUN cd /home/app/webapp && \
     bundle exec rails assets:precompile && \
     cd ..
