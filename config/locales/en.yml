@@ -33,12 +33,12 @@ en:
   hello: "Hello world"
 
   lib_answers_search:
-    display_name: "Ask Us!"
-    short_display_name: "Ask Us!"
-    search_form_placeholder: "Search Ask Us!"
-    module_callout: "Search Ask Us!"
-    error_service_message: "searching Ask Us!"
-    no_results_service_message: "a different search from Ask Us!"
+    display_name: "FAQs from Ask Us!"
+    short_display_name: "FAQs from Ask Us!"
+    search_form_placeholder: "Search FAQs from Ask Us!"
+    module_callout: "Search FAQs from Ask Us!"
+    error_service_message: "searching FAQs from Ask Us!"
+    no_results_service_message: "a different search from FAQs from Ask Us!"
     # no_results_link now configured in searcher configuration YAML file
     no_results_link:
 
