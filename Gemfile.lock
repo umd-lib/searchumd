@@ -33,14 +33,6 @@ GIT
       rsolr (= 2.2.1)
 
 GIT
-  remote: https://github.com/umd-lib/quick_search-swiftype_searcher.git
-  revision: 2452a8d73c11456ed0e193a4df4962ebbc15c0e3
-  branch: develop
-  specs:
-    quick_search-swiftype_searcher (0.1.0)
-      quick_search-core (~> 0)
-
-GIT
   remote: https://github.com/umd-lib/quick_search-umd_theme.git
   revision: 7974326def4cd6082022ded601f88ef2ab29362a
   branch: develop
@@ -439,7 +431,6 @@ DEPENDENCIES
   quick_search-lib_answers_searcher!
   quick_search-lib_guides_searcher!
   quick_search-library_website_searcher!
-  quick_search-swiftype_searcher!
   quick_search-umd_theme!
   quick_search-world_cat_discovery_api_searcher!
   rails (~> 5.2.2, >= 5.2.2.1)

@@ -62,6 +62,3 @@ DATABASE_FINDER_HIPPO_SITE_URL=
 # -- config/searchers/library_website_config.yml
 # The Library Website Search Solr endpoint
 LIBRARY_WEBSITE_SEARCH_SOLR_URL=
-
-# -- config/searchers/swiftype_config.yml
-SWIFTYPE_ENGINE_KEY=

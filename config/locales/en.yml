@@ -63,22 +63,12 @@ en:
     no_results_link:
 
   library_website_search:
-    display_name: "Website Option 1"
-    short_display_name: "Website Option 1"
-    search_form_placeholder: "Search Library Website using Option 1"
-    module_callout: "Search Website Option 1"
-    error_service_message: "searching Library Website using Option 1"
-    no_results_service_message: "a different search from Website Option 1"
-    # no_results_link now configured in searcher configuration YAML file
-    no_results_link:
-
-  swiftype_search:
-    display_name: "Website Option 2"
-    short_display_name: "Website Option 2"
-    search_form_placeholder: "Search Library Website using Option 2"
-    module_callout: "Search Website Option 2"
-    error_service_message: "searching Library Website using Option 2"
-    no_results_service_message: "a different search from Website Option 2"
+    display_name: "Libraries' Website"
+    short_display_name: "Libraries' Website"
+    search_form_placeholder: "Search Libraries' Website"
+    module_callout: "Search Libraries' Website"
+    error_service_message: "searching Libraries' Website"
+    no_results_service_message: "a different search from Libraries' Website"
     # no_results_link now configured in searcher configuration YAML file
     no_results_link:
 
