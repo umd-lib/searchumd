@@ -15,17 +15,15 @@
 
 defaults: &defaults
   # The following propreties are common to both searchers. If the
-  # world_cat_discovery_api searcher is not being used, copy these
-  # properties into the world_cat_discovery_api_article_config.yml file
-  wskey: <%= ENV['WORLD_CAT_DISCOVERY_API_WSKEY'] %>
-  secret: <%= ENV['WORLD_CAT_DISCOVERY_API_SECRET'] %>
-  authenticatingInstitutionId: <%= ENV['WORLD_CAT_DISCOVERY_API_INSTITUTION_ID'] %>
-  contextInstitutionId: <%= ENV['WORLD_CAT_DISCOVERY_API_INSTITUTION_ID'] %>
+  # ebsco_discovery_service_api searcher is not being used, copy these
+  # properties into the ebsco_discovery_service_api_article_config.yml file
+  username: <%= ENV['EBSCO_DISCOVERY_SERVICE_API_USERNAME'] %>
+  password: <%= ENV['EBSCO_DISCOVERY_SERVICE_API_PASSWORD'] %>
 
-  # world_cat_discovery_api-specific properties
-  loaded_link: "https://umaryland.on.worldcat.org/search?queryString="
-  url_link: "https://umaryland.on.worldcat.org/oclc/"
-  no_results_link: 'https://umaryland.on.worldcat.org/search'
+  # ebsco_discovery_service_api-specific properties
+  loaded_link: 'http://proxy-um.researchport.umd.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live&bquery='
+  url_link: 'http://proxy-um.researchport.umd.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live'
+  no_results_link: 'http://proxy-um.researchport.umd.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live'
 
 development:
   <<: *defaults

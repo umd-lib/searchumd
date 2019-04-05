@@ -18,11 +18,11 @@ defaults: &defaults
   #
   # See docs for more details: https://github.com/NCSU-Libraries/quick_search/blob/master/docs/configuration.md
 
-  searchers: [best_bets,world_cat_discovery_api,world_cat_discovery_api_article,lib_guides,database_finder,lib_answers,library_website]
+  searchers: [best_bets,ebsco_discovery_service_api,ebsco_discovery_service_api_article,lib_guides,database_finder,lib_answers,library_website]
 
   # Searchers listed in the "result type guide" bar that lists result types that were found for a given search
 
-  found_types: [world_cat_discovery_api,world_cat_discovery_api_article,lib_guides,database_finder,lib_answers,library_website]
+  found_types: [ebsco_discovery_service_api,ebsco_discovery_service_api_article,lib_guides,database_finder,lib_answers,library_website]
 
   per_page: 3
   max_per_page: 50

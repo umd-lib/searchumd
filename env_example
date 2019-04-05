@@ -34,15 +34,12 @@ PROD_DATABASE_PORT=5432
 # Pool size
 PROD_DATABASE_POOL=10
 
-# --- config/searchers/world_cat_discovery_api_config.yml
-# The WorldCat Discovery API institution id
-WORLD_CAT_DISCOVERY_API_INSTITUTION_ID=
+# --- config/searchers/ebsco_discovery_service_api_config.yml
+# The EBSCO Discovery Service API Username
+EBSCO_DISCOVERY_SERVICE_API_USERNAME=
 
-# The WorldCat Discovery API wskey
-WORLD_CAT_DISCOVERY_API_WSKEY=
-
-# The WorldCat Discovery API wskey
-WORLD_CAT_DISCOVERY_API_SECRET=
+# The EBSCO Discovery Service Password
+EBSCO_DISCOVERY_SERVICE_API_PASSWORD=
 
 # --- config/searchers/lib_answers_config.yml
 # The Institution ID for LibAnswers
