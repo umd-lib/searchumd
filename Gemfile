@@ -63,12 +63,11 @@ gem 'quick_search-database_finder_searcher',
     git: 'https://github.com/umd-lib/quick_search-database_finder_searcher.git', branch: 'develop'
 gem 'quick_search-library_website_searcher',
     git: 'https://github.com/umd-lib/quick_search-library_website_searcher.git', branch: 'develop'
-gem 'quick_search-world_cat_discovery_api_searcher',
-    git: 'https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git', branch: 'develop'
+gem 'quick_search-ebsco_discovery_service_api_searcher',
+    git: 'https://github.com/umd-lib/quick_search-ebsco_discovery_service_api_searcher.git', branch: 'develop'
 
-# Dependencies for the quick_search-world_cat_discovery_api_searcher initialization script
-gem 'oclc-auth', '>=1.0.0'
-gem 'worldcat-discovery', '>=1.2.0.1'
+# Dependencies for the quick_search-ebsco_discovery_service_api_searcher initialization script
+gem 'ebsco-eds', '~> 1.0.7'
 
 # -END Inserted by QuickSearch-
 
