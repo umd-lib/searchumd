@@ -18,11 +18,20 @@ backend default {
     .port = "3000";
 }
 
+backend cms {
+    .host = "wwwdev.lib.umd.edu";
+    .port = "80";
+}
+
 sub vcl_recv {
     # Happens before we check if we have this in cache already.
     #
     # Typically you clean up the request here, removing cookies you don't need,
     # rewriting the request, etc.
+
+    if (req.http.host ~ "wwwdev.lib.umd.edu") {
+        set req.backend_hint = cms;
+    }
 }
 
 sub vcl_backend_response {
@@ -32,7 +41,7 @@ sub vcl_backend_response {
     # and other mistakes your backend does.
 
     # Parse edge side includes (ESI)
-    set beresp.do_esi=true;
+    set beresp.do_esi = true;
 }
 
 sub vcl_deliver {

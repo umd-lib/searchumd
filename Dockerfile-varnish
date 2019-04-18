@@ -22,4 +22,4 @@ COPY docker_config/varnish/ /etc/varnish/
 
 EXPOSE 80
 
-CMD ["varnishd", "-F", "-f", "/etc/varnish/default.vcl", "-a", ":80", "-s", "default,256m", "-p", "feature=+esi_disable_xml_check", "-p", "feature=+esi_ignore_https"]
+CMD ["varnishd", "-F", "-f", "/etc/varnish/default.vcl", "-a", ":80", "-s", "default,256m", "-p", "feature=+esi_disable_xml_check", "-p", "feature=+esi_ignore_https", "-p", "feature=+esi_remove_bom"]
