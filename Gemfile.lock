@@ -57,7 +57,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search.git
-  revision: b92a6de679b17a194c288386e41c181b19436d08
+  revision: 777121a93e5f6cb267ee5e0292151ecf209263e5
   branch: umd-develop
   specs:
     quick_search-core (0.2.0)
