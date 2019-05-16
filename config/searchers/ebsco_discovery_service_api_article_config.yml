@@ -22,7 +22,7 @@ defaults: &defaults
   enable_article_filter: true
 
   # ebsco_discovery_service_api-specific properties
-  loaded_link: 'http://proxy-um.researchport.umd.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live&bquery='
+  loaded_link: 'https://widgets.ebscohost.com/prod/search/?direct=true&scope=site&site=eds-live&authtype=ip,guest&custid=umarylnd&groupid=main&profile=eds&facet=AcademicJournals&bquery='
   url_link: 'http://proxy-um.researchport.umd.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live'
   doi_link: 'http://proxy-um.researchport.umd.edu/login?url=https://doi.org/'
   no_results_link: 'http://proxy-um.researchport.umd.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live'
