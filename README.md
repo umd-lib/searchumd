@@ -196,6 +196,142 @@ The "docker_config" directory contains files used by the Dockerfiles.
 In order to generate "clean" Docker images, the Docker images should be
 built from a fresh clone of the GitHub repository.
 
+### Generating New Docker Images
+
+The following steps can be done on any workstation (i.e., your MacBook):
+
+#### 1) Update searchumd so that the "Gemfile.lock" file points to the latest commits of the searchers
+
+This step is needed because we have not (yet) provided distinct version numbers
+for the searchers, nor pushed up the searchers as Ruby gems into the Nexus. The
+"Gemfile" of the "searchumd" application simply points to the "develop" branch
+of each of the searchers, and as the searchers are updated, the "Gemfile.lock"
+file in the "searchumd" application gets slowly out of date. The following steps
+resets the "Gemfile.lock" to the latest commits for the searchers:
+
+1.a) Create an empty directory for the checkout. For these steps, we'll use
+     "/tmp/searchumd-build":
+
+```
+> mkdir /tmp/searchumd-build
+```
+
+1.b) Switch to the directory, and clone the "searchumd" application:
+
+```
+> cd /tmp/searchumd-build
+> git clone https://github.com/umd-lib/searchumd.git
+```
+
+1.c) Switch into the "searchumd" directory, and update each of the searcher
+     gems, as well as the "quick_search-core" and "umd_theme" gems:
+
+```
+> cd searchumd
+> bundle update quick_search-core
+> bundle update quick_search-lib_answers_searcher
+> bundle update quick_search-lib_guides_searcher
+> bundle update quick_search-database_finder_searcher
+> bundle update quick_search-library_website_searcher
+> bundle update quick_search-world_cat_discovery_api_searcher
+> bundle update quick_search-umd_theme
+```
+
+**Note:**  The above list was obtained by examining the "Gemfile", and looking
+for gems having a "git" repository with a "develop" branch, for example:
+
+```
+gem 'quick_search-lib_answers_searcher',
+    git: 'https://github.com/umd-lib/quick_search-lib_answers_searcher.git', branch: 'develop'
+```
+
+Be sure to examine the "Gemfile" to ensure that all the appropriate gems are updated.
+
+An alternative to doing the above is to simply run "bundle update". This is
+slightly more dangerous, as not all the gem dependencies are "pinned" to
+specific versions, so there may be changes in gems unrelated to the searchers.
+This might be okay, though, if only the "patch" version numbers are changed.
+
+This issue should largely go away once we start versioning the searcher gems.
+
+1.d) Examine the "Gemfile.lock" file:
+
+```
+> vi Gemfile.lock
+```
+
+and make sure that all the searchers, as well as the  "quick_search-core" and
+"umd_theme" gems),  point to the latest commit of their respective repositories.
+
+**Note:** There may also be additional dependencies that have been added, or
+version updates to existing dependencies. These are likely okay, but should be
+kept in mind if there are any issues.
+
+1.e) Commit the changes to the "Gemfile.lock" file, and push up to GitHub:
+
+```
+> git add Gemfile.lock
+> git commit
+> git push origin develop
+```
+
+1.f) Examine the "searchumd/env_example" file, and compare it to the
+     "search-env/docker/env_example" file in this repository, making any
+     additions/deletions/changes as needed.
+
+#### 2) Build the Docker images for the various components
+
+Once the "searchumd" application is up to date, we need to build the Docker
+images for each of the components. The current practice so far has been to
+rebuild all the Docker images for each "release", even if nothing may have
+changed with them. This is mainly done so that we don't have to track what's
+changed in which image, and to provide a consistent "version number" for all
+the images.
+
+Until we actually start releasing actual version, the GIt branch and Git commit
+hash of the "searchumd" application is used to identify the version of the
+containers.
+
+2.a) Copy the Git branch and commit into "GIT_BRANCH" and "GIT_COMMIT_HASH"
+     environment variables:
+
+```
+> export GIT_BRANCH=`git rev-parse --abbrev-ref HEAD`
+> export GIT_COMMIT_HASH=`git rev-parse HEAD`
+```
+
+to retrieve the Git commit hash of the latest commit.
+
+2.b) Examine the the "GIT_BRANCH" and "GIT_COMMIT_HASH" values to verify that
+they are what is expected (and because they will be used in future steps):
+
+```
+> echo ${GIT_BRANCH}-${GIT_COMMIT_HASH}
+```
+
+2.c) Build each of the Docker containers, using the "GIT_COMMIT_HASH"
+     environment variable to set the version:
+
+```
+> docker build --no-cache -t docker.lib.umd.edu/searchumd:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile .
+> docker build --no-cache -t docker.lib.umd.edu/searchumd-nginx:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile-nginx .
+> docker build --no-cache -t docker.lib.umd.edu/searchumd-nutch:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile-nutch .
+> docker build --no-cache -t docker.lib.umd.edu/searchumd-solr:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile-solr .
+```
+
+**Note:** The "--no-cache" option is used to force Docker to download the
+latest version of any images, instead of relying on whatever might be in the
+cache on a particular workstation.
+
+2.d) Push each of the images up to the private UMD docker registry:
+
+```
+> docker push docker.lib.umd.edu/searchumd:${GIT_BRANCH}-${GIT_COMMIT_HASH}
+> docker push docker.lib.umd.edu/searchumd-nginx:${GIT_BRANCH}-${GIT_COMMIT_HASH}
+> docker push docker.lib.umd.edu/searchumd-nutch:${GIT_BRANCH}-${GIT_COMMIT_HASH}
+> docker push docker.lib.umd.edu/searchumd-solr:${GIT_BRANCH}-${GIT_COMMIT_HASH}
+```
+
 ## Additional Functionality
 
 ### Website search interface
