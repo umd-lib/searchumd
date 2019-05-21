@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/umd-lib/quick_search-database_finder_searcher.git
-  revision: 1357ea964598f22a9b816b13a5f5262a0b4a3f78
+  revision: 88d7e82fa627af062e4418648c935f537f664ab5
   branch: develop
   specs:
     quick_search-database_finder_searcher (0.1.0)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_answers_searcher.git
-  revision: 7b1d676130d41d775f036999284f8f1c3b1a8e59
+  revision: f742f893bd9e65d1139a11fe7ae286fab60f7c69
   branch: develop
   specs:
     quick_search-lib_answers_searcher (0.1.0)
@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_guides_searcher.git
-  revision: dd790bfd9925eb591a7ec8dcc0b6759db3da0e10
+  revision: 241df2ec31dddf937ac04a645aa559acf8ad22a8
   branch: develop
   specs:
     quick_search-lib_guides_searcher (0.1.0)
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-library_website_searcher.git
-  revision: cb8f43220d1d7c8dc733c1609f2bb3a58b0556e3
+  revision: 390888a33b3f69ec56f5704711685e2d4d71fd63
   branch: develop
   specs:
     quick_search-library_website_searcher (0.1.0)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git
-  revision: 7de3a89988faab7301590da13af6bcc1d28a559c
+  revision: d28aae27124f15ae0b65e859df3e63156276fa97
   branch: develop
   specs:
     quick_search-world_cat_discovery_api_searcher (0.1.0)
@@ -57,7 +57,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search.git
-  revision: 777121a93e5f6cb267ee5e0292151ecf209263e5
+  revision: 0c884db5f3d0c2df1557499c6b0e837997b386ca
   branch: umd-develop
   specs:
     quick_search-core (0.2.0)
@@ -179,7 +179,7 @@ GEM
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
     fastimage (2.1.5)
-    ffi (1.10.0)
+    ffi (1.11.1)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
     foundation-rails (5.4.5.0)
@@ -187,7 +187,7 @@ GEM
       sass (>= 3.2.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    haml (5.0.4)
+    haml (5.1.0)
       temple (>= 0.8.0)
       tilt
     hamster (3.0.0)
@@ -235,7 +235,7 @@ GEM
     method_source (0.9.2)
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2018.0812)
+    mime-types-data (3.2019.0331)
     mimemagic (0.3.3)
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
@@ -248,7 +248,7 @@ GEM
     modernizr-rails (2.7.1)
     msgpack (1.2.9)
     multi_json (1.13.1)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     mysql2 (0.5.2)
     netrc (0.11.0)
     nio4r (2.3.1)
@@ -298,7 +298,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    rdf (3.0.10)
+    rdf (3.0.12)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
     rdf-aggregate-repo (2.2.1)
@@ -388,7 +388,7 @@ GEM
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.5)
+    unf_ext (0.0.7.6)
     unicode-display_width (1.5.0)
     web-console (3.7.0)
       actionview (>= 5.0)
