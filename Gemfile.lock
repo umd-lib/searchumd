@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_answers_searcher.git
-  revision: f742f893bd9e65d1139a11fe7ae286fab60f7c69
+  revision: cbc4b4aa1269e675fadf1952afebce2c909d9bea
   branch: develop
   specs:
     quick_search-lib_answers_searcher (0.1.0)
@@ -450,4 +450,4 @@ DEPENDENCIES
   worldcat-discovery (>= 1.2.0.1)
 
 BUNDLED WITH
-   1.16.6
+   1.17.3
