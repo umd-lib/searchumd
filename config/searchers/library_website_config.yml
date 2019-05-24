@@ -15,7 +15,7 @@ defaults: &defaults
     # Template for the "q" parameter. SEARCH_TERM will be replaced with the
     # URI escaped search term
     q_template: 'text:SEARCH_TERM'
-  loaded_link: 'website?q='
+  loaded_link: 'website?query='
   no_results_link: 'website'
 
 development:

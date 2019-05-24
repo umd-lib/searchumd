@@ -17,12 +17,12 @@ class WebsiteSearchController < ApplicationController
     def do_search
       @searcher = QuickSearch::LibraryWebsiteSearcher.new(
         http_client,
-        extracted_query(params_q_scrubbed),
+        extracted_query(@q),
         @per_page,
         @offset,
         @page,
         on_campus?(ip),
-        extracted_scope(params_q_scrubbed)
+        extracted_scope(@q)
       )
       @searcher.search
     end
@@ -36,8 +36,10 @@ class WebsiteSearchController < ApplicationController
     end
 
     def assign_search_params
-      params[:q] ||= ''
-      @q = params_q_scrubbed
+      # For library website search, query parameter is "query", not "q"
+      # This is so the query parameter is compatible with what is used in Hippo.
+      params[:query] ||= ''
+      @q = params[:query].scrub
       @query = @q
       @per_page = params[:per_page] || 10
       @page = params[:page] || 1
