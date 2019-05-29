@@ -25,7 +25,7 @@ defaults: &defaults
   # world_cat_discovery_api-specific properties
   loaded_link: "https://umaryland.on.worldcat.org/search?queryString="
   url_link: "https://umaryland.on.worldcat.org/oclc/"
-  no_results_link: 'https://umaryland.on.worldcat.org/search'
+  no_results_link: "https://umaryland.on.worldcat.org/discovery"
 
 development:
   <<: *defaults
