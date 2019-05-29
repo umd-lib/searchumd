@@ -1,10 +1,9 @@
 ---
 best_bets:
-  academicsearchpremier:
-    title: Academic Search Complete
-    url: http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=a9h
-    description: Search for full-text articles from a wide range of scholarly journals.
-      Formerly named Academic Search Premier.
+  academicsearchultimate:
+    title: Academic Search Ultimate
+    url: https://proxy-um.researchport.umd.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=asn
+    description: Multi-disciplinary database providing information for nearly every area of academic study. Includes an enormous collection of the most valuable peer-reviewed full text journals, as well as additional journals, magazines, newspapers and books.
     keywords:
     - academic search complete
     - academic search complet
@@ -22,29 +21,50 @@ best_bets:
     - acedemic search premier
     - academic search premire
     - academic search primer
+    - academic search ultimate
+    - academic search
+    
   acm:
     title: ACM Digital Library
-    url: http://www.acm.org/dl/
-    description: Provides access to ACM journals, magazines, and conference proceedings
+    url: https://proxy-um.researchport.umd.edu/login?url=http://dl.acm.org
+    description: Full-text repository of papers from publications that have been published, co-published, or co-marketed by ACM and other publishers.
     keywords:
     - acm
     - acm digital library
     - acm portal
     - acm database
     - acm digital
+ billing:
+    title: Billing & Fines
+    url: https://www.lib.umd.edu/access/fines
+    description: https://www.lib.umd.edu/access/fines
+    keywords:
+    - billing
+    - fines
+    - bill
+    - overdue
+    - bills
+    - fine
   eric:
     title: ERIC (Educational Resource Information Center)
-    url: http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=eric
-    description: Use ERIC to find journal articles in the field of education
+    url: https://proxy-um.researchport.umd.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=eric
+    description: Provides access to information from over 1000 education and education-related journals as well as a variety of non journal materials, or ERIC documents.
     keywords:
     - eric database
     - eric
     - education
     - educational resources information center
+ econlit:
+    title: EconLit
+    url: https://proxy-um.researchport.umd.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&defaultdb=ecn&profile=ehost
+    description: EconLit is a reliable source of citations and abstracts to economic research in over 400 books, journals, dissertations, and working papers.
+    keywords:
+    - econlit
+    - econ lit
   googlescholar:
     title: Google Scholar
-    url: http://scholar.google.com
-    description: Use Google Scholar and get access to articles via our library
+    url: https://proxy-um.researchport.umd.edu/login?url=http://scholar.google.com
+    description: Google Scholar searches academic publishers, professional societies, pre-print archives, and university institutional repositories.
     keywords:
     - google scholar
     - google search
@@ -53,10 +73,58 @@ best_bets:
     - googlescholar
     - googlescholar
     - google
-  lexisnexis:
-    title: LexisNexis Academic
-    url: http://www.lexisnexis.com/
-    description: Search for news, business, legal, medical, and congressional information
+  hoovers:
+    title: Hoovers Company Information
+    url: https://proxy-um.researchport.umd.edu/login?url=http://www.mergentonline.com/Hoovers
+    description: Company descriptions, key numbers and officers, history, major competitors.
+    keywords:
+    - hoovers
+    - hoovers company information
+    - hoovers database
+    - hoover's
+    - hoover
+ ibis:
+    title: IBISWorld
+    url: https://proxy-um.researchport.umd.edu/login?url=http://clients1.ibisworld.com/processlogin.aspx?user=NorthCarolinaState&pwd=ibisworld2008
+    description: Industry market research, company research, business environment, and industry risk ratings
+    keywords:
+    - ibis
+    - ibisworld
+    - ibis world
+    - ibiz
+    - ibizworld
+    - ibiz world
+ journalofpersonality:
+    title: Journal of Personality and Social Psychology
+    url: https://proxy-um.researchport.umd.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=pdh&jid=PSP&site=ehost-live
+    description: Issues available from 1965 through to the present.
+    keywords:
+    - journal of personality and social psychology
+    - personality and social psychology
+    - 0022-3514
+ jstor:
+    title: JSTOR
+    url: https://proxy-um.researchport.umd.edu/login?url=http://www.jstor.org/
+    keywords:
+    - jstor
+    - jstr
+    - jstore
+ newyorktimes:
+    title: the New York Times
+    url: https://proxy-um.researchport.umd.edu/login?url=https://search.proquest.com/publication/11561
+    description: 
+    keywords:
+    - new york times
+    - nyt
+    - the new york times
+    - ny times
+    - nytimes
+    - 0362-4331 
+    - 1542-667X
+  nexis uni:
+    title: Nexis Uni
+    url: https://proxy-um.researchport.umd.edu/login?url=http://www.nexisuni.com
+    description: Nexis Uni (formerly LexisNexis Academic) provides fulltext to news, business and legal information.  Newspapers date back to the 1970's. 
     keywords:
     - lexis
     - nexis
@@ -76,11 +144,89 @@ best_bets:
     - academic universe
     - lexis nexis academic
     - lexisnexis academic
-  pubmed:
+    - nexis uni
+    - nexisuni
+    - nexus uni
+    - nexusuni
+ pubmed:
     title: PubMed
-    url: http://www.ncbi.nlm.nih.gov/
-    description: Search citations from MEDLINE and other medical and life science
-      journals
+    url: https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?otool=umdcplib
+    description: PubMed is the National Library of Medicine's Medline database that provides abstracts and indexing for biomedical journals published in the U.S. and in foreign countries.
     keywords:
     - pubmed
     - pub med
+psychinfo:
+    title: PsycINFO
+    url: https://proxy-um.researchport.umd.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=psyh
+    description: Search for journal articles, book chapters, books, and technical reports in the field of psychology
+    keywords:
+    - psycinfo
+    - psychinfo
+    - psych info
+    - psyc info
+ printing:
+    title: Copy, Print, and Scan
+    url: https://www.lib.umd.edu/services/copying-and-printing/home
+    keywords:
+    - print
+    - printing
+    - scan
+    - scanning
+    - copying
+    - copiers
+    - printers
+    - printer
+    - copier
+    - scanner
+    - scanners
+    - printer locations
+    - print from my computer
+ reload:
+    title: Reload Button
+    url: https://lib.guides.umd.edu/reload-button
+    description: Reload web pages through the UMD Libraries proxy. Instant access to our subscriptions!
+    keywords:
+    - reload
+    - reload button
+scananddeliver:
+    title: Scan & Deliver
+    url: https://www.lib.umd.edu/access/scan-deliver
+    keywords:
+    - scan and deliver
+    - scan & deliver
+    - document delivery
+    - doc del
+    - deliver
+ webofscience:
+    title: Web of Science Core Collection
+    url: https://proxy-um.researchport.umd.edu/login?url=http://webofknowledge.com/WOS
+    description: A multidisciplinary index covering the journal literature of the sciences.
+    keywords:
+    - isi web of science
+    - ofscience
+    - web science
+    - science web
+    - webofscience
+    - web of science database
+    - wos
+    - isi
+    - web of knowledge
+    - isi web of knowledge
+    - isi web of science
+    - web of science
+    - web of sciences
+    - web of sicence
+    - web of scinces
+ wallstreetjournal:
+    title: The Wall Street Journal
+    description: Available from 01/02/1984 to the present
+    url: https://proxy-um.researchport.umd.edu/login?url=https://search.proquest.com/publication/10482
+    keywords:
+    - wall street journal
+    - wall street journal online
+    - the wall street journal
+    - wsj
+    - wallstreet journal
+    - 0099-9660
+    
+    
