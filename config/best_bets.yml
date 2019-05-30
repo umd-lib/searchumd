@@ -23,7 +23,7 @@ best_bets:
     - academic search primer
     - academic search ultimate
     - academic search
-    
+
   acm:
     title: ACM Digital Library
     url: https://proxy-um.researchport.umd.edu/login?url=http://dl.acm.org
@@ -34,7 +34,7 @@ best_bets:
     - acm portal
     - acm database
     - acm digital
- billing:
+  billing:
     title: Billing & Fines
     url: https://www.lib.umd.edu/access/fines
     description: https://www.lib.umd.edu/access/fines
@@ -54,7 +54,7 @@ best_bets:
     - eric
     - education
     - educational resources information center
- econlit:
+  econlit:
     title: EconLit
     url: https://proxy-um.researchport.umd.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&defaultdb=ecn&profile=ehost
     description: EconLit is a reliable source of citations and abstracts to economic research in over 400 books, journals, dissertations, and working papers.
@@ -83,7 +83,7 @@ best_bets:
     - hoovers database
     - hoover's
     - hoover
- ibis:
+  ibis:
     title: IBISWorld
     url: https://proxy-um.researchport.umd.edu/login?url=http://clients1.ibisworld.com/processlogin.aspx?user=NorthCarolinaState&pwd=ibisworld2008
     description: Industry market research, company research, business environment, and industry risk ratings
@@ -94,7 +94,7 @@ best_bets:
     - ibiz
     - ibizworld
     - ibiz world
- journalofpersonality:
+  journalofpersonality:
     title: Journal of Personality and Social Psychology
     url: https://proxy-um.researchport.umd.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=pdh&jid=PSP&site=ehost-live
     description: Issues available from 1965 through to the present.
@@ -102,29 +102,29 @@ best_bets:
     - journal of personality and social psychology
     - personality and social psychology
     - 0022-3514
- jstor:
+  jstor:
     title: JSTOR
     url: https://proxy-um.researchport.umd.edu/login?url=http://www.jstor.org/
     keywords:
     - jstor
     - jstr
     - jstore
- newyorktimes:
+  newyorktimes:
     title: the New York Times
     url: https://proxy-um.researchport.umd.edu/login?url=https://search.proquest.com/publication/11561
-    description: 
+    description:
     keywords:
     - new york times
     - nyt
     - the new york times
     - ny times
     - nytimes
-    - 0362-4331 
+    - 0362-4331
     - 1542-667X
   nexis uni:
     title: Nexis Uni
     url: https://proxy-um.researchport.umd.edu/login?url=http://www.nexisuni.com
-    description: Nexis Uni (formerly LexisNexis Academic) provides fulltext to news, business and legal information.  Newspapers date back to the 1970's. 
+    description: Nexis Uni (formerly LexisNexis Academic) provides fulltext to news, business and legal information.  Newspapers date back to the 1970's.
     keywords:
     - lexis
     - nexis
@@ -148,14 +148,14 @@ best_bets:
     - nexisuni
     - nexus uni
     - nexusuni
- pubmed:
+  pubmed:
     title: PubMed
     url: https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?otool=umdcplib
     description: PubMed is the National Library of Medicine's Medline database that provides abstracts and indexing for biomedical journals published in the U.S. and in foreign countries.
     keywords:
     - pubmed
     - pub med
-psychinfo:
+  psychinfo:
     title: PsycINFO
     url: https://proxy-um.researchport.umd.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=psyh
     description: Search for journal articles, book chapters, books, and technical reports in the field of psychology
@@ -164,7 +164,7 @@ psychinfo:
     - psychinfo
     - psych info
     - psyc info
- printing:
+  printing:
     title: Copy, Print, and Scan
     url: https://www.lib.umd.edu/services/copying-and-printing/home
     keywords:
@@ -181,14 +181,14 @@ psychinfo:
     - scanners
     - printer locations
     - print from my computer
- reload:
+  reload:
     title: Reload Button
     url: https://lib.guides.umd.edu/reload-button
     description: Reload web pages through the UMD Libraries proxy. Instant access to our subscriptions!
     keywords:
     - reload
     - reload button
-scananddeliver:
+  scananddeliver:
     title: Scan & Deliver
     url: https://www.lib.umd.edu/access/scan-deliver
     keywords:
@@ -197,7 +197,7 @@ scananddeliver:
     - document delivery
     - doc del
     - deliver
- webofscience:
+  webofscience:
     title: Web of Science Core Collection
     url: https://proxy-um.researchport.umd.edu/login?url=http://webofknowledge.com/WOS
     description: A multidisciplinary index covering the journal literature of the sciences.
@@ -217,7 +217,7 @@ scananddeliver:
     - web of sciences
     - web of sicence
     - web of scinces
- wallstreetjournal:
+  wallstreetjournal:
     title: The Wall Street Journal
     description: Available from 01/02/1984 to the present
     url: https://proxy-um.researchport.umd.edu/login?url=https://search.proquest.com/publication/10482
@@ -228,5 +228,3 @@ scananddeliver:
     - wsj
     - wallstreet journal
     - 0099-9660
-    
-    
