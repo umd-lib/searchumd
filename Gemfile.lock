@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/umd-lib/quick_search-database_finder_searcher.git
-  revision: 88d7e82fa627af062e4418648c935f537f664ab5
+  revision: 0cd5730f5c4a78c8dcad8a2d6ea0202250849ccd
   branch: develop
   specs:
     quick_search-database_finder_searcher (0.1.0)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git
-  revision: d28aae27124f15ae0b65e859df3e63156276fa97
+  revision: 9a0ecea535a8750aad9e1c6a4eeb89453a26d4f8
   branch: develop
   specs:
     quick_search-world_cat_discovery_api_searcher (0.1.0)
@@ -57,7 +57,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search.git
-  revision: bc379b3db2565bf6d0e9d6c744fdfe512434cab1
+  revision: ebf2d909327b4ed56c81467c21bdb513fd211408
   branch: umd-develop
   specs:
     quick_search-core (0.2.0)
@@ -187,7 +187,7 @@ GEM
       sass (>= 3.2.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    haml (5.1.0)
+    haml (5.1.1)
       temple (>= 0.8.0)
       tilt
     hamster (3.0.0)
@@ -264,7 +264,7 @@ GEM
     pg (0.18.4)
     promise (0.3.1)
     psych (3.1.0)
-    public_suffix (3.0.3)
+    public_suffix (3.1.0)
     puma (3.12.1)
     rack (2.0.7)
     rack-test (1.1.0)
