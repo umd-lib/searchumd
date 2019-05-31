@@ -1,4 +1,4 @@
-# Dockerfile for the generating Apache Nutch Docker image
+# Dockerfile for the generating Apache Solr Docker image
 #
 # To build:
 #
@@ -17,10 +17,10 @@ ENV SOLR_DIR=${SOLR_DIR}
 RUN cp -r ${SOLR_DIR}/server/solr/configsets/basic_configs ${SOLR_DIR}/server/solr/configsets/nutch && \
     rm ${SOLR_DIR}/server/solr/configsets/nutch/conf/managed-schema
 
-COPY docker_config/solr/conf/schema.xml ${SOLR_DIR}/server/solr/configsets/nutch/conf
+COPY docker_config/solr/conf/* ${SOLR_DIR}/server/solr/configsets/nutch/conf/
 
 RUN ${SOLR_DIR}/bin/solr start && \
-    ${SOLR_DIR}/bin/solr create -c nutch -d server/solr/configsets/nutch/conf/ &&\
+    ${SOLR_DIR}/bin/solr create -c nutch -d ${SOLR_DIR}/server/solr/configsets/nutch/conf/ &&\
     ${SOLR_DIR}/bin/solr stop
 
 ENTRYPOINT ["docker-entrypoint.sh"]
