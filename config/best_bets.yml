@@ -112,7 +112,7 @@ best_bets:
   newyorktimes:
     title: the New York Times
     url: https://proxy-um.researchport.umd.edu/login?url=https://search.proquest.com/publication/11561
-    description:
+    description: Provides citations, abstracts and full-text articles from the newspaper.
     keywords:
     - new york times
     - nyt
@@ -167,6 +167,7 @@ best_bets:
   printing:
     title: Copy, Print, and Scan
     url: https://www.lib.umd.edu/services/copying-and-printing/home
+    description: The UMD Libraries provide a variety of copy and print services for users.
     keywords:
     - print
     - printing
