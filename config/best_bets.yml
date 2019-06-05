@@ -96,6 +96,7 @@ best_bets:
   ill:
     title: Interlibrary Loan Services
     url: https://www.lib.umd.edu/access/ill
+    description: ILL provides materials in all formats (books, articles, A/V, etc) from our own libraries, and from libraries worldwide.
     keywords:
     - scan and deliver
     - scan & deliver
