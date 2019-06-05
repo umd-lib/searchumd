@@ -23,7 +23,6 @@ best_bets:
     - academic search primer
     - academic search ultimate
     - academic search
-
   acm:
     title: ACM Digital Library
     url: https://proxy-um.researchport.umd.edu/login?url=http://dl.acm.org
@@ -94,6 +93,18 @@ best_bets:
     - ibiz
     - ibizworld
     - ibiz world
+  ill:
+    title: Interlibrary Loan Services
+    url: https://www.lib.umd.edu/access/ill
+    keywords:
+    - scan and deliver
+    - scan & deliver
+    - document delivery
+    - doc del
+    - deliver
+    - ILL
+    - Interlibrary loan
+    - ill
   journalofpersonality:
     title: Journal of Personality and Social Psychology
     url: https://proxy-um.researchport.umd.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=pdh&jid=PSP&site=ehost-live
@@ -105,6 +116,7 @@ best_bets:
   jstor:
     title: JSTOR
     url: https://proxy-um.researchport.umd.edu/login?url=http://www.jstor.org/
+    description: Electronic archive of core journals in the humanities, social sciences, and sciences.
     keywords:
     - jstor
     - jstr
@@ -189,15 +201,13 @@ best_bets:
     keywords:
     - reload
     - reload button
-  scananddeliver:
-    title: Scan & Deliver
-    url: https://www.lib.umd.edu/access/scan-deliver
+  uborrow:
+    title: UBorrow
+    url: https://www.lib.umd.edu/access/uborrow
+    description: UBorrow enables you to search for and request print books and other items directly from Big Ten university libraries and the Center for Research Libraries.
     keywords:
-    - scan and deliver
-    - scan & deliver
-    - document delivery
-    - doc del
-    - deliver
+    - UBorrow
+    - uborrow
   webofscience:
     title: Web of Science Core Collection
     url: https://proxy-um.researchport.umd.edu/login?url=http://webofknowledge.com/WOS
