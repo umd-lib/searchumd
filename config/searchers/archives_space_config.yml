@@ -1,0 +1,56 @@
+# Configuration
+#
+# Replace the following placeholders with the correct values for
+# your installation.
+#
+# search_url: The URL for performing the search
+# loaded_link: URL to the 'native' interface
+# object_types: aspace object types to return. these are mapped to Solr types:
+# field queries
+# query_params: params to be passed to Solr
+# native_query_params: params to be passed to the loaded_link.
+
+defaults: &defaults
+  search_url: '<%= ENV['ARCHIVES_SPACE_SOLR_URL'] %>'
+  loaded_link: '<%= ENV['ARCHIVES_SPACE_URL'] %>/search'
+  no_results_link: '<%= ENV['ARCHIVES_SPACE_URL'] %>'
+  object_types:
+    - subject
+    - classification
+    - accession
+    - repository
+    - resource
+    - agent
+    - digital_object
+    - archival_object
+  query_params:
+    'q.op': AND
+    q:
+      - 'publish:(true)'
+      - 'types:(pui)' 
+    fq:
+      - '-exclude_by_default:true'
+      - 'publish:true'
+    rows: 3
+    wt: 'json'
+  native_query_params:
+    op: ['']
+    q: []
+    uft8: '✓'
+    limit: ''
+    field: ['']
+    from_year: ['']
+    to_year: ['']
+    commit: 'Search' 
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

@@ -30,64 +30,68 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-
-  lib_answers_search:
-    display_name: "FAQs from Ask Us!"
-    short_display_name: "FAQs from Ask Us!"
-    search_form_placeholder: "Search FAQs from Ask Us!"
-    module_callout: "Search FAQs from Ask Us!"
-    error_service_message: "searching FAQs from Ask Us!"
-    no_results_service_message: "a different search from FAQs from Ask Us!"
-    # no_results_link now configured in searcher configuration YAML file
-    no_results_link:
-
-  lib_guides_search:
-    display_name: "Research Guides"
-    short_display_name: "Research Guides"
-    search_form_placeholder: "Search Research Guides"
-    module_callout: "Search Research Guides"
-    error_service_message: "searching Research Guides"
-    no_results_service_message: "a different search from Research Guides"
+  archives_space_search:
     # no_results_link now configured in searcher configuration YAML file
     no_results_link:
 
   database_finder_search:
-    display_name: "Databases"
-    short_display_name: "Databases"
-    search_form_placeholder: "Search Databases"
-    module_callout: "Search Databases"
-    error_service_message: "searching Databases"
-    no_results_service_message: "a different search from Databases"
-    # no_results_link configured in searcher configuration YAML file
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
+
+  DRUM_search:
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
+
+  ebsco_discovery_service_api_search:
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
+
+  ebsco_discovery_service_api_article_search:
+    display_name: "EBSCO Discovery API Article"
+    short_display_name: "EBSCO Discovery API Article"
+    search_form_placeholder: "Search EBSCO Discovery API (Articles)"
+    module_callout: "Articles"
+    error_service_message: "searching EBSCO Discovery API (Articles)"
+    no_results_service_message: "a different search from EBSCO Discovery API (Articles)"
+    loaded_link:
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
+
+  fedora_search:
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
+
+  internet_archive_search:
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
+
+  lib_answers_search:
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
+
+  lib_guides_search:
+    # no_results_link now configured in searcher configuration YAML file
     no_results_link:
 
   library_website_search:
-    display_name: "Libraries' Website"
-    short_display_name: "Libraries' Website"
-    search_form_placeholder: "Search Libraries' Website"
-    module_callout: "Search Libraries' Website"
-    error_service_message: "searching Libraries' Website"
-    no_results_service_message: "a different search from Libraries' Website"
+    # no_results_link now configured in searcher configuration YAML file
+    no_results_link:
+
+  maryland_map_search:
     # no_results_link now configured in searcher configuration YAML file
     no_results_link:
 
   world_cat_discovery_api_search:
-    display_name: "Books and more"
-    short_display_name: "Books and more"
-    search_form_placeholder: "Search Books and more"
-    module_callout: "Search Books and more"
-    error_service_message: "searching Books and more"
-    no_results_service_message: "a different search for Books and more"
     # no_results_link now configured in searcher configuration YAML file
     no_results_link:
 
   world_cat_discovery_api_article_search:
-    display_name: "Articles"
-    short_display_name: "Articles"
+    display_name: "Worldcat Discovery API Article"
+    short_display_name: "Worldcat Discovery API Article"
     search_form_placeholder: "Search Worldcat Discovery API (Articles)"
     module_callout: "Articles"
     error_service_message: "searching Worldcat Discovery API (Articles)"
     no_results_service_message: "a different search from Worldcat Discovery API (Articles)"
     loaded_link:
+    # no_results_link now configured in searcher configuration YAML file
     no_results_link:

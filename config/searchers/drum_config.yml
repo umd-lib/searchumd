@@ -1,0 +1,28 @@
+# Configuration
+#
+# Replace the following placeholders with the correct values for
+# your installation.
+#
+# search_url: The URL for performing the search
+# native_url: Link to the 'native'/human interface
+# query_params => rpp: Number of results to display
+
+defaults: &defaults
+  search_url: '<%= ENV['DRUM_SITE_URL'] %>open-search/discover'
+  native_url: '<%= ENV['DRUM_SITE_URL'] %>discover'
+  no_results_link: '<%= ENV['DRUM_SITE_URL'] %>discover'
+  # Query params should be listed in "hash" format
+  query_params:
+    query: ''
+    rpp: 3
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

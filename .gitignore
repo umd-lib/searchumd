@@ -43,4 +43,7 @@ coverage
 # Ignore Bundler vendored files
 vendor/bundle
 
+# Ignore log from "faraday" gem
+faraday.log
+
 .DS_Store
