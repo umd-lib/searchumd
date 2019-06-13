@@ -185,8 +185,6 @@ This application provides the following Dockerfiles for generating Docker images
 for use in production:
 
 * Dockerfile - Generates image for the searchumd Rails application
-* Dockerfile-nginx - Generates image for the Nginx web server providing HTTPS
-    and port redirection.
 * Dockerfile-solr - Generates image for the Solr search application
 * Dockerfile-nutch - Generates image for Apache Nutch application with UMD
     custom configuration
@@ -320,7 +318,6 @@ they are what is expected (and because they will be used in future steps):
 
 ```
 > docker build --no-cache -t docker.lib.umd.edu/searchumd:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile .
-> docker build --no-cache -t docker.lib.umd.edu/searchumd-nginx:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile-nginx .
 > docker build --no-cache -t docker.lib.umd.edu/searchumd-nutch:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile-nutch .
 > docker build --no-cache -t docker.lib.umd.edu/searchumd-solr:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile-solr .
 ```
@@ -333,7 +330,6 @@ cache on a particular workstation.
 
 ```
 > docker push docker.lib.umd.edu/searchumd:${GIT_BRANCH}-${GIT_COMMIT_HASH}
-> docker push docker.lib.umd.edu/searchumd-nginx:${GIT_BRANCH}-${GIT_COMMIT_HASH}
 > docker push docker.lib.umd.edu/searchumd-nutch:${GIT_BRANCH}-${GIT_COMMIT_HASH}
 > docker push docker.lib.umd.edu/searchumd-solr:${GIT_BRANCH}-${GIT_COMMIT_HASH}
 ```
