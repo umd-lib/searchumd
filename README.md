@@ -279,10 +279,6 @@ kept in mind if there are any issues.
 > git push origin develop
 ```
 
-1.f) Examine the "searchumd/env_example" file, and compare it to the
-     "search-env/docker/env_example" file in this repository, making any
-     additions/deletions/changes as needed.
-
 #### 2) Build the Docker images for the various components
 
 Once the "searchumd" application is up to date, we need to build the Docker
