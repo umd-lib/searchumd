@@ -38,6 +38,10 @@
 # reject DBfinder URLs
 -^https?://(www\.)*lib\.umd\.edu/dbfinder
 
+# reject Plant Patents URLs (actual patents)
+-^https?://(www\.)*lib\.umd\.edu/plantpatents/id
+-^https?://(www\.)*lib\.umd\.edu/plantpatents/binaries
+
 # accept UMD Libraries URLs
 +^https?://(www\.)*lib\.umd\.edu
 
