@@ -42,6 +42,10 @@
 -^https?://(www\.)*lib\.umd\.edu/plantpatents/id
 -^https?://(www\.)*lib\.umd\.edu/plantpatents/binaries
 
+# reject anything under binaries/content, as we typically cannot parse it
+# TODO: Figure out why PDF parsing seems to always fail
+-^https?://(www\.)*lib\.umd\.edu/binaries/content
+
 # accept UMD Libraries URLs
 +^https?://(www\.)*lib\.umd\.edu
 
