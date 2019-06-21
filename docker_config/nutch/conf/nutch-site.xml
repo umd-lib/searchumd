@@ -89,4 +89,23 @@
     metadata to generate fields.
     </description>
   </property>
+
+  <property>
+    <name>http.content.limit</name>
+    <value>-1</value>
+    <description>The length limit for downloaded content using the http://
+    protocol, in bytes. If this value is nonnegative (>=0), content longer
+    than it will be truncated; otherwise, no truncation at all. Do not
+    confuse this setting with the file.content.limit setting.
+    </description>
+  </property>
+
+  <property>
+    <name>db.max.outlinks.per.page</name>
+    <value>-1</value>
+    <description>The maximum number of outlinks that we'll process for a page.
+    If this value is nonnegative (>=0), at most db.max.outlinks.per.page outlinks
+    will be processed for a page; otherwise, all outlinks will be processed.
+    </description>
+  </property>
 </configuration>
