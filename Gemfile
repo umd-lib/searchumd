@@ -68,8 +68,8 @@ gem 'quick_search-drum_searcher',
     branch: 'develop'
 
 gem 'quick_search-ebsco_discovery_service_api_searcher',
-    git: 'https://github.com/umd-lib/quick_search-ebsco_discovery_service_api_searcher.git',
-    branch: 'develop'
+    git: 'https://github.com/dsteelma-umd/quick_search-ebsco_discovery_service_api_searcher.git',
+    branch: 'feature/LIBSEARCH-74'
 
 gem 'quick_search-fedora_searcher',
     git: 'https://github.com/umd-lib/quick_search-fedora_searcher.git',
@@ -96,8 +96,12 @@ gem 'quick_search-maryland_map_searcher',
     branch: 'develop'
 
 gem 'quick_search-world_cat_discovery_api_searcher',
-    git: 'https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git',
-    branch: 'develop'
+    git: 'https://github.com/dsteelma-umd/quick_search-world_cat_discovery_api_searcher.git',
+    branch: 'feature/LIBSEARCH-74'
+
+gem 'umd_open_url',
+    git: 'https://github.com/dsteelma-umd/umd_open_url',
+    branch: 'feature/LIBSEARCH-74'
 
 # Dependencies for the quick_search-ebsco_discovery_service_api_searcher initialization script
 gem 'ebsco-eds', '~> 1.0.7'

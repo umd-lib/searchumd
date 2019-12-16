@@ -1,4 +1,33 @@
 GIT
+  remote: https://github.com/dsteelma-umd/quick_search-ebsco_discovery_service_api_searcher.git
+  revision: 0d99284b5d2920fa8fe56cc64d54e2b592d7351c
+  branch: feature/LIBSEARCH-74
+  specs:
+    quick_search-ebsco_discovery_service_api_searcher (0.1.0)
+      ebsco-eds (~> 1.0.7)
+      quick_search-core (~> 0)
+      umd_open_url
+
+GIT
+  remote: https://github.com/dsteelma-umd/quick_search-world_cat_discovery_api_searcher.git
+  revision: 967f71497b1eccd3babf6566184a9f46e7f17f2e
+  branch: feature/LIBSEARCH-74
+  specs:
+    quick_search-world_cat_discovery_api_searcher (0.1.0)
+      quick_search-core (~> 0)
+      umd_open_url
+      worldcat-discovery (~> 1.2.0.2)
+
+GIT
+  remote: https://github.com/dsteelma-umd/umd_open_url
+  revision: 557d9e85a8ed6ca70303ec48bf209b0fda23cffc
+  branch: feature/LIBSEARCH-74
+  specs:
+    umd_open_url (1.0.0.rc1)
+      faraday
+      rack
+
+GIT
   remote: https://github.com/umd-lib/quick_search-archives_space_searcher.git
   revision: e9b1b6b4afe2edc1f085d235401778f349f9bcd6
   branch: develop
@@ -21,15 +50,6 @@ GIT
   specs:
     quick_search-drum_searcher (0.1.0)
       nokogiri
-      quick_search-core (~> 0)
-
-GIT
-  remote: https://github.com/umd-lib/quick_search-ebsco_discovery_service_api_searcher.git
-  revision: 4743f95cf0040b119c3c9aff417bd16b549de2f5
-  branch: develop
-  specs:
-    quick_search-ebsco_discovery_service_api_searcher (0.1.0)
-      ebsco-eds (~> 1.0.7)
       quick_search-core (~> 0)
 
 GIT
@@ -95,15 +115,6 @@ GIT
       quick_search-core (~> 0.1)
       sass (~> 3.2)
       sass-rails (~> 5.0)
-
-GIT
-  remote: https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git
-  revision: c385f96f2a88984020b947e6b75ee39d3262eb1f
-  branch: develop
-  specs:
-    quick_search-world_cat_discovery_api_searcher (0.1.0)
-      quick_search-core (~> 0)
-      worldcat-discovery (~> 1.2.0.2)
 
 GIT
   remote: https://github.com/umd-lib/quick_search.git
@@ -544,6 +555,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
+  umd_open_url!
   web-console (>= 3.3.0)
   worldcat-discovery (>= 1.2.0.1)
 

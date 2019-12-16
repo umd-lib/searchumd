@@ -28,6 +28,10 @@ defaults: &defaults
   no_results_link: "https://umaryland.on.worldcat.org/discovery"
   doi_link: "http://proxy-um.researchport.umd.edu/login?url="
 
+  # OpenURL resolver service properties
+  open_url_resolver_service_link: https://worldcat.org/webservices/kb/openurl/resolve
+  world_cat_open_url_wskey:  <%= ENV['WORLD_CAT_OPENURL_RESOLVER_WSKEY'] %>
+
 development:
   <<: *defaults
 
