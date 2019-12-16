@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/dsteelma-umd/quick_search-ebsco_discovery_service_api_searcher.git
-  revision: 0d99284b5d2920fa8fe56cc64d54e2b592d7351c
+  revision: 2b52597c6d7e800b2643bd20913e47c3ab70a28b
   branch: feature/LIBSEARCH-74
   specs:
     quick_search-ebsco_discovery_service_api_searcher (0.1.0)
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/dsteelma-umd/quick_search-world_cat_discovery_api_searcher.git
-  revision: 967f71497b1eccd3babf6566184a9f46e7f17f2e
+  revision: 536778eff1dc52d3ce3779cfba16a93bf0949fd6
   branch: feature/LIBSEARCH-74
   specs:
     quick_search-world_cat_discovery_api_searcher (0.1.0)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/dsteelma-umd/umd_open_url
-  revision: 557d9e85a8ed6ca70303ec48bf209b0fda23cffc
+  revision: bec6f0c26e71f35be34b253617be0d439a968439
   branch: feature/LIBSEARCH-74
   specs:
     umd_open_url (1.0.0.rc1)
