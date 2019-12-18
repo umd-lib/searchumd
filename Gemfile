@@ -6,9 +6,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # Ruby version should be controlled by .ruby-version file
 # ruby '2.5.0'
 
-# quick_search-world_cat_discovery_api_searcher - Needed until upgrade to Ruby v2.4 or later
-gem 'rdf', '~> 3.0.12'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4'
 # Use sqlite3 as the database for Active Record
@@ -114,6 +111,8 @@ gem 'ebsco-eds', '~> 1.0.7'
 # Dependencies for the quick_search-world_cat_discovery_api_searcher initialization script
 gem 'oclc-auth', '>=1.0.0'
 gem 'worldcat-discovery', '>=1.2.0.1'
+gem 'rdf'
+gem 'rdf-vocab'
 
 # -END Inserted by QuickSearch-
 
