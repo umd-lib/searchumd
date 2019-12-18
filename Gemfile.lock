@@ -1,33 +1,4 @@
 GIT
-  remote: https://github.com/dsteelma-umd/quick_search-ebsco_discovery_service_api_searcher.git
-  revision: 2b52597c6d7e800b2643bd20913e47c3ab70a28b
-  branch: feature/LIBSEARCH-74
-  specs:
-    quick_search-ebsco_discovery_service_api_searcher (0.1.0)
-      ebsco-eds (~> 1.0.7)
-      quick_search-core (~> 0)
-      umd_open_url
-
-GIT
-  remote: https://github.com/dsteelma-umd/quick_search-world_cat_discovery_api_searcher.git
-  revision: 536778eff1dc52d3ce3779cfba16a93bf0949fd6
-  branch: feature/LIBSEARCH-74
-  specs:
-    quick_search-world_cat_discovery_api_searcher (0.1.0)
-      quick_search-core (~> 0)
-      umd_open_url
-      worldcat-discovery (~> 1.2.0.2)
-
-GIT
-  remote: https://github.com/dsteelma-umd/umd_open_url
-  revision: bec6f0c26e71f35be34b253617be0d439a968439
-  branch: feature/LIBSEARCH-74
-  specs:
-    umd_open_url (1.0.0.rc1)
-      faraday
-      rack
-
-GIT
   remote: https://github.com/umd-lib/quick_search-archives_space_searcher.git
   revision: e9b1b6b4afe2edc1f085d235401778f349f9bcd6
   branch: develop
@@ -50,6 +21,15 @@ GIT
   specs:
     quick_search-drum_searcher (0.1.0)
       nokogiri
+      quick_search-core (~> 0)
+
+GIT
+  remote: https://github.com/umd-lib/quick_search-ebsco_discovery_service_api_searcher.git
+  revision: 4743f95cf0040b119c3c9aff417bd16b549de2f5
+  branch: develop
+  specs:
+    quick_search-ebsco_discovery_service_api_searcher (0.1.0)
+      ebsco-eds (~> 1.0.7)
       quick_search-core (~> 0)
 
 GIT
@@ -117,6 +97,15 @@ GIT
       sass-rails (~> 5.0)
 
 GIT
+  remote: https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git
+  revision: c385f96f2a88984020b947e6b75ee39d3262eb1f
+  branch: develop
+  specs:
+    quick_search-world_cat_discovery_api_searcher (0.1.0)
+      quick_search-core (~> 0)
+      worldcat-discovery (~> 1.2.0.2)
+
+GIT
   remote: https://github.com/umd-lib/quick_search.git
   revision: c8bc035f282f0bb8384f31db584ef9a59a2560ce
   branch: umd-develop
@@ -130,6 +119,15 @@ GIT
       mysql2
       nokogiri
       rails (~> 5.2)
+
+GIT
+  remote: https://github.com/umd-lib/umd_open_url
+  revision: 3acdcf2ca94463968f0f652893ae1942274f54b7
+  branch: develop
+  specs:
+    umd_open_url (0.1.0)
+      faraday
+      rack
 
 GEM
   remote: https://maven.lib.umd.edu/nexus/content/groups/umd-ruby-gems-repository-group/
