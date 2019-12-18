@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-ebsco_discovery_service_api_searcher.git
-  revision: 6189338276cbf8c803f45a388d72e4b4b5e826bc
+  revision: 11d5983698756961cd2113b6ea2673b9fdbd9f14
   branch: develop
   specs:
     quick_search-ebsco_discovery_service_api_searcher (0.1.0)
