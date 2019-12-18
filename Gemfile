@@ -99,6 +99,10 @@ gem 'quick_search-world_cat_discovery_api_searcher',
     git: 'https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git',
     branch: 'develop'
 
+gem 'umd_open_url',
+    git: 'https://github.com/umd-lib/umd_open_url',
+    branch: 'develop'
+
 # Dependencies for the quick_search-ebsco_discovery_service_api_searcher initialization script
 gem 'ebsco-eds', '~> 1.0.7'
 

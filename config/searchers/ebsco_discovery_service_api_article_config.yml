@@ -27,6 +27,13 @@ defaults: &defaults
   doi_link: 'https://proxy-um.researchport.umd.edu/login?url=https://doi.org/'
   no_results_link: 'https://proxy-um.researchport.umd.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live'
 
+  # Citation Finder URL
+  citation_finder_link: https://umaryland.on.worldcat.org/atoztitles/link
+
+  # OpenURL resolver service properties
+  open_url_resolver_service_link: https://worldcat.org/webservices/kb/openurl/resolve
+  world_cat_open_url_wskey:  <%= ENV['WORLD_CAT_OPEN_URL_RESOLVER_WSKEY'] %>
+
 development:
   <<: *defaults
 
