@@ -152,7 +152,8 @@ group :test do
   gem 'webdrivers'
   gem 'simplecov', '~> 0.15.1', require: false
   gem 'simplecov-rcov', '~> 0.2.3', require: false
-  gem 'minitest-reporters', '~> 1.1.19'
+  gem 'minitest'
+  gem 'minitest-reporters'
 end
 
 group :production do
