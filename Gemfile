@@ -141,7 +141,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   # Code analysis tools
-  gem 'rubocop', '= 0.66.0', require: false
+  gem 'rubocop', '= 0.77.0', require: false
+  gem 'rubocop-rails', '= 2.4.0', require: false
   gem 'rubocop-checkstyle_formatter', '~> 0.4.0', require: false
 end
 
