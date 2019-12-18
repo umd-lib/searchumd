@@ -17,8 +17,7 @@ gem 'sqlite3', '~> 1.3.6'
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 # quick_search-umd_theme - Needed until upgrade to Ruby v2.4 or later
-gem 'sass-rails', '= 5.0.7'
-# gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -150,9 +149,7 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  gem 'webdrivers'
   gem 'simplecov', '~> 0.15.1', require: false
   gem 'simplecov-rcov', '~> 0.2.3', require: false
   gem 'minitest-reporters', '~> 1.1.19'
