@@ -33,7 +33,7 @@ defaults: &defaults
 
   # OpenURL resolver service properties
   open_url_resolver_service_link: https://worldcat.org/webservices/kb/openurl/resolve
-  world_cat_open_url_wskey:  <%= ENV['WORLD_CAT_OPENURL_RESOLVER_WSKEY'] %>
+  world_cat_open_url_wskey:  <%= ENV['WORLD_CAT_OPEN_URL_RESOLVER_WSKEY'] %>
 
 development:
   <<: *defaults

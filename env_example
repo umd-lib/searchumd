@@ -95,4 +95,4 @@ WORLD_CAT_DISCOVERY_API_SECRET=
 # --- config/searchers/world_cat_discovery_api_article_config.yml
 # --- config/searchers/ebsco_discovery_service_api_article_config.yml
 # The WorldCat Knowledge Base API OpenURL Resolve wskey
-WORLD_CAT_OPENURL_RESOLVER_WSKEY=
+WORLD_CAT_OPEN_URL_RESOLVER_WSKEY=
