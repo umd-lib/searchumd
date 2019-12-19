@@ -1,3 +1,6 @@
+require:
+  - rubocop-rails
+
 # Enables Rails cops
 Rails:
   Enabled: true
@@ -17,7 +20,7 @@ AllCops:
     - 'lib/**/*'
     - 'db/seeds.rb'
 
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.6
   TargetRailsVersion: 5.2
 
 # Don't require gems in Gemfile to be in alphabetical order.
@@ -65,4 +68,8 @@ Style/ClassAndModuleChildren:
     - 'test/test_helper.rb'
 
 Layout/IndentationConsistency:
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods
+
+Rails/FilePath:
+  Exclude:
+    - 'config/environments/development.rb'

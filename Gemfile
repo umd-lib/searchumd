@@ -7,13 +7,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # ruby '2.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.6'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
+# quick_search-umd_theme - Needed until upgrade to Ruby v2.4 or later
 gem 'sass-rails', '~> 5.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -109,6 +111,8 @@ gem 'ebsco-eds', '~> 1.0.7'
 # Dependencies for the quick_search-world_cat_discovery_api_searcher initialization script
 gem 'oclc-auth', '>=1.0.0'
 gem 'worldcat-discovery', '>=1.2.0.1'
+gem 'rdf'
+gem 'rdf-vocab'
 
 # -END Inserted by QuickSearch-
 
@@ -137,19 +141,19 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   # Code analysis tools
-  gem 'rubocop', '= 0.66.0', require: false
+  gem 'rubocop', '= 0.77.0', require: false
+  gem 'rubocop-rails', '= 2.4.0', require: false
   gem 'rubocop-checkstyle_formatter', '~> 0.4.0', require: false
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  gem 'webdrivers'
   gem 'simplecov', '~> 0.15.1', require: false
   gem 'simplecov-rcov', '~> 0.2.3', require: false
-  gem 'minitest-reporters', '~> 1.1.19'
+  gem 'minitest'
+  gem 'minitest-reporters'
 end
 
 group :production do

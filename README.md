@@ -238,6 +238,7 @@ resets the "Gemfile.lock" to the latest commits for the searchers:
 > bundle update quick_search-library_website_searcher
 > bundle update quick_search-maryland_map_searcher
 > bundle update quick_search-world_cat_discovery_api_searcher
+> bundle update umd_open_url
 > bundle update quick_search-umd_theme
 ```
 
