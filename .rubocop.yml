@@ -37,7 +37,7 @@ Style/PercentLiteralDelimiters:
     - config/spring.rb
 
 # Increase max allowed line length
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
 
 Metrics/ClassLength:
