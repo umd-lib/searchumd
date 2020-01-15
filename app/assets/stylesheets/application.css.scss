@@ -1,0 +1,7 @@
+@import "quick_search";
+
+.st-default-search-input {
+  // Forcibly unsetting the background, so we won't get a "search"
+  // icon that interferes with the other CSS
+  background: unset !important;
+}

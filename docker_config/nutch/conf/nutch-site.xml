@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+  <property>
+    <name>plugin.includes</name>
+    <value>protocol-http|urlfilter-(regex|validator)|parse-(html|tika)|index-(basic|anchor|metadata)|indexer-solr|scoring-opic|urlnormalizer-(pass|regex|basic)|umd-parsefilter-jsonld|umd-index-title</value>
+    <description>
+      Regular expression naming plugin directory names to
+      include.  Any plugin not matching this expression is excluded.
+      In any case you need at least include the nutch-extensionpoints plugin. By
+      default Nutch includes crawling just HTML and plain text via HTTP,
+      and basic indexing and search plugins.
+    </description>
+  </property>
+
+  <property>
+    <name>http.agent.name</name>
+    <value>http.umd_libraries.umdsearch_crawler</value>
+  </property>
+  <property>
+    <name>http.agent.description</name>
+    <value>Nutch Crawler for umdsearch</value>
+    <description>Further description of our bot- this text is used in
+    the User-Agent header.  It appears in parenthesis after the agent name.
+    </description>
+  </property>
+  <property>
+    <name>http.agent.url</name>
+    <value>https://www.lib.umd.edu/</value>
+    <description>A URL to advertise in the User-Agent header.  This will
+     appear in parenthesis after the agent name. Custom dictates that this
+     should be a URL of a page explaining the purpose and behavior of this
+     crawler.
+    </description>
+  </property>
+  <property>
+    <name>http.agent.email</name>
+    <value>lib-ssdr@umd.edu</value>
+    <description>An email address to advertise in the HTTP 'From' request
+     header and User-Agent header. A good practice is to mangle this
+     address (e.g. 'info at example dot com') to avoid spamming.
+    </description>
+  </property>
+  <property>
+    <name>http.agent.version</name>
+    <value>Nutch-1.14</value>
+    <description>A version string to advertise in the User-Agent
+     header.</description>
+  </property>
+  <property>
+    <name>linkdb.ignore.internal.links</name>
+    <value>false</value>
+    <description>If true, when adding new links to a page, links from
+      the same host are ignored.  This is an effective way to limit the
+      size of the link database, keeping only the highest quality
+      links.
+    </description>
+  </property>
+  <property>
+    <name>http.redirect.max</name>
+    <value>1</value>
+    <description>The maximum number of redirects the fetcher will follow when
+    trying to fetch a page. If set to negative or 0, fetcher won't immediately
+    follow redirected URLs, instead it will record them for later fetching.
+    </description>
+  </property>
+  <property>
+    <name>db.fetch.interval.default</name>
+    <value>86400</value>
+    <description>The default number of seconds between re-fetches of a page (30 days).
+    </description>
+  </property>
+  <property>
+    <name>fetcher.server.delay</name>
+    <value>1.0</value>
+    <description>The number of seconds the fetcher will delay between
+     successive requests to the same server. Note that this might get
+     overridden by a Crawl-Delay from a robots.txt and is used ONLY if
+     fetcher.threads.per.queue is set to 1.
+     </description>
+  </property>
+  <property>
+    <name>index.content.md</name>
+    <value>documentContent</value>
+    <description>Comma-separated list of keys to be taken from the content
+    metadata to generate fields.
+    </description>
+  </property>
+
+  <property>
+    <name>http.content.limit</name>
+    <value>-1</value>
+    <description>The length limit for downloaded content using the http://
+    protocol, in bytes. If this value is nonnegative (>=0), content longer
+    than it will be truncated; otherwise, no truncation at all. Do not
+    confuse this setting with the file.content.limit setting.
+    </description>
+  </property>
+
+  <property>
+    <name>db.max.outlinks.per.page</name>
+    <value>-1</value>
+    <description>The maximum number of outlinks that we'll process for a page.
+    If this value is nonnegative (>=0), at most db.max.outlinks.per.page outlinks
+    will be processed for a page; otherwise, all outlinks will be processed.
+    </description>
+  </property>
+</configuration>

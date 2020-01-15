@@ -1,0 +1,75 @@
+require:
+  - rubocop-rails
+
+# Enables Rails cops
+Rails:
+  Enabled: true
+
+inherit_mode:
+  merge:
+    - Include
+
+# Exclude auto-generated files
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'config/initializers/*'
+    - 'config/application.rb'
+    - 'db/schema.rb'
+    - 'db/migrate/*'
+    - 'lib/**/*'
+    - 'db/seeds.rb'
+
+  TargetRubyVersion: 2.6
+  TargetRailsVersion: 5.2
+
+# Don't require gems in Gemfile to be in alphabetical order.
+Bundler/OrderedGems:
+  Enabled: false
+
+# Exclude the following because they are largely controlled by Rails
+Style/StringLiterals:
+  Exclude:
+    - config/puma.rb
+
+Style/PercentLiteralDelimiters:
+  Exclude:
+    - config/spring.rb
+
+# Increase max allowed line length
+Layout/LineLength:
+  Max: 120
+
+Metrics/ClassLength:
+  Exclude:
+    - 'test/**/*'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'test/**/*'
+
+Metrics/ModuleLength:
+  Exclude:
+    - 'test/**/*'
+
+# The following configuration exclude checks that seem
+# silly, or conflict with the way Rails naturally does
+# things.
+Style/Documentation:
+  Exclude:
+    - 'app/controllers/*_controller.rb'
+    - 'app/helpers/*_helper.rb'
+    - 'test/test_helper.rb'
+    - 'test/controllers/*_controller_test.rb'
+    - 'test/helpers/*_helper_test.rb'
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/test_helper.rb'
+
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
+Rails/FilePath:
+  Exclude:
+    - 'config/environments/development.rb'
