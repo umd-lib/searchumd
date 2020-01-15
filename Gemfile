@@ -47,7 +47,9 @@ gem 'jquery-rails'
 # dotenv - For storing production configuration parameters
 gem 'dotenv-rails', '~> 2.2.1'
 
-gem 'quick_search-core', git: 'https://github.com/umd-lib/quick_search.git', branch: 'umd-develop'
+gem 'quick_search-core',
+    git: 'https://github.com/umd-lib/quick_search.git',
+    tag: '0.2.0.1'
 
 # -Inserted by QuickSearch-
 
@@ -59,51 +61,51 @@ gem 'quick_search-core', git: 'https://github.com/umd-lib/quick_search.git', bra
 
 gem 'quick_search-archives_space_searcher',
     git: 'https://github.com/umd-lib/quick_search-archives_space_searcher.git',
-    branch: 'develop'
+    tag: '1.0.0'
 
 gem 'quick_search-database_finder_searcher',
     git: 'https://github.com/umd-lib/quick_search-database_finder_searcher.git',
-    branch: 'develop'
+    tag: '1.0.0'
 
 gem 'quick_search-drum_searcher',
     git: 'https://github.com/umd-lib/quick_search-drum_searcher.git',
-    branch: 'develop'
+    tag: '1.0.0'
 
 gem 'quick_search-ebsco_discovery_service_api_searcher',
     git: 'https://github.com/umd-lib/quick_search-ebsco_discovery_service_api_searcher.git',
-    branch: 'develop'
+    tag: '1.0.0'
 
 gem 'quick_search-fedora_searcher',
     git: 'https://github.com/umd-lib/quick_search-fedora_searcher.git',
-    branch: 'develop'
+    tag: '1.0.0'
 
 gem 'quick_search-internet_archive_searcher',
     git: 'https://github.com/umd-lib/quick_search-internet_archive_searcher',
-    branch: 'develop'
+    tag: '1.0.0'
 
 gem 'quick_search-lib_answers_searcher',
     git: 'https://github.com/umd-lib/quick_search-lib_answers_searcher.git',
-    branch: 'develop'
+    tag: '1.0.0'
 
 gem 'quick_search-lib_guides_searcher',
     git: 'https://github.com/umd-lib/quick_search-lib_guides_searcher.git',
-    branch: 'develop'
+    tag: '1.0.0'
 
 gem 'quick_search-library_website_searcher',
     git: 'https://github.com/umd-lib/quick_search-library_website_searcher.git',
-    branch: 'develop'
+    tag: '1.0.0'
 
 gem 'quick_search-maryland_map_searcher',
     git: 'https://github.com/umd-lib/quick_search-maryland_map_searcher.git',
-    branch: 'develop'
+    tag: '1.0.0'
 
 gem 'quick_search-world_cat_discovery_api_searcher',
     git: 'https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git',
-    branch: 'develop'
+    tag: '1.0.0'
 
 gem 'umd_open_url',
     git: 'https://github.com/umd-lib/umd_open_url',
-    branch: 'develop'
+    tag: '1.0.0'
 
 # Dependencies for the quick_search-ebsco_discovery_service_api_searcher initialization script
 gem 'ebsco-eds', '~> 1.0.7'
@@ -123,7 +125,7 @@ gem 'rdf-vocab'
 # Remove the following if you want to use a different theme
 
 gem 'quick_search-umd_theme',
-    git: 'https://github.com/umd-lib/quick_search-umd_theme.git', branch: 'develop'
+    git: 'https://github.com/umd-lib/quick_search-umd_theme.git', tag: '1.0.0'
 
 # END -Inserted by QuickSearch-
 

@@ -1,94 +1,94 @@
 GIT
   remote: https://github.com/umd-lib/quick_search-archives_space_searcher.git
-  revision: e9b1b6b4afe2edc1f085d235401778f349f9bcd6
-  branch: develop
+  revision: 7817ba3eabb6756a5612aba4faf2b97f958dcac4
+  tag: 1.0.0
   specs:
-    quick_search-archives_space_searcher (0.1.0)
+    quick_search-archives_space_searcher (1.0.0)
       quick_search-core (~> 0)
 
 GIT
   remote: https://github.com/umd-lib/quick_search-database_finder_searcher.git
-  revision: 60295f519ea914c0b78579364c9010f1b77cf026
-  branch: develop
+  revision: d36343a25947b9ea9db91031ee7564b10752948a
+  tag: 1.0.0
   specs:
-    quick_search-database_finder_searcher (0.1.0)
+    quick_search-database_finder_searcher (1.0.0)
       quick_search-core (~> 0)
 
 GIT
   remote: https://github.com/umd-lib/quick_search-drum_searcher.git
-  revision: fea4750604a1d763a199d4eee5076d85d3606f29
-  branch: develop
+  revision: 7fe4835d984f7f1f254422b776b7e34f9d66b8cf
+  tag: 1.0.0
   specs:
-    quick_search-drum_searcher (0.1.0)
+    quick_search-drum_searcher (1.0.0)
       nokogiri
       quick_search-core (~> 0)
 
 GIT
   remote: https://github.com/umd-lib/quick_search-ebsco_discovery_service_api_searcher.git
-  revision: 11d5983698756961cd2113b6ea2673b9fdbd9f14
-  branch: develop
+  revision: 81f355744fd891ca88eada05b44abcab903570af
+  tag: 1.0.0
   specs:
-    quick_search-ebsco_discovery_service_api_searcher (0.1.0)
+    quick_search-ebsco_discovery_service_api_searcher (1.0.0)
       ebsco-eds (~> 1.0.7)
       quick_search-core (~> 0)
       umd_open_url
 
 GIT
   remote: https://github.com/umd-lib/quick_search-fedora_searcher.git
-  revision: 474df6d0891c51481dfed70090ab494359fb3c32
-  branch: develop
+  revision: 10a22d42e1feee6f5710ce87482c175732797e2e
+  tag: 1.0.0
   specs:
-    quick_search-fedora_searcher (0.1.0)
+    quick_search-fedora_searcher (1.0.0)
       quick_search-core (~> 0)
 
 GIT
   remote: https://github.com/umd-lib/quick_search-internet_archive_searcher
-  revision: 7c9d47672707cee5782022783bc51837f049b922
-  branch: develop
+  revision: fac5695ab95ff7e01afc4593573c5feac0524486
+  tag: 1.0.0
   specs:
-    quick_search-internet_archive_searcher (0.1.0)
+    quick_search-internet_archive_searcher (1.0.0)
       quick_search-core (~> 0)
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_answers_searcher.git
-  revision: 82fd9c8cadc389bd6c634409144e0df15045cd8f
-  branch: develop
+  revision: 27046ab389d885bc6a06dfff2e81f8bcb2986f33
+  tag: 1.0.0
   specs:
-    quick_search-lib_answers_searcher (0.1.0)
+    quick_search-lib_answers_searcher (1.0.0)
       quick_search-core (~> 0)
 
 GIT
   remote: https://github.com/umd-lib/quick_search-lib_guides_searcher.git
-  revision: d5fde515196c78045a219983d89320f354248c7e
-  branch: develop
+  revision: 5fa082c716d41258ffb22960f406db63c70e6e38
+  tag: 1.0.0
   specs:
-    quick_search-lib_guides_searcher (0.1.0)
+    quick_search-lib_guides_searcher (1.0.0)
       quick_search-core (~> 0)
 
 GIT
   remote: https://github.com/umd-lib/quick_search-library_website_searcher.git
-  revision: 959f48e209eba1aa09afc998a8521ccdb7d31469
-  branch: develop
+  revision: 2bf2059ed63a301e554a4efeb01abecbb602dbe8
+  tag: 1.0.0
   specs:
-    quick_search-library_website_searcher (0.1.0)
+    quick_search-library_website_searcher (1.0.0)
       kaminari
       quick_search-core (~> 0)
       rsolr (= 2.2.1)
 
 GIT
   remote: https://github.com/umd-lib/quick_search-maryland_map_searcher.git
-  revision: a84e9580d3ae11bcfbdd33a9cc342dc12f9caeea
-  branch: develop
+  revision: fd5022df46230ec6e1ccf0dc6e1f808430d56124
+  tag: 1.0.0
   specs:
-    quick_search-maryland_map_searcher (0.1.0)
+    quick_search-maryland_map_searcher (1.0.0)
       quick_search-core (~> 0)
 
 GIT
   remote: https://github.com/umd-lib/quick_search-umd_theme.git
-  revision: 11a19c836cf925878d4f9d0eb51095e60968a708
-  branch: develop
+  revision: f19c35f604baa9d95a48a0d67f4ee53fa7e5ce4b
+  tag: 1.0.0
   specs:
-    quick_search-umd_theme (0.1.0)
+    quick_search-umd_theme (1.0.0)
       compass (~> 1.0)
       compass-rails (~> 3.0)
       font-awesome-sass (~> 4.4)
@@ -99,20 +99,20 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git
-  revision: e20d2e6774acc2b8df9f145cb330e933592871c8
-  branch: develop
+  revision: 443caaf228e32380311ca2d26a9c886ae301eaf6
+  tag: 1.0.0
   specs:
-    quick_search-world_cat_discovery_api_searcher (0.1.0)
+    quick_search-world_cat_discovery_api_searcher (1.0.0)
       quick_search-core (~> 0)
       umd_open_url
       worldcat-discovery (~> 1.2.0.2)
 
 GIT
   remote: https://github.com/umd-lib/quick_search.git
-  revision: c8bc035f282f0bb8384f31db584ef9a59a2560ce
-  branch: umd-develop
+  revision: dfeffb738263f11c112c48a7249b693df77068c3
+  tag: 0.2.0.1
   specs:
-    quick_search-core (0.2.0)
+    quick_search-core (0.2.0.1)
       fastimage
       httpclient
       jquery-rails (~> 4.3)
@@ -124,10 +124,10 @@ GIT
 
 GIT
   remote: https://github.com/umd-lib/umd_open_url
-  revision: 4e3fd15beeb103ac1007801a8b5a0c93523cca0b
-  branch: develop
+  revision: e165240d8d991c79ac884e7998720755e531e4e0
+  tag: 1.0.0
   specs:
-    umd_open_url (1.0.0.rc1)
+    umd_open_url (1.0.0)
       faraday
       rack
 
