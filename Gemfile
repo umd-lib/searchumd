@@ -89,7 +89,7 @@ gem 'quick_search-lib_answers_searcher',
 
 gem 'quick_search-lib_guides_searcher',
     git: 'https://github.com/umd-lib/quick_search-lib_guides_searcher.git',
-    tag: '1.0.0'
+    tag: '1.0.1'
 
 gem 'quick_search-library_website_searcher',
     git: 'https://github.com/umd-lib/quick_search-library_website_searcher.git',
