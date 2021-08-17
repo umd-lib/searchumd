@@ -25,69 +25,39 @@
     </div>
 </div>
 <div class="quicksearch-ga-click-tracking">
-    <div class="row articles-catalog">
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@archives_space, 'archives_space') %>
-      </div>
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@database_finder, 'database_finder') %>
-      </div>
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@DRUM, 'DRUM') %>
-      </div>
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@ebsco_discovery_service_api, 'ebsco_discovery_service_api') %>
-      </div>
-      <hr>
+  <div class="row articles-catalog">
+    <div class="small-12 medium-3 columns catalog module">
+      <%= render_module(@database_finder, 'database_finder') %>
     </div>
-    <div class="row articles-catalog">
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@ebsco_discovery_service_api_article, 'ebsco_discovery_service_api_article') %>
-      </div>
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@fedora, 'fedora') %>
-      </div>
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@internet_archive, 'internet_archive') %>
-      </div>
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@lib_guides, 'lib_guides') %>
-      </div>
-      <hr>
+    <div class="small-12 medium-3 columns catalog module">
+      <%= render_module(@lib_guides, 'lib_guides') %>
     </div>
-    <div class="row articles-catalog">
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@lib_answers, 'lib_answers') %>
-      </div>
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@library_website, 'library_website') %>
-      </div>
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@maryland_map, 'maryland_map') %>
-      </div>
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@world_cat_discovery_api, 'world_cat_discovery_api') %>
-      </div>
-      <hr>
+    <div class="small-12 medium-3 columns catalog module">
+      <%= render_module(@lib_answers, 'lib_answers') %>
     </div>
-    <div class="row articles-catalog">
-      <div class="small-12 medium-3 columns catalog module">
-        <%= render_module(@world_cat_discovery_api_article, 'world_cat_discovery_api_article') %>
-      </div>
-      <hr>
+    <hr>
+  </div>
+  <div class="row articles-catalog">
+    <div class="small-12 medium-3 columns catalog module">
+      <%= render_module(@world_cat_discovery_api, 'world_cat_discovery_api') %>
     </div>
-    <div class="row website-faq">
-        <div class="small-12 columns"><h4 class='section-description'>Information About the Libraries</h4></div>
+    <div class="small-12 medium-3 columns catalog module">
+      <%= render_module(@world_cat_discovery_api_article, 'world_cat_discovery_api_article') %>
     </div>
+    <hr>
+  </div>
+  <div class="row website-faq">
+    <div class="small-12 columns"><h4 class='section-description'>Information About the Libraries</h4></div>
+  </div>
 
-    <div class="row">
-        <div class="small-12 columns panel">
-            <div class="row">
-                <div id="related-topics" class="hidden small-12 medium-7 columns module related-topics"></div>
-                <div id="more-options" class="small-12 medium-5 columns more-options">
-                    <%= render partial: 'layouts/quick_search/more_options' %>
-                </div>
-            </div>
+  <div class="row">
+    <div class="small-12 columns panel">
+      <div class="row">
+        <div id="related-topics" class="hidden small-12 medium-7 columns module related-topics"></div>
+        <div id="more-options" class="small-12 medium-5 columns more-options">
+          <%= render partial: 'layouts/quick_search/more_options' %>
         </div>
+      </div>
     </div>
+  </div>
 </div>
