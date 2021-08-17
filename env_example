@@ -65,3 +65,17 @@ WORLD_CAT_DISCOVERY_API_SECRET=
 # --- config/searchers/world_cat_discovery_api_article_config.yml
 # The WorldCat Knowledge Base API OpenURL Resolve wskey
 WORLD_CAT_OPEN_URL_RESOLVER_WSKEY=
+
+# --- lib_guides_database_config.yml
+# RFC 6570 URI template for the LibGuides "API" search endpoint. The first
+# variable in the template will be set to the user's current query when executing
+# a search. Any additional variables will be ignored.
+LIB_GUIDES_DATABASE_QUERY_TEMPLATE=
+
+# RFC 6570 URI template for the LibGuides search page. The first variable in the
+# template will be set to the user's current query when executing a search. Any
+# additional variables will be ignored.
+LIB_GUIDES_DATABASE_LOADED_LINK_TEMPLATE=
+
+# URL to link to when there are no search results for the user's current query.
+LIB_GUIDES_DATABASE_NO_RESULTS_LINK=

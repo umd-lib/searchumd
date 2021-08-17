@@ -15,6 +15,16 @@ GIT
       quick_search-core (~> 0)
 
 GIT
+  remote: https://github.com/umd-lib/quick_search-lib_guides_database_searcher.git
+  revision: 3859ad69bc8f597f41e1542031e5d662f59c2cb8
+  tag: develop
+  specs:
+    quick_search-lib_guides_database_searcher (1.0.0)
+      addressable (~> 2.7)
+      quick_search-core (~> 0)
+      rails (~> 5.2.6)
+
+GIT
   remote: https://github.com/umd-lib/quick_search-lib_guides_searcher.git
   revision: 34b5276583f92cb341329c0f96cf1450cc8a396c
   tag: 1.0.1
@@ -424,6 +434,7 @@ DEPENDENCIES
   quick_search-core!
   quick_search-database_finder_searcher!
   quick_search-lib_answers_searcher!
+  quick_search-lib_guides_database_searcher!
   quick_search-lib_guides_searcher!
   quick_search-umd_theme!
   quick_search-world_cat_discovery_api_searcher!

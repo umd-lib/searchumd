@@ -27,17 +27,20 @@
 <div class="quicksearch-ga-click-tracking">
   <div class="row articles-catalog">
     <div class="small-12 medium-3 columns catalog module">
+      <%= render_module(@lib_guides_database, 'lib_guides_database') %>
+    </div>
+    <div class="small-12 medium-3 columns catalog module">
       <%= render_module(@database_finder, 'database_finder') %>
     </div>
     <div class="small-12 medium-3 columns catalog module">
       <%= render_module(@lib_guides, 'lib_guides') %>
     </div>
-    <div class="small-12 medium-3 columns catalog module">
-      <%= render_module(@lib_answers, 'lib_answers') %>
-    </div>
     <hr>
   </div>
   <div class="row articles-catalog">
+    <div class="small-12 medium-3 columns catalog module">
+      <%= render_module(@lib_answers, 'lib_answers') %>
+    </div>
     <div class="small-12 medium-3 columns catalog module">
       <%= render_module(@world_cat_discovery_api, 'world_cat_discovery_api') %>
     </div>
