@@ -324,17 +324,6 @@ cache on a particular workstation.
 > docker push docker.lib.umd.edu/searchumd-solr:${GIT_BRANCH}-${GIT_COMMIT_HASH}
 ```
 
-## Additional Functionality
-
-### Website search interface
-
-In addition to the functionality provided by the NSCU QuickSearch Rails engine,
-this application also provides a search page for the library website on the
-"website" path (i.e., [http://localhost:3000/website][website].
-
-This functionality uses the quick_search-library_website_searcher to generate
-the results, and so is also dependent on a running Solr instance.
-
 [quick_search]: https://github.com/NCSU-Libraries/quick_search
 [umd_quick_search]: https://github.com/umd-lib/quick_search
 [solr]: http://localhost:8983/
