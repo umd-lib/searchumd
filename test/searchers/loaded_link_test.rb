@@ -14,7 +14,6 @@ class LoadedLinkTest < ActiveSupport::TestCase
     searchers_with_query_param = {
       'QuickSearch::LibAnswersSearcher' => 'q',
       'QuickSearch::DatabaseFinderSearcher' => 'query',
-      'QuickSearch::LibraryWebsiteSearcher' => 'query',
       'QuickSearch::WorldCatDiscoveryApiSearcher' => 'queryString',
       'QuickSearch::WorldCatDiscoveryApiArticleSearcher' => 'queryString'
     }
