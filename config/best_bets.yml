@@ -70,7 +70,7 @@ best_bets:
     - astm
     - astm standards and engineering
     - astm standards and engineering digital library
-    - american society for testing materials 
+    - american society for testing materials
   billing:
     title: Billing & Fines
     url: https://www.lib.umd.edu/access/fines
@@ -85,21 +85,7 @@ best_bets:
   directofsubjectspecialists:
     title: Directory of subject specialists
     url: https://www.lib.umd.edu/directory/specialists/librarian
-    description: In their outreach function, liaison librarians are a conduit between academic departments and the library to make sure that we are serving the unique research and information literacy needs of students and faculty in each discipline to the best of our ability.
-    Liaison librarians are assigned subjects based on their undergraduate and graduate degrees, academic interests, and the needs of the library.
-    Liaison librarians provide information literacy instruction, research assistance, and manage and build collections.
-    Through departmental partnerships, liaison librarians actively develop innovative services and materials that support the evolving academic programs and changing research interests of the University.
-    Active communication between liaison librarians and their faculty library liaison include all matters related to the University Libraries, such as
-    # some descriptions were rather long and included lists. I'm not sure how the formatting would work, so I used >'s as bullets.
- # not sure if it'll display well or even work, but I would like to try it out before editing down the submitted descriptions.
-    > Acquisitions
-    > Instructional support
-    > Scholarly communications
-    > Library digitization efforts
-    > Developments in data research and visualization
-    > Library events
-    > Workshops
-    > Library-wide services
+    description: Liaison librarians are a conduit between academic departments and the library. They provide information literacy instruction, research assistance, and manage and build collections.
     keyword:
     - subject specialist directory
     - directory of subject specialists
@@ -121,7 +107,7 @@ best_bets:
     - econlit
     - econ lit
   fearlessteachinginstitute:
-    title: Fearless Teaching Institute 
+    title: Fearless Teaching Institute
     url: https://lib.guides.umd.edu/fearlessteaching
     description: The UMD Libraries' Fearless Institute supports the professional development and lifelong learning of our library teachers through targeted workshops, journal clubs, special events, and rotating programming, such as peer-teaching observations. Inspired by the UMD Teaching and Learning Center’s (TLTC) Fearless Teaching Framework, the Libraries' Fearless Teaching Institute focuses on improving teaching climate, content, practices, and assessment.
     keywords:
@@ -164,13 +150,13 @@ best_bets:
     url: https://www.lib.umd.edu/hours
     description: Daily hours of all libraries across the campus.
     keywords:
-    -hours
-    -library hours
-    -hour
-    -open hours
-    -library open
-    -when is the library open
-    -when does the library open
+    - hours
+    - library hours
+    - hour
+    - open hours
+    - library open
+    - when is the library open
+    - when does the library open
   ibis:
     title: IBISWorld
     url: https://proxy-um.researchport.umd.edu/login?url=http://clients1.ibisworld.com/processlogin.aspx?user=NorthCarolinaState&pwd=ibisworld2008
@@ -362,8 +348,8 @@ best_bets:
     url: https://www.lib.umd.edu/rc
     description: At the Research Commons we expand the boundaries of the traditional library through support in core areas such as research organization, statistical and geospatial analysis.
     keywords:
-    -research commons
-    -research common
+    - research commons
+    - research common
   researchworkshops:
     title: Research Workshops
     url: https://www.lib.umd.edu/rc/workshops
@@ -404,15 +390,7 @@ best_bets:
   statisticalconsulting:
     title: Statistical Consulting
     url: https://www.lib.umd.edu/rc/statistical-consulting
-    description: What we do
- # some descriptions were rather long and included lists. I'm not sure how the formatting would work, so I used >'s as bullets.
- # not sure if it'll display well or even work, but I would like to try it out before editing down the submitted descriptions.
-    > Answer your statistics and analysis questions through
-        >> Virtual consultation using Zoom 
-        >> Email--lib-statsconsulting@umd.edu
-    > We currently specialize in SAS, SPSS, R, and can also provide support on Survey Design and Analysis.
-    > We do NOT tutor on statistical classes or homework. 
-    > Our mission statement contains information on the overarching goals of our services
+    description: We do answer your statistics and analysis questions through virtual consultation using Zoom and email lib-statsconsulting@umd.edu. We currently specialize in SAS, SPSS, R, and can also provide support on Survey Design and Analysis, but we do NOT tutor on statistical classes or homework.
     keywords:
     - statistical consulting
     - stat consulting
@@ -432,7 +410,7 @@ best_bets:
     - speaking of book series
     - speaking of books serie
     - speaking of book serie
-   steamsalon:
+  steamsalon:
     title: STEAM Salon
     url: https://www.lib.umd.edu/rc/steam-salon
     description: STEAM Salon is an informal series presented by the Research Commons and hosted by the STEM Library. The mission of STEAM Salon is to provide a platform that centers the work of emerging researchers, faculty, and students at the intersection of Science, Technology, Engineering, Art, and Mathematics.STEAM Salons enrich the intellectual and cultural life of our community through engaged conversation and shared ideas. We offer an inclusive space for developing researchers, faculty, and students to grow as professionals and to connect with a broad campus audience.
@@ -445,12 +423,7 @@ best_bets:
   subjectspecialists:
     title: Subject Specialists
     url: https://www.lib.umd.edu/rc/meet-your-librarian
-    description: How can your subject librarian help you? 
-    > Provide one-on-one research assistance online, in-person, or over the phone
-    > Lead instruction sessions that teach your students information literacy skills and research tools
-    > Answer your questions about publishing, copyright issues, and preserving digital works
-    > Purchase materials (including data) for the University Libraries that facilitate research and instruction
-    > Help identify gaps in the literature when you are planning a research project
+    description: We provide one-on-one research assistance; lead instruction sessions that teach your students information literacy skills and research tools; answer your questions about publishing, copyright issues, and preserving digital works; purchase materials (including data) for the University Libraries that facilitate research and instruction; help identify gaps in the literature when you are planning a research project
     keywords:
     - meet your librarian
     - subject specialist
@@ -460,35 +433,22 @@ best_bets:
   systemicreview:
     title: Systemic Review
     url: https://www.lib.umd.edu/rc/systematic-review
-    description: Librarians at the UMD Libraries are expert searchers and offer a systematic review service to faculty, students, and research staff. What we do:
-    > Choose the best review methodology to fit your timeline, question scope, and discipline
-    > Suggest relevant databases for searching the scholarly and grey literature
-    > Design complex search strategies for specific databases
-    > Use citation management software for organizing references (e.g. Zotero and Endnote)
-    > Use article screening and selection tools (e.g. Rayyan)
+    description: Librarians at the UMD Libraries are expert searchers and offer a systematic review service to faculty, students, and research staff.
     keywords:
     - systemic review
     - system review
   teachingsupport:
     title: Teaching Support
     url: https://www.lib.umd.edu/rc/services
-    description: Creating Effective Research Assignments--help when designing assignments with a research component.
-    Librarian Instruction Sessions include--
-   > Navigating library databases
-   > Locating open access and government publications through the world wide web
-   > Evaluating information resources for credibility
-   > Integrating sources into research papers and projects
-   > Citing and managing sources using free-source tools such as Zotero,
-   > Sharing new knowledge through our institutional repository DRUM.
-   Open Education Resources--There are a number of library services and external resources available to help you deliver affordable course materials to your students.
-   keywords:
-   - teaching support
-   - teaching help
-   - instruction help
-   - instruction
-   - information literacy sessions
-   - information literacy
-   - information literary
+    description: We can help when designing assignments with a research component. We also offer librarian instruction sessions covering topics include using library databases, evaluating informational resources for credibility, using citation management software, and others. We can also support your use of open educational resources.
+    keywords:
+    - teaching support
+    - teaching help
+    - instruction help
+    - instruction
+    - information literacy sessions
+    - information literacy
+    - information literary
   toptextbooks:
     title: Top Textbooks
     url: https://www.lib.umd.edu/access/top-textbooks
@@ -541,4 +501,4 @@ best_bets:
     - the wall street journal
     - wsj
     - wallstreet journal
-    - 0099-9660
+    - "0099-9660"
