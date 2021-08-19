@@ -15,7 +15,7 @@ NCSU QuickSearch application at
 
 Requires:
 
-* Ruby 2.3.7
+* Ruby 2.6.5
 * Bundler
 
 ### Setup
