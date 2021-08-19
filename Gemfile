@@ -7,13 +7,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # ruby '2.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
+gem 'rails', '~> 5.2.6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.6'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
+# quick_search-umd_theme - Needed until upgrade to Ruby v2.4 or later
 gem 'sass-rails', '~> 5.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -45,7 +47,9 @@ gem 'jquery-rails'
 # dotenv - For storing production configuration parameters
 gem 'dotenv-rails', '~> 2.2.1'
 
-gem 'quick_search-core', git: 'https://github.com/umd-lib/quick_search.git', branch: 'umd-develop'
+gem 'quick_search-core',
+    git: 'https://github.com/umd-lib/quick_search.git',
+    tag: '0.2.0.1'
 
 # -Inserted by QuickSearch-
 
@@ -55,20 +59,62 @@ gem 'quick_search-core', git: 'https://github.com/umd-lib/quick_search.git', bra
 # your config/quick_search_config.yml file as well as references to them in your theme's search
 # results page template
 
-gem 'quick_search-lib_answers_searcher',
-    git: 'https://github.com/umd-lib/quick_search-lib_answers_searcher.git', branch: 'develop'
-gem 'quick_search-lib_guides_searcher',
-    git: 'https://github.com/umd-lib/quick_search-lib_guides_searcher.git', branch: 'develop'
+gem 'quick_search-archives_space_searcher',
+    git: 'https://github.com/umd-lib/quick_search-archives_space_searcher.git',
+    tag: '1.0.0'
+
 gem 'quick_search-database_finder_searcher',
-    git: 'https://github.com/umd-lib/quick_search-database_finder_searcher.git', branch: 'develop'
+    git: 'https://github.com/umd-lib/quick_search-database_finder_searcher.git',
+    tag: '1.0.0'
+
+gem 'quick_search-drum_searcher',
+    git: 'https://github.com/umd-lib/quick_search-drum_searcher.git',
+    tag: '1.0.0'
+
+gem 'quick_search-ebsco_discovery_service_api_searcher',
+    git: 'https://github.com/umd-lib/quick_search-ebsco_discovery_service_api_searcher.git',
+    tag: '1.0.0'
+
+gem 'quick_search-fedora_searcher',
+    git: 'https://github.com/umd-lib/quick_search-fedora_searcher.git',
+    tag: '1.0.0'
+
+gem 'quick_search-internet_archive_searcher',
+    git: 'https://github.com/umd-lib/quick_search-internet_archive_searcher',
+    tag: '1.0.0'
+
+gem 'quick_search-lib_answers_searcher',
+    git: 'https://github.com/umd-lib/quick_search-lib_answers_searcher.git',
+    tag: '1.0.0'
+
+gem 'quick_search-lib_guides_searcher',
+    git: 'https://github.com/umd-lib/quick_search-lib_guides_searcher.git',
+    tag: '1.0.1'
+
 gem 'quick_search-library_website_searcher',
-    git: 'https://github.com/umd-lib/quick_search-library_website_searcher.git', branch: 'develop'
+    git: 'https://github.com/umd-lib/quick_search-library_website_searcher.git',
+    tag: '1.0.0'
+
+gem 'quick_search-maryland_map_searcher',
+    git: 'https://github.com/umd-lib/quick_search-maryland_map_searcher.git',
+    tag: '1.0.0'
+
 gem 'quick_search-world_cat_discovery_api_searcher',
-    git: 'https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git', branch: 'develop'
+    git: 'https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git',
+    tag: '1.0.0'
+
+gem 'umd_open_url',
+    git: 'https://github.com/umd-lib/umd_open_url',
+    tag: '1.0.0'
+
+# Dependencies for the quick_search-ebsco_discovery_service_api_searcher initialization script
+gem 'ebsco-eds', '~> 1.0.7'
 
 # Dependencies for the quick_search-world_cat_discovery_api_searcher initialization script
 gem 'oclc-auth', '>=1.0.0'
 gem 'worldcat-discovery', '>=1.2.0.1'
+gem 'rdf'
+gem 'rdf-vocab'
 
 # -END Inserted by QuickSearch-
 
@@ -79,7 +125,7 @@ gem 'worldcat-discovery', '>=1.2.0.1'
 # Remove the following if you want to use a different theme
 
 gem 'quick_search-umd_theme',
-    git: 'https://github.com/umd-lib/quick_search-umd_theme.git', branch: 'develop'
+    git: 'https://github.com/umd-lib/quick_search-umd_theme.git', tag: '1.0.0'
 
 # END -Inserted by QuickSearch-
 
@@ -97,19 +143,19 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   # Code analysis tools
-  gem 'rubocop', '= 0.66.0', require: false
+  gem 'rubocop', '= 0.78.0', require: false
+  gem 'rubocop-rails', '= 2.4.0', require: false
   gem 'rubocop-checkstyle_formatter', '~> 0.4.0', require: false
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  gem 'webdrivers'
   gem 'simplecov', '~> 0.15.1', require: false
   gem 'simplecov-rcov', '~> 0.2.3', require: false
-  gem 'minitest-reporters', '~> 1.1.19'
+  gem 'minitest'
+  gem 'minitest-reporters'
 end
 
 group :production do

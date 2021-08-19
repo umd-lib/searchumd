@@ -1,0 +1,26 @@
+# Configuration
+#
+# Replace the following placeholders with the correct values for
+# your installation.
+#
+# <SEARCH_URL>: The URL for performing the search
+# <QUERY_PARAMS>: Any HTTP query parameters that should be included in the search
+# <HIPPO_SITE_URL>: The URL for the Hippo site
+
+defaults: &defaults
+  search_url: "<%= ENV['MARYLAND_MAP_HIPPO_SITE_URL'] %>restservices/v1/mdmap/search"
+  query_params: '?q='
+  loaded_link: "<%= ENV['MARYLAND_MAP_HIPPO_SITE_URL'] %>mdmap/search?queryScope=all&query="
+  no_results_link: "<%= ENV['MARYLAND_MAP_HIPPO_SITE_URL'] %>mdmap/search/"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

@@ -12,21 +12,20 @@
 # <LOADED_LINK>: The base URL to send the query to
 # <URL_LINK>: The base URL for result links
 # <NO_RESULTS_LINK>: The URL to use when no results are found
-# <DOI_LINK>: The base URL to use for retrieving articles with DOIs
+
 defaults: &defaults
+  # The following propreties are common to both searchers. If the
+  # ebsco_discovery_service_api searcher is not being used, copy these
+  # properties into the ebsco_discovery_service_api_article_config.yml file
+  username: <%= ENV['EBSCO_DISCOVERY_SERVICE_API_USERNAME'] %>
+  password: <%= ENV['EBSCO_DISCOVERY_SERVICE_API_PASSWORD'] %>
+  enable_article_filter: true
 
-  # The following properties should only be defined when the
-  # world_cat_discovery_api_seacher is not being used.
-  # wskey: <%= ENV['WORLD_CAT_DISCOVERY_API_WSKEY'] %>
-  # secret: <%= ENV['WORLD_CAT_DISCOVERY_API_SECRET'] %>
-  # authenticatingInstitutionId: <%= ENV['WORLD_CAT_DISCOVERY_API_INSTITUTION_ID'] %>
-  # contextInstitutionId: <%= ENV['WORLD_CAT_DISCOVERY_API_INSTITUTION_ID'] %>
-
-  # world_cat_discovery_api_article-specific properties
-  loaded_link: "https://umaryland.on.worldcat.org/search?format=Artchap&queryString="
-  url_link: "https://umaryland.on.worldcat.org/oclc/"
-  no_results_link: "https://umaryland.on.worldcat.org/discovery"
-  doi_link: "http://proxy-um.researchport.umd.edu/login?url="
+  # ebsco_discovery_service_api-specific properties
+  loaded_link: 'https://widgets.ebscohost.com/prod/search/?direct=true&scope=site&site=eds-live&authtype=ip,guest&custid=umarylnd&groupid=main&profile=eds&facet=AcademicJournals&bquery='
+  url_link: 'https://proxy-um.researchport.umd.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live'
+  doi_link: 'https://proxy-um.researchport.umd.edu/login?url=https://doi.org/'
+  no_results_link: 'https://proxy-um.researchport.umd.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live'
 
   # Citation Finder URL
   citation_finder_link: https://umaryland.on.worldcat.org/atoztitles/link

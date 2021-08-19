@@ -24,10 +24,10 @@ RUN echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> $HOME/.bashrc
 
 # The Git branch to build
 ARG NUTCH_REPO=https://github.com/umd-lib/nutch.git
-ARG NUTCH_REPO_BRANCH=umd-develop
+ARG NUTCH_REPO_BRANCH_OR_TAG=release-1.14-umd-1.0
 
 # Checkout and build the nutch trunk
-RUN git clone ${NUTCH_REPO} --branch ${NUTCH_REPO_BRANCH} nutch_source && cd nutch_source && ant runtime
+RUN git clone ${NUTCH_REPO} --branch ${NUTCH_REPO_BRANCH_OR_TAG} nutch_source && cd nutch_source && ant runtime
 
 # Convenience symlink to Nutch runtime local
 RUN ln -s nutch_source/runtime/local $HOME/nutch

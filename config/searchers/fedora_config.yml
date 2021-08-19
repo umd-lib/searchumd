@@ -1,0 +1,26 @@
+# Configuration
+#
+# Replace the following placeholders with the correct values for
+# your installation.
+#
+# <SEARCH_URL>: The URL for performing the search
+# <QUERY_PARAMS>: Any HTTP query parameters that should be included in the search
+# <WEBSITE_SEARCH_URL>: The URL for the website search page (with query parameter)
+
+defaults: &defaults
+  search_url: "<%= ENV['FEDORA_HIPPO_SITE_URL'] %><%= ENV['FEDORA_HIPPO_SITE_SEARCH_PATH'] %>/json"
+  query_params: '?query='
+  no_results_link: "<%= ENV['FEDORA_HIPPO_SITE_URL'] %><%= ENV['FEDORA_HIPPO_SITE_SEARCH_PATH'] %>"
+  loaded_link: "<%= ENV['FEDORA_HIPPO_SITE_URL'] %><%= ENV['FEDORA_HIPPO_SITE_SEARCH_PATH'] %>"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

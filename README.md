@@ -185,8 +185,6 @@ This application provides the following Dockerfiles for generating Docker images
 for use in production:
 
 * Dockerfile - Generates image for the searchumd Rails application
-* Dockerfile-nginx - Generates image for the Nginx web server providing HTTPS
-    and port redirection.
 * Dockerfile-solr - Generates image for the Solr search application
 * Dockerfile-nutch - Generates image for Apache Nutch application with UMD
     custom configuration
@@ -229,11 +227,18 @@ resets the "Gemfile.lock" to the latest commits for the searchers:
 ```
 > cd searchumd
 > bundle update quick_search-core
+> bundle update quick_search-archives_space_searcher
+> bundle update quick_search-database_finder_searcher
+> bundle update quick_search-drum_searcher
+> bundle update quick_search-ebsco_discovery_service_api_searcher
+> bundle update quick_search-fedora_searcher
+> bundle update quick_search-internet_archive_searcher
 > bundle update quick_search-lib_answers_searcher
 > bundle update quick_search-lib_guides_searcher
-> bundle update quick_search-database_finder_searcher
 > bundle update quick_search-library_website_searcher
+> bundle update quick_search-maryland_map_searcher
 > bundle update quick_search-world_cat_discovery_api_searcher
+> bundle update umd_open_url
 > bundle update quick_search-umd_theme
 ```
 
@@ -275,10 +280,6 @@ kept in mind if there are any issues.
 > git push origin develop
 ```
 
-1.f) Examine the "searchumd/env_example" file, and compare it to the
-     "search-env/docker/env_example" file in this repository, making any
-     additions/deletions/changes as needed.
-
 #### 2) Build the Docker images for the various components
 
 Once the "searchumd" application is up to date, we need to build the Docker
@@ -314,7 +315,6 @@ they are what is expected (and because they will be used in future steps):
 
 ```
 > docker build --no-cache -t docker.lib.umd.edu/searchumd:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile .
-> docker build --no-cache -t docker.lib.umd.edu/searchumd-nginx:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile-nginx .
 > docker build --no-cache -t docker.lib.umd.edu/searchumd-nutch:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile-nutch .
 > docker build --no-cache -t docker.lib.umd.edu/searchumd-solr:${GIT_BRANCH}-${GIT_COMMIT_HASH} -f Dockerfile-solr .
 ```
@@ -327,7 +327,6 @@ cache on a particular workstation.
 
 ```
 > docker push docker.lib.umd.edu/searchumd:${GIT_BRANCH}-${GIT_COMMIT_HASH}
-> docker push docker.lib.umd.edu/searchumd-nginx:${GIT_BRANCH}-${GIT_COMMIT_HASH}
 > docker push docker.lib.umd.edu/searchumd-nutch:${GIT_BRANCH}-${GIT_COMMIT_HASH}
 > docker push docker.lib.umd.edu/searchumd-solr:${GIT_BRANCH}-${GIT_COMMIT_HASH}
 ```

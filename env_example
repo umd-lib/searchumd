@@ -34,6 +34,57 @@ PROD_DATABASE_PORT=5432
 # Pool size
 PROD_DATABASE_POOL=10
 
+# --- config/searchers/archives_space_config
+# The ArchivesSpace search endpoint
+ARCHIVES_SPACE_URL=
+
+# The ArchivesSpace Solr search endpoint
+ARCHIVES_SPACE_SOLR_URL=
+
+# -- config/searchers/database_finder_config.yml
+# The base URL for the Hippo website
+DATABASE_FINDER_HIPPO_SITE_URL=
+
+# --- config/searchers/drum_config.yml
+# The URL for the DRUM site
+DRUM_SITE_URL=
+
+# --- config/searchers/ebsco_discovery_service_api_config.yml
+# The EBSCO Discovery Service API Username
+EBSCO_DISCOVERY_SERVICE_API_USERNAME=
+
+# The EBSCO Discovery Service Password
+EBSCO_DISCOVERY_SERVICE_API_PASSWORD=
+
+# --- config/searchers/fedora_config.yml
+# The base URL for performing Fedora searches using the Hippo CMS
+FEDORA_HIPPO_SITE_URL=
+
+# The URL path to native search interface
+FEDORA_HIPPO_SITE_SEARCH_PATH=searchnew
+
+# --- config/searchers/lib_answers_config.yml
+# The Institution ID for LibAnswers
+LIB_ANSWERS_IID=
+
+# --- config/searchers/lib_guides_config.yml
+# The URL for the LibGuides API
+LIB_GUIDES_URL=https://lgapi-us.libapps.com/1.1/guides/
+
+# The Site ID to use with LibGuides
+LIB_GUIDES_SITE_ID=
+
+# The API key to use with LibGuides
+LIB_GUIDES_API_KEY=
+
+# -- config/searchers/library_website_config.yml
+# The Library Website Search Solr endpoint
+LIBRARY_WEBSITE_SEARCH_SOLR_URL=
+
+# -- config/searchers/maryland_map_config.yml
+# The base URL for the Hippo website
+MARYLAND_MAP_HIPPO_SITE_URL=
+
 # --- config/searchers/world_cat_discovery_api_config.yml
 # The WorldCat Discovery API institution id
 WORLD_CAT_DISCOVERY_API_INSTITUTION_ID=
@@ -44,21 +95,7 @@ WORLD_CAT_DISCOVERY_API_WSKEY=
 # The WorldCat Discovery API wskey
 WORLD_CAT_DISCOVERY_API_SECRET=
 
-# --- config/searchers/lib_answers_config.yml
-# The Institution ID for LibAnswers
-LIB_ANSWERS_IID=
-
-# --- config/searchers/lib_guides_config.yml
-# The Site ID to use with LibGuides
-LIB_GUIDES_SITE_ID=
-
-# The API key to use with LibGuides
-LIB_GUIDES_API_KEY=
-
-# -- config/searchers/database_finder_config.yml
-# The base URL for the Hippo website
-DATABASE_FINDER_HIPPO_SITE_URL=
-
-# -- config/searchers/library_website_config.yml
-# The Library Website Search Solr endpoint
-LIBRARY_WEBSITE_SEARCH_SOLR_URL=
+# --- config/searchers/world_cat_discovery_api_article_config.yml
+# --- config/searchers/ebsco_discovery_service_api_article_config.yml
+# The WorldCat Knowledge Base API OpenURL Resolve wskey
+WORLD_CAT_OPEN_URL_RESOLVER_WSKEY=

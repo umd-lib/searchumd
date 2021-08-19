@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Sample usage
+# > ./umd_crawl http://solr_app:8983/solr/nutch 10
+
+# Verify number of arguments, and print usage message if needed
+[ $# -lt 2 ] && { echo "Usage: $0 <SOLR_SERVER_URL> <NUM_ROUNDS>"; exit 1; }
+
+# Default to 90% of RAM usage, if no other value is specified
+JVM_MAX_RAM_PERCENTAGE=${JVM_MAX_RAM_PERCENTAGE:=90.0}
+
+SOLR_SERVER_URL=$1
+NUM_ROUNDS=$2
+SITEMAP_URL_DIR=sitemaps/
+CRAWL_DB=LibCrawl/
+
+bin/nutch sitemap $CRAWL_DB/crawldb -sitemapUrls $SITEMAP_URL_DIR
+bin/crawl -i -D -XX:MaxRAMPercentage=$JVM_MAX_RAM_PERCENTAGE -D solr.server.url=$SOLR_SERVER_URL $CRAWL_DB $NUM_ROUNDS
