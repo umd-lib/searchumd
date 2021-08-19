@@ -33,6 +33,44 @@ best_bets:
     - acm portal
     - acm database
     - acm digital
+  aiaa:
+    title: AIAA
+    url: https://www.lib.umd.edu/dbfinder/id/UMD01763
+    description: American Institute of Aeronautics and Astronautics database with full-text journal and conference proceedings covering many topics in aerospace engineering.
+    keywords:
+    - aiaa
+    - aia
+    - aerospace
+    - American Institute of Aeronautics and Astronautics
+    - aerospace engineering
+    - airospace engineering
+    - airospace
+    - arospace
+  asce:
+    title: ASCE
+    url: https://www.lib.umd.edu/dbfinder/id/UMD01767
+    description: American Society of Civil Engineers database with full-text journal and conference proceedings, books, standards, and more covering many topics in civil engineering.
+    keywords:
+    - asce
+    - civil engineering
+    - american society of civil engineers
+  asme:
+    title: ASME
+    url: https://www.lib.umd.edu/dbfinder/id/UMD08721
+    description: American Society of Mechanical Engineers database with full-text journal and conference proceedings covering many topics in mechanical engineering.
+    keywords:
+    - asme
+    - american society of mechanical engineers
+    - mechanical engineering
+  astm:
+    title: ASTM
+    url: http://proxy-um.researchport.umd.edu/login?url=https://Compass.astm.org
+    description: ASTM Standards and Engineering Digital Library is a vast collection of industry-leading standards and technical engineering information covering a broad range of engineering disciplines.
+    keywords:
+    - astm
+    - astm standards and engineering
+    - astm standards and engineering digital library
+    - american society for testing materials
   billing:
     title: Billing & Fines
     url: https://www.lib.umd.edu/access/fines
@@ -44,6 +82,14 @@ best_bets:
     - overdue
     - bills
     - fine
+  directofsubjectspecialists:
+    title: Directory of subject specialists
+    url: https://www.lib.umd.edu/directory/specialists/librarian
+    description: Liaison librarians are a conduit between academic departments and the library. They provide information literacy instruction, research assistance, and manage and build collections.
+    keywords:
+    - subject specialist directory
+    - directory of subject specialists
+    - find my librarian
   eric:
     title: ERIC (Educational Resource Information Center)
     url: https://proxy-um.researchport.umd.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=eric
@@ -60,6 +106,23 @@ best_bets:
     keywords:
     - econlit
     - econ lit
+  fearlessteachinginstitute:
+    title: Fearless Teaching Institute
+    url: https://lib.guides.umd.edu/fearlessteaching
+    description: The UMD Libraries' Fearless Institute supports the professional development and lifelong learning of our library teachers through targeted workshops, journal clubs, special events, and rotating programming, such as peer-teaching observations. Inspired by the UMD Teaching and Learning Center’s (TLTC) Fearless Teaching Framework, the Libraries' Fearless Teaching Institute focuses on improving teaching climate, content, practices, and assessment.
+    keywords:
+    - fearless teaching
+    - fearless teaching institute
+    - fearless institute
+  gisdatacenter:
+    title: GIS and Spatial Data Center
+    url: https://www.lib.umd.edu/gis
+    description: GIS and Spatial Data Center’s mission is to support all GIS users (students/faculty/staff/affiliates) affiliated with the College Park campus. Our services are free of charge and include all aspects of geospatial research and teaching.
+    keywords:
+    - gis and spatial data center
+    - spatial data center
+    - gis center
+    - gis data center
   googlescholar:
     title: Google Scholar
     url: https://proxy-um.researchport.umd.edu/login?url=http://scholar.google.com
@@ -82,6 +145,18 @@ best_bets:
     - hoovers database
     - hoover's
     - hoover
+  hours:
+    title: Library Hours
+    url: https://www.lib.umd.edu/hours
+    description: Daily hours of all libraries across the campus.
+    keywords:
+    - hours
+    - library hours
+    - hour
+    - open hours
+    - library open
+    - when is the library open
+    - when does the library open
   ibis:
     title: IBISWorld
     url: https://proxy-um.researchport.umd.edu/login?url=http://clients1.ibisworld.com/processlogin.aspx?user=NorthCarolinaState&pwd=ibisworld2008
@@ -93,6 +168,19 @@ best_bets:
     - ibiz
     - ibizworld
     - ibiz world
+  ieee:
+    title: IEEE Xplore
+    url: https://www.lib.umd.edu/dbfinder/id/UMD01797
+    description: Comprehensive electrical and computer engineering database with over 5 million records, providing full text articles, books, standards, and more.
+    keywords:
+    - ieee
+    - iee
+    - xplor
+    - xplore
+    - ieee explore
+    - ieee xplor
+    - ieee xplore
+    - ie xplore
   ill:
     title: Interlibrary Loan Services
     url: https://www.lib.umd.edu/access/ill
@@ -106,6 +194,26 @@ best_bets:
     - ILL
     - Interlibrary loan
     - ill
+  integratedresearchresources:
+    title: Integrated Research Resources on Campus (IRRoC)
+    url: https://irroc.umd.edu/
+    description: There are a wide variety of services that can help you develop novel ideas, compete for funding, conduct research, and disseminate your findings. You will find them here — search or browse our collection of integrated research resources on campus.
+    keywords:
+    - irroc
+    - iroc
+    - integrated research resources on campus
+    - integrated research
+    - integrated research resources
+  interdisciplinarydialogues:
+    title: Interdisciplinary Dialogue Series
+    url: https://www.lib.umd.edu/rc/interdisciplinary-dialogue
+    description: The Interdisciplinary Dialogue Series features panel discussions on important topics by scholars from various disciplines at the University of Maryland. The forums are free and are open to all members of the campus community, as well as to members of the general public.
+    keywords:
+    - interdisciplinary dialogue
+    - interdisciplinary dialogues
+    - interdisciplinary dialogue series
+    - interdisciplinary series
+    - dialogue series
   journalofpersonality:
     title: Journal of Personality and Social Psychology
     url: https://proxy-um.researchport.umd.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=pdh&jid=PSP&site=ehost-live
@@ -122,6 +230,24 @@ best_bets:
     - jstor
     - jstr
     - jstore
+  nasa:
+    title: NASA
+    url: https://ntrs.nasa.gov/
+    description: Open access database maintained by NASA to provide access to public agency publications, conference presentations, pre-prints, and more.
+    keywords:
+    - nasa
+    - nasa publications
+  moneytalks:
+    title: Money talks
+    url: https://www.lib.umd.edu/rc/money-talks
+    description: The intent of this series is to provide and encourage financial education and awareness.
+    keywords:
+    - money talk
+    - money talks
+    - money talk series
+    - money talks series
+    - money tlk
+    - mooney talks
   newyorktimes:
     title: the New York Times
     url: https://proxy-um.researchport.umd.edu/login?url=https://search.proquest.com/publication/11561
@@ -161,6 +287,16 @@ best_bets:
     - nexisuni
     - nexus uni
     - nexusuni
+  openeducationalresources:
+    title: Open Educational Resources
+    url: https://www.lib.umd.edu/news/2015/02/oer
+    description: Open Educational Resources are free, quality instructional resources. Finds hundreds of open-source textbooks by subject.
+    keywords:
+    - oer
+    - oers
+    - open educational resources
+    - open educational resource
+    - open resources
   pubmed:
     title: PubMed
     url: https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?otool=umdcplib
@@ -195,6 +331,32 @@ best_bets:
     - scanners
     - printer locations
     - print from my computer
+  researchconsultation:
+    title: Research Consultation
+    url: https://www.lib.umd.edu/rc/services
+    description: Need help using the University Libraries? Subject specialist librarians are here for you! Visit the Subject Specialist Directory today to receive one-on-one research assistance online, in-person, or over the phone.
+    keywords:
+    - research consultation
+    - research help
+    - research consultations
+    - research consult
+    - librarian consultation
+    - librarian consultations
+    - library consultation
+  researchcommons:
+    title: Research Commons
+    url: https://www.lib.umd.edu/rc
+    description: At the Research Commons we expand the boundaries of the traditional library through support in core areas such as research organization, statistical and geospatial analysis.
+    keywords:
+    - research commons
+    - research common
+  researchworkshops:
+    title: Research Workshops
+    url: https://www.lib.umd.edu/rc/workshops
+    description: These workshops offer introductions to a variety of skills, tools, and concepts to researchers on campus.
+    keywords:
+    - research workshops
+    - research workshop
   reload:
     title: Reload Button
     url: https://lib.guides.umd.edu/reload-button
@@ -202,6 +364,106 @@ best_bets:
     keywords:
     - reload
     - reload button
+  reserves:
+    title: Reserves
+    url: https://www.lib.umd.edu/access/reserves
+    description: Find all the information about finding and accessing course reserve materials as well as making content available using course reserves.
+    keywords:
+    - reserves
+    - course reserves
+    - reserve
+    - course materials
+    - course pack
+    - course material
+    - course reserve
+    - cours reserve
+  sfpe:
+    title: SFPE
+    url: https://umaryland.on.worldcat.org/v2/oclc/933276811
+    description: "Society of Fire Protection Engineers' electronic handbook: as the definitive reference on fire protection engineering, this book provides thorough treatment of the current best practices in fire protection engineering and performance-based fire safety."
+    keywords:
+    - sfpe
+    - fire protection
+    - society of fire protection engineers
+    - society of fire protection engineers
+    - fire handbook
+  statisticalconsulting:
+    title: Statistical Consulting
+    url: https://www.lib.umd.edu/rc/statistical-consulting
+    description: We do answer your statistics and analysis questions through virtual consultation using Zoom and email lib-statsconsulting@umd.edu. We currently specialize in SAS, SPSS, R, and can also provide support on Survey Design and Analysis, but we do NOT tutor on statistical classes or homework.
+    keywords:
+    - statistical consulting
+    - stat consulting
+    - sas consulting
+    - spss consulting
+    - r consulting
+    - r workshop
+  speakingofbooks:
+    title: Speaking of Books
+    url: https://www.lib.umd.edu/rc/speaking-of-books
+    description: Speaking of Books series features free, open to the community and public talks by UMD faculty authors on their recently published work.
+    keywords:
+    - speaking of books
+    - speaking books
+    - speaking of book
+    - speaking of books series
+    - speaking of book series
+    - speaking of books serie
+    - speaking of book serie
+  steamsalon:
+    title: STEAM Salon
+    url: https://www.lib.umd.edu/rc/steam-salon
+    description: STEAM Salon is an informal series presented by the Research Commons and hosted by the STEM Library. The mission of STEAM Salon is to provide a platform that centers the work of emerging researchers, faculty, and students at the intersection of Science, Technology, Engineering, Art, and Mathematics.STEAM Salons enrich the intellectual and cultural life of our community through engaged conversation and shared ideas. We offer an inclusive space for developing researchers, faculty, and students to grow as professionals and to connect with a broad campus audience.
+    keywords:
+    - steam salon
+    - stem salon
+    - steam salon series
+    - steam saloon
+    - stem saloon
+  subjectspecialists:
+    title: Subject Specialists
+    url: https://www.lib.umd.edu/rc/meet-your-librarian
+    description: We provide one-on-one research assistance; lead instruction sessions that teach your students information literacy skills and research tools; answer your questions about publishing, copyright issues, and preserving digital works; purchase materials (including data) for the University Libraries that facilitate research and instruction; help identify gaps in the literature when you are planning a research project
+    keywords:
+    - meet your librarian
+    - subject specialist
+    - subject specialists
+    - librarian help
+    - subject librarian
+  systemicreview:
+    title: Systemic Review
+    url: https://www.lib.umd.edu/rc/systematic-review
+    description: Librarians at the UMD Libraries are expert searchers and offer a systematic review service to faculty, students, and research staff.
+    keywords:
+    - systemic review
+    - system review
+  teachingsupport:
+    title: Teaching Support
+    url: https://www.lib.umd.edu/rc/services
+    description: We can help when designing assignments with a research component. We also offer librarian instruction sessions covering topics include using library databases, evaluating informational resources for credibility, using citation management software, and others. We can also support your use of open educational resources.
+    keywords:
+    - teaching support
+    - teaching help
+    - instruction help
+    - instruction
+    - information literacy sessions
+    - information literacy
+    - information literary
+  toptextbooks:
+    title: Top Textbooks
+    url: https://www.lib.umd.edu/access/top-textbooks
+    description: The Libraries have purchased textbooks for the largest courses on campus! They are available at the McKeldin Library Services Desk, and you can borrow them for 4 hours at a time.
+    keywords:
+    - textbook
+    - textbooks
+    - top textbooks
+    - textbook reserve
+    - txtbook
+    - text book
+    - text books
+    - top text books
+    - top text book
+    - top textbook
   uborrow:
     title: UBorrow
     url: https://www.lib.umd.edu/access/uborrow
@@ -239,4 +501,4 @@ best_bets:
     - the wall street journal
     - wsj
     - wallstreet journal
-    - 0099-9660
+    - "0099-9660"
