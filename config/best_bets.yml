@@ -367,7 +367,7 @@ best_bets:
   reserves:
     title: Reserves
     url: https://www.lib.umd.edu/access/reserves
-    description: Find all the information about finding and accessing course reserve materials as well as making content available using course reserves.
+    description: Find all the information about accessing Course Reserves materials as well as about making content available using Course Reserves.
     keywords:
     - reserves
     - course reserves
