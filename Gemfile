@@ -59,28 +59,8 @@ gem 'quick_search-core',
 # your config/quick_search_config.yml file as well as references to them in your theme's search
 # results page template
 
-gem 'quick_search-archives_space_searcher',
-    git: 'https://github.com/umd-lib/quick_search-archives_space_searcher.git',
-    tag: '1.0.0'
-
 gem 'quick_search-database_finder_searcher',
     git: 'https://github.com/umd-lib/quick_search-database_finder_searcher.git',
-    tag: '1.0.0'
-
-gem 'quick_search-drum_searcher',
-    git: 'https://github.com/umd-lib/quick_search-drum_searcher.git',
-    tag: '1.0.0'
-
-gem 'quick_search-ebsco_discovery_service_api_searcher',
-    git: 'https://github.com/umd-lib/quick_search-ebsco_discovery_service_api_searcher.git',
-    tag: '1.0.0'
-
-gem 'quick_search-fedora_searcher',
-    git: 'https://github.com/umd-lib/quick_search-fedora_searcher.git',
-    tag: '1.0.0'
-
-gem 'quick_search-internet_archive_searcher',
-    git: 'https://github.com/umd-lib/quick_search-internet_archive_searcher',
     tag: '1.0.0'
 
 gem 'quick_search-lib_answers_searcher',
@@ -91,14 +71,6 @@ gem 'quick_search-lib_guides_searcher',
     git: 'https://github.com/umd-lib/quick_search-lib_guides_searcher.git',
     tag: '1.0.1'
 
-gem 'quick_search-library_website_searcher',
-    git: 'https://github.com/umd-lib/quick_search-library_website_searcher.git',
-    tag: '1.0.0'
-
-gem 'quick_search-maryland_map_searcher',
-    git: 'https://github.com/umd-lib/quick_search-maryland_map_searcher.git',
-    tag: '1.0.0'
-
 gem 'quick_search-world_cat_discovery_api_searcher',
     git: 'https://github.com/umd-lib/quick_search-world_cat_discovery_api_searcher.git',
     tag: '1.0.0'
@@ -106,9 +78,6 @@ gem 'quick_search-world_cat_discovery_api_searcher',
 gem 'umd_open_url',
     git: 'https://github.com/umd-lib/umd_open_url',
     tag: '1.0.0'
-
-# Dependencies for the quick_search-ebsco_discovery_service_api_searcher initialization script
-gem 'ebsco-eds', '~> 1.0.7'
 
 # Dependencies for the quick_search-world_cat_discovery_api_searcher initialization script
 gem 'oclc-auth', '>=1.0.0'
