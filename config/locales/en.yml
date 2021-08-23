@@ -30,38 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  archives_space_search:
-    # no_results_link now configured in searcher configuration YAML file
-    no_results_link:
-
   database_finder_search:
-    # no_results_link now configured in searcher configuration YAML file
-    no_results_link:
-
-  DRUM_search:
-    # no_results_link now configured in searcher configuration YAML file
-    no_results_link:
-
-  ebsco_discovery_service_api_search:
-    # no_results_link now configured in searcher configuration YAML file
-    no_results_link:
-
-  ebsco_discovery_service_api_article_search:
-    display_name: "EBSCO Discovery API Article"
-    short_display_name: "EBSCO Discovery API Article"
-    search_form_placeholder: "Search EBSCO Discovery API (Articles)"
-    module_callout: "Articles"
-    error_service_message: "searching EBSCO Discovery API (Articles)"
-    no_results_service_message: "a different search from EBSCO Discovery API (Articles)"
-    loaded_link:
-    # no_results_link now configured in searcher configuration YAML file
-    no_results_link:
-
-  fedora_search:
-    # no_results_link now configured in searcher configuration YAML file
-    no_results_link:
-
-  internet_archive_search:
     # no_results_link now configured in searcher configuration YAML file
     no_results_link:
 
@@ -70,14 +39,6 @@ en:
     no_results_link:
 
   lib_guides_search:
-    # no_results_link now configured in searcher configuration YAML file
-    no_results_link:
-
-  library_website_search:
-    # no_results_link now configured in searcher configuration YAML file
-    no_results_link:
-
-  maryland_map_search:
     # no_results_link now configured in searcher configuration YAML file
     no_results_link:
 

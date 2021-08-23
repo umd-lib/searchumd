@@ -1,52 +1,9 @@
 GIT
-  remote: https://github.com/umd-lib/quick_search-archives_space_searcher.git
-  revision: 7817ba3eabb6756a5612aba4faf2b97f958dcac4
-  tag: 1.0.0
-  specs:
-    quick_search-archives_space_searcher (1.0.0)
-      quick_search-core (~> 0)
-
-GIT
   remote: https://github.com/umd-lib/quick_search-database_finder_searcher.git
   revision: d36343a25947b9ea9db91031ee7564b10752948a
   tag: 1.0.0
   specs:
     quick_search-database_finder_searcher (1.0.0)
-      quick_search-core (~> 0)
-
-GIT
-  remote: https://github.com/umd-lib/quick_search-drum_searcher.git
-  revision: 7fe4835d984f7f1f254422b776b7e34f9d66b8cf
-  tag: 1.0.0
-  specs:
-    quick_search-drum_searcher (1.0.0)
-      nokogiri
-      quick_search-core (~> 0)
-
-GIT
-  remote: https://github.com/umd-lib/quick_search-ebsco_discovery_service_api_searcher.git
-  revision: 81f355744fd891ca88eada05b44abcab903570af
-  tag: 1.0.0
-  specs:
-    quick_search-ebsco_discovery_service_api_searcher (1.0.0)
-      ebsco-eds (~> 1.0.7)
-      quick_search-core (~> 0)
-      umd_open_url
-
-GIT
-  remote: https://github.com/umd-lib/quick_search-fedora_searcher.git
-  revision: 10a22d42e1feee6f5710ce87482c175732797e2e
-  tag: 1.0.0
-  specs:
-    quick_search-fedora_searcher (1.0.0)
-      quick_search-core (~> 0)
-
-GIT
-  remote: https://github.com/umd-lib/quick_search-internet_archive_searcher
-  revision: fac5695ab95ff7e01afc4593573c5feac0524486
-  tag: 1.0.0
-  specs:
-    quick_search-internet_archive_searcher (1.0.0)
       quick_search-core (~> 0)
 
 GIT
@@ -63,24 +20,6 @@ GIT
   tag: 1.0.1
   specs:
     quick_search-lib_guides_searcher (1.0.1)
-      quick_search-core (~> 0)
-
-GIT
-  remote: https://github.com/umd-lib/quick_search-library_website_searcher.git
-  revision: 2bf2059ed63a301e554a4efeb01abecbb602dbe8
-  tag: 1.0.0
-  specs:
-    quick_search-library_website_searcher (1.0.0)
-      kaminari
-      quick_search-core (~> 0)
-      rsolr (= 2.2.1)
-
-GIT
-  remote: https://github.com/umd-lib/quick_search-maryland_map_searcher.git
-  revision: fd5022df46230ec6e1ccf0dc6e1f808430d56124
-  tag: 1.0.0
-  specs:
-    quick_search-maryland_map_searcher (1.0.0)
       quick_search-core (~> 0)
 
 GIT
@@ -134,43 +73,43 @@ GIT
 GEM
   remote: https://maven.lib.umd.edu/nexus/content/groups/umd-ruby-gems-repository-group/
   specs:
-    actioncable (5.2.4.3)
-      actionpack (= 5.2.4.3)
+    actioncable (5.2.6)
+      actionpack (= 5.2.6)
       nio4r (~> 2.0)
       websocket-driver (>= 0.6.1)
-    actionmailer (5.2.4.3)
-      actionpack (= 5.2.4.3)
-      actionview (= 5.2.4.3)
-      activejob (= 5.2.4.3)
+    actionmailer (5.2.6)
+      actionpack (= 5.2.6)
+      actionview (= 5.2.6)
+      activejob (= 5.2.6)
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 2.0)
-    actionpack (5.2.4.3)
-      actionview (= 5.2.4.3)
-      activesupport (= 5.2.4.3)
+    actionpack (5.2.6)
+      actionview (= 5.2.6)
+      activesupport (= 5.2.6)
       rack (~> 2.0, >= 2.0.8)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (5.2.4.3)
-      activesupport (= 5.2.4.3)
+    actionview (5.2.6)
+      activesupport (= 5.2.6)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
-    activejob (5.2.4.3)
-      activesupport (= 5.2.4.3)
+    activejob (5.2.6)
+      activesupport (= 5.2.6)
       globalid (>= 0.3.6)
-    activemodel (5.2.4.3)
-      activesupport (= 5.2.4.3)
-    activerecord (5.2.4.3)
-      activemodel (= 5.2.4.3)
-      activesupport (= 5.2.4.3)
+    activemodel (5.2.6)
+      activesupport (= 5.2.6)
+    activerecord (5.2.6)
+      activemodel (= 5.2.6)
+      activesupport (= 5.2.6)
       arel (>= 9.0)
-    activestorage (5.2.4.3)
-      actionpack (= 5.2.4.3)
-      activerecord (= 5.2.4.3)
-      marcel (~> 0.3.1)
-    activesupport (5.2.4.3)
+    activestorage (5.2.6)
+      actionpack (= 5.2.6)
+      activerecord (= 5.2.6)
+      marcel (~> 1.0.0)
+    activesupport (5.2.6)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -180,8 +119,6 @@ GEM
     ansi (1.5.0)
     arel (9.0.0)
     ast (2.4.1)
-    bibtex-ruby (5.1.4)
-      latex-decode (~> 0.0)
     bindex (0.8.1)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
@@ -197,12 +134,6 @@ GEM
       xpath (~> 3.2)
     childprocess (3.0.0)
     chunky_png (1.3.11)
-    citeproc (1.0.9)
-      namae (~> 1.0)
-    citeproc-ruby (1.1.10)
-      citeproc (~> 1.0, >= 1.0.9)
-      csl (~> 1.5)
-    climate_control (0.2.0)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -226,13 +157,8 @@ GEM
       compass (~> 1.0.0)
       sass-rails (< 5.1)
       sprockets (< 4.0)
-    concurrent-ruby (1.1.7)
-    connection_pool (2.2.2)
+    concurrent-ruby (1.1.9)
     crass (1.0.6)
-    csl (1.5.0)
-      namae (~> 1.0)
-    csl-styles (1.0.1.9)
-      csl (~> 1.0)
     docile (1.1.5)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -240,32 +166,12 @@ GEM
     dotenv-rails (2.2.2)
       dotenv (= 2.2.2)
       railties (>= 3.2, < 6.0)
-    ebsco-eds (1.0.8)
-      activesupport (~> 5.2)
-      bibtex-ruby (~> 5.0, >= 5.0.0)
-      citeproc (>= 1.0.4, < 2.0)
-      citeproc-ruby (~> 1.0, >= 1.0.2)
-      climate_control (~> 0)
-      csl (~> 1.4)
-      csl-styles (~> 1.0, >= 1.0.1.5)
-      dotenv (~> 2.2)
-      faraday (~> 0)
-      faraday-detailed_logger (~> 2.0)
-      faraday_middleware (~> 0.11)
-      net-http-persistent (~> 3.1)
-      public_suffix (~> 4.0)
-      require_all (~> 2.0)
-      sanitize (~> 5.0)
     equivalent-xml (0.6.0)
       nokogiri (>= 1.4.3)
-    erubi (1.9.0)
+    erubi (1.10.0)
     execjs (2.7.0)
     faraday (0.17.1)
       multipart-post (>= 1.2, < 3)
-    faraday-detailed_logger (2.1.3)
-      faraday (~> 0.8)
-    faraday_middleware (0.13.1)
-      faraday (>= 0.7.4, < 1.0)
     fastimage (2.1.7)
     ffi (1.11.3)
     font-awesome-sass (4.7.0)
@@ -273,8 +179,8 @@ GEM
     foundation-rails (5.4.5.0)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
-    globalid (0.4.2)
-      activesupport (>= 4.2.0)
+    globalid (0.5.2)
+      activesupport (>= 5.0)
     haml (5.1.2)
       temple (>= 0.8.0)
       tilt
@@ -284,7 +190,7 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     httpclient (2.8.3)
-    i18n (1.8.5)
+    i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.4)
     jbuilder (2.9.1)
@@ -306,27 +212,24 @@ GEM
       activerecord
       kaminari-core (= 1.2.1)
     kaminari-core (1.2.1)
-    latex-decode (0.3.1)
     link_header (0.0.8)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
-    loofah (2.6.0)
+    loofah (2.12.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    marcel (0.3.3)
-      mimemagic (~> 0.3.2)
+    marcel (1.0.1)
     method_source (1.0.0)
     mime-types (3.3)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.1009)
-    mimemagic (0.3.5)
-    mini_mime (1.0.2)
-    mini_portile2 (2.4.0)
-    minitest (5.14.1)
+    mini_mime (1.1.0)
+    mini_portile2 (2.6.1)
+    minitest (5.14.4)
     minitest-reporters (1.4.2)
       ansi
       builder
@@ -337,15 +240,11 @@ GEM
     multi_json (1.14.1)
     multipart-post (2.1.1)
     mysql2 (0.5.3)
-    namae (1.0.1)
-    net-http-persistent (3.1.0)
-      connection_pool (~> 2.2)
     netrc (0.11.0)
-    nio4r (2.5.2)
-    nokogiri (1.10.10)
-      mini_portile2 (~> 2.4.0)
-    nokogumbo (2.0.2)
-      nokogiri (~> 1.8, >= 1.8.4)
+    nio4r (2.5.8)
+    nokogiri (1.12.3)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
     oclc-auth (1.0.0)
       json (~> 2.0, >= 2.0.3)
       rake (~> 10.4)
@@ -357,30 +256,31 @@ GEM
     promise (0.3.1)
     public_suffix (4.0.1)
     puma (3.12.6)
+    racc (1.5.2)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rails (5.2.4.3)
-      actioncable (= 5.2.4.3)
-      actionmailer (= 5.2.4.3)
-      actionpack (= 5.2.4.3)
-      actionview (= 5.2.4.3)
-      activejob (= 5.2.4.3)
-      activemodel (= 5.2.4.3)
-      activerecord (= 5.2.4.3)
-      activestorage (= 5.2.4.3)
-      activesupport (= 5.2.4.3)
+    rails (5.2.6)
+      actioncable (= 5.2.6)
+      actionmailer (= 5.2.6)
+      actionpack (= 5.2.6)
+      actionview (= 5.2.6)
+      activejob (= 5.2.6)
+      activemodel (= 5.2.6)
+      activerecord (= 5.2.6)
+      activestorage (= 5.2.6)
+      activesupport (= 5.2.6)
       bundler (>= 1.3.0)
-      railties (= 5.2.4.3)
+      railties (= 5.2.6)
       sprockets-rails (>= 2.0.0)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.3.0)
       loofah (~> 2.3)
-    railties (5.2.4.3)
-      actionpack (= 5.2.4.3)
-      activesupport (= 5.2.4.3)
+    railties (5.2.6)
+      actionpack (= 5.2.6)
+      activesupport (= 5.2.6)
       method_source
       rake (>= 0.8.7)
       thor (>= 0.19.0, < 2.0)
@@ -412,14 +312,10 @@ GEM
     rdf-xsd (3.1.0)
       rdf (~> 3.1)
     regexp_parser (1.6.0)
-    require_all (2.0.0)
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rsolr (2.2.1)
-      builder (>= 2.1.2)
-      faraday (>= 0.9.0)
     rubocop (0.78.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -435,10 +331,6 @@ GEM
     ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
     rubyzip (2.0.0)
-    sanitize (5.2.1)
-      crass (~> 1.0.2)
-      nokogiri (>= 1.8.0)
-      nokogumbo (~> 2.0)
     sass (3.4.25)
     sass-rails (5.0.8)
       railties (>= 5.2.0)
@@ -469,19 +361,19 @@ GEM
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.2.1)
+    sprockets-rails (3.2.2)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.3.13)
     temple (0.8.2)
-    thor (1.0.1)
+    thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    tzinfo (1.2.7)
+    tzinfo (1.2.9)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
@@ -498,7 +390,7 @@ GEM
       nokogiri (~> 1.6)
       rubyzip (>= 1.3.0)
       selenium-webdriver (>= 3.0, < 4.0)
-    websocket-driver (0.7.3)
+    websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     worldcat-discovery (1.2.0.2)
@@ -521,7 +413,6 @@ DEPENDENCIES
   capybara (>= 2.15)
   coffee-rails (~> 4.2)
   dotenv-rails (~> 2.2.1)
-  ebsco-eds (~> 1.0.7)
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
@@ -530,20 +421,13 @@ DEPENDENCIES
   oclc-auth (>= 1.0.0)
   pg (~> 0.18.4)
   puma (~> 3.11)
-  quick_search-archives_space_searcher!
   quick_search-core!
   quick_search-database_finder_searcher!
-  quick_search-drum_searcher!
-  quick_search-ebsco_discovery_service_api_searcher!
-  quick_search-fedora_searcher!
-  quick_search-internet_archive_searcher!
   quick_search-lib_answers_searcher!
   quick_search-lib_guides_searcher!
-  quick_search-library_website_searcher!
-  quick_search-maryland_map_searcher!
   quick_search-umd_theme!
   quick_search-world_cat_discovery_api_searcher!
-  rails (~> 5.2.4, >= 5.2.4.1)
+  rails (~> 5.2.6)
   rdf
   rdf-vocab
   rubocop (= 0.78.0)
