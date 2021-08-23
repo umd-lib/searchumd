@@ -79,6 +79,10 @@ gem 'umd_open_url',
     git: 'https://github.com/umd-lib/umd_open_url',
     tag: '1.0.0'
 
+gem 'quick_search-lib_guides_database_searcher',
+    git: 'https://github.com/umd-lib/quick_search-lib_guides_database_searcher.git',
+    tag: 'develop'
+
 # Dependencies for the quick_search-world_cat_discovery_api_searcher initialization script
 gem 'oclc-auth', '>=1.0.0'
 gem 'worldcat-discovery', '>=1.2.0.1'
