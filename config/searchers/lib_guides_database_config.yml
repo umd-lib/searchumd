@@ -1,0 +1,16 @@
+defaults: &defaults
+  query_template: "https://lib.guides.umd.edu/process/az/dbsearch?action=520&site_id=<%= ENV['LIB_GUIDES_SITE_ID'] %>&is_widget=0{&search}"
+  loaded_link_template: "https://lib.guides.umd.edu/az.php{?q}"
+  no_results_link: "https://lib.guides.umd.edu/az.php"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
