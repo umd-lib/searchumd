@@ -1,0 +1,25 @@
+defaults: &defaults
+  # RFC 6570 URI template for the LibGuides "API" search endpoint. The first
+  # variable in the template will be set to the user's current query when executing
+  # a search. Any additional variables will be ignored.
+  query_template: "https://lib.guides.umd.edu/process/az/dbsearch?action=520&site_id=<%= ENV['LIB_GUIDES_SITE_ID'] %>&is_widget=0{&search}"
+
+  # RFC 6570 URI template for the LibGuides search page. The first variable in the
+  # template will be set to the user's current query when executing a search. Any
+  # additional variables will be ignored.
+  loaded_link_template: "https://lib.guides.umd.edu/az.php{?q}"
+
+  # URL to link to when there are no search results for the user's current query.
+  no_results_link: "https://lib.guides.umd.edu/az.php"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

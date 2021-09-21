@@ -43,6 +43,7 @@ DATABASE_FINDER_HIPPO_SITE_URL=
 LIB_ANSWERS_IID=
 
 # --- config/searchers/lib_guides_config.yml
+# --- config/searchers/lib_guides_database_config.yml
 # The URL for the LibGuides API
 LIB_GUIDES_URL=https://lgapi-us.libapps.com/1.1/guides/
 
