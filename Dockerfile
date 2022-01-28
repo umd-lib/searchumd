@@ -50,8 +50,7 @@ COPY  --chown=app:app . /home/app/webapp/
 # Copy Rails application start script
 COPY --chown=app:app docker_config/searchumd/rails_start.sh /home/app/webapp
 
-ENV RAILS_RELATIVE_URL_ROOT=/search
-ENV SCRIPT_NAME=/search
+ENV RAILS_RELATIVE_URL_ROOT=/
 
 # The following SECRET_KEY_BASE variable is used so that the
 # "assets:precompile" command will run run without throwing an error.
