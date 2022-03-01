@@ -265,7 +265,8 @@ GEM
     pg (0.18.4)
     promise (0.3.1)
     public_suffix (4.0.1)
-    puma (3.12.6)
+    puma (4.3.11)
+      nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -430,7 +431,7 @@ DEPENDENCIES
   minitest-reporters
   oclc-auth (>= 1.0.0)
   pg (~> 0.18.4)
-  puma (~> 3.11)
+  puma (~> 4.3)
   quick_search-core!
   quick_search-database_finder_searcher!
   quick_search-lib_answers_searcher!
