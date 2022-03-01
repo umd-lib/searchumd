@@ -7,11 +7,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # ruby '2.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.6'
+gem 'rails', '~> 5.2.6', '>= 5.2.6.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.6'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 # quick_search-umd_theme - Needed until upgrade to Ruby v2.4 or later
 gem 'sass-rails', '~> 5.0'
